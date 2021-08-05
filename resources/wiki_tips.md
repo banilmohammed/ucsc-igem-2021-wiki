@@ -1,4 +1,4 @@
-#2021 RULES
+# 2021 RULES
 * WIKI FREEZE: OCTOBER something
 1. Do not alter iGEM login bar (grey bar at the top)
 2. Use standard url pages for the main pages
@@ -13,12 +13,12 @@
     * can use things licensed for reuse, open-source, creative commons licensed images
 7. No changing after wiki freeze
 
-#HTML
+# HTML
 * no need to use head tag when writing new html files
 * should start and end with html tags
     * mediawiki will take all the different html groups and put them together
 
-#CSS
+# CSS
 * when trying to use a stylesheet you cannot do it the traditional way of using the link tag
 and linking to stylesheet
 * you need to make a new template
@@ -43,14 +43,14 @@ and linking to stylesheet
     * {{Template:TEAM_NAME/TEMPLATE_NAME}}
 * rest of the html can go after the template call
 
-#MISC
+# MISC
 * the standard interface is very cumbersome to edit the wiki with
     * when making a change to ex. a stylesheet, it will take several minutes to update the main page
     * if it does not update when you refresh, you can press edit on the page you want to see the change on, then save
     * site should be updated now
 * Only one person should edit the site through the iGEM server, at a time
 
-#Uploading files
+# Uploading files
 * Go to wiki tools --> upload files
 * choose the file you want to upload and MAKE SURE ITS A DECENT SIZE IF ITS AN IMAGE NOT 5000x3000 pixels
 	* if you need to change the image size you could go to paint and resize it if it's not a transparent photo
@@ -60,12 +60,12 @@ and linking to stylesheet
 * In summary add which page the image will end up in
 * Click upload file 
 
-#Using files
+# Using files
 * go to special pages and down to file list
 * you could search for media name and click on the "(file)" link
 * Copy the url the file link takes you to and paste it into an image tag or whatever tag of the media you're trying to insert
 
-#USEFUL LINKS
+# USEFUL LINKS
 * https://2020.igem.org/Team:BITSPilani-Goa_India/Software#iGEMWikiSyncGithubAction
 * https://2019.igem.org/Team:Tec-Chihuahua/Wiki
 * http://2016.igem.org/Team:Peshawar/Wiki
