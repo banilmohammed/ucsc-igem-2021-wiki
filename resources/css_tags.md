@@ -1,6 +1,6 @@
-#CSS Tags
+# CSS Tags
 
-##Position
+## Position
 * when used, you can use left, right, top, bottom, properites to move position
 
 * **static**
@@ -21,14 +21,14 @@
     * used to change order of stacked things
     * higher element means closer to front
 
-##Pseudo-elements
+## Pseudo-elements
 * style parts of an element
 
 * **::before**
     * insert *content* before the modified element
         * content is another property you define in the css declaration
 
-##Backgrounds
+## Backgrounds
 * **background-color**
     * use to change bc color of containers
 * **background-image**
@@ -45,12 +45,12 @@
     2. cover: resize image to size of entire container
     3. contain: resize image to make sure image is fully visible
 
-##Visual Effects
+## Visual Effects
 * **filter**
     * use this to apply visual effects like blur, brightness, etc.
     * to use more than one effect(function), just separate by space
 
-##Flexbox
+## Flexbox
 * one-dimensional layout model
     * deals with one dimension at a time, either a row or a column
 * flexbox has 2 axes:
@@ -86,7 +86,7 @@
     * space-between: equal amount of space between(no space on ends)
     * space-evenly: spaced evenly
 
-##Font
+## Font
 * **font-family**: chooose what font you want
     * to include fallbacks, use a comma after and include name
 * **font-style**: what style font:
