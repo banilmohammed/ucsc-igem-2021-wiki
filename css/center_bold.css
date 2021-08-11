@@ -1,0 +1,148 @@
+:root {
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-mcherry-red: #FF423E;
+    --clr-pale-red: #FF8F8C;
+    --clr-white-pink: #FFD4C5;
+    --clr-light-purple: #A375ED;
+    --clr-mint: #89EACE;
+    --clr-dark-purple: #733D9D;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    src: url("../fonts/Lemon_milk/LEMONMILK-Light.otf")
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    src: url("../fonts/Lemon_milk/LEMONMILK-Bold.otf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+/* General Settings */
+body {
+    background-color: var(--clr-black);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--clr-light-purple);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar #nav-logo {
+    width: 13em;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.navbar-list-item {
+    list-style: none;
+    margin-right: 4rem;
+}
+
+.navbar-list-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+.navbar-list-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--clr-white);
+    margin-bottom: 4rem;
+}
+
+.hero h1 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.hero img {
+    width: 25rem;
+    height: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(#FF8F8C, #A375ED);
+    width: 40px;
+    height: 100%;
+    grid-area: sidebar;
+    justify-self: end;
+}
+
+/* Card */
+.card {
+    background-color: var(--clr-light-purple);
+    color: var(--clr-white);
+    margin: 2rem 0;
+    margin-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.card h2 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.card p {
+    padding: 0 1rem;
+}
+
+/* Main */
+.main {
+    grid-area: main;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas:
+    "sidebar main"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main";
+}
+
+/* Figures */
+.figure {
+    width: 45rem;
+    height: 90%;
+    padding-right: 2rem;
+}
+
+section {
+    display:flex;
+    align-items: center;
+}
