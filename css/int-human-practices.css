@@ -1,0 +1,496 @@
+:root {
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-mcherry-red: #FF423E;
+    --clr-pale-red: #FF8F8C;
+    --clr-white-pink: #FFD4C5;
+    --clr-light-purple: #A375ED;
+    --clr-mint: #89EACE;
+    --clr-dark-purple: #733D9D;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    src: LEMONMILK-Light.otf;
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    src: LEMONMILK-Bold.otf;
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+/* General Settings */
+body {
+    background-color: var(--clr-black);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--clr-light-purple);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar #nav-logo {
+    width: 13em;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.navbar-list-item {
+    list-style: none;
+    margin-right: 4rem;
+}
+
+.navbar-list-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+.navbar-list-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--clr-white);
+    margin-bottom: 6rem;
+}
+
+.hero h1 {
+    font-family: "Lemon Milk";
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero img {
+    width: 25rem;
+    height: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(#FF8F8C, #A375ED);
+    width: 40px;
+    height: 100%;
+    grid-area: sidebar;
+    justify-self: end;
+    margin-top: 33px;
+}
+
+/* Card */
+.card {
+    background-color: var(--clr-light-purple);
+    color: var(--clr-white);
+    margin: 2rem 2rem;
+}
+
+.card h2 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.subcaption h2 {
+    background-color: black;
+    color: var(--clr-white);
+    margin: 2rem 2rem;
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+
+.card p {
+    padding: 0 1rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+    margin-bottom: 2rem;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.image-fixer {
+    background-color: black;
+    padding-bottom: 0px;
+    justify-content: center;
+}
+
+.image-fixer h2 {
+  font-family: "Lemon Milk";
+  font-weight: light;
+  font-size: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+    
+/* Main */
+.main {
+    grid-area: main;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 80px 1fr 200px;
+    grid-template-areas:
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside";
+}
+
+section {
+    display:flex;
+    align-items: center;
+}
+
+.mainnn {
+    grid-column-start: 2;
+}
+
+.mainnn-re-up {
+  width: 100%;
+  height: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 20;
+  top: 80%;
+  background-color: black;
+}
+
+.mainnn-re-up p {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.page-wrap {
+  display: grid;
+  grid-template-columns: 20vw auto;
+  position: relative;
+
+}
+
+.footer {
+    position: relative;
+    width: 100%
+    height: auto;
+    padding: 50px 100x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#A375ED, #FF8F8C);
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.footer-list-item {
+    list-style: none;
+    align-items: center;
+}
+
+.footer-list-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 2rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+.not-hero h2 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sec h2 {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    color: white;
+    justify-content: center;
+    position: relative;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.sec img {
+    margin-left: 60px;
+}
+
+.sec h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.sec p {
+    font-family: "Lemon Milk"
+    font-weight: light;
+}
+
+.footer img {
+    max-width: 80px;
+}
+    
+.sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 20px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: 38px;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    justify-content: center;
+    text-direction: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: green;
+}
+    
+.sci li a .fa {
+    color: white;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks li {
+    list-style: none;
+}
+    
+.quicklinks li a {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover {
+    color: white;
+}
+
+
+.aside {
+    display: flex;
+    min-width: 0px;
+    grid-area: aside;
+    background-color: black;
+    font-family: "Lemon Milk";
+    font-weight: light;
+    color: white;
+    margin-top: 33px;
+}
+
+.aside-container {
+  display: flex;
+  height: 80%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.item {
+  position: sticky;
+}
+
+.shark-3 {
+  top: 4rem;
+}
+
+.aside p {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    color: white;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.aside p::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.rhi li {
+    list-style: none;
+}
+
+.rhi-exp {
+    display: grid;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+ 
+.circle {
+  list-style-type: none;
+  font-family: "Lemon Milk";
+  width: 250px;
+  margin: 20px;
+  height: 250px;
+  line-height: 250px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #fff;
+  background: red;
+  border: 6px solid purple;
+}
+
+.box-container-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .grid {
+       display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+
+    .aside {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .rhi {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rhi-exp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sec img {
+        margin-left: 20px;
+    }
+
+
+    .quicklinks {
+        margin-left: 50px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .box-container-item a {
+        text-decoration: none;
+        color: var(--clr-white);
+        font-size: 1rem;
+        text-align: center;
+        font-family: "Lemon Milk";
+        font-weight: light;
+}
+
+}
