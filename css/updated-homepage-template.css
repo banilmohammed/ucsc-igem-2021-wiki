@@ -1,0 +1,554 @@
+:root {
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-mcherry-red: #FF423E;
+    --clr-pale-red: #FF8F8C;
+    --clr-white-pink: #FFD4C5;
+    --clr-light-purple: #A375ED;
+    --clr-mint: #89EACE;
+    --clr-dark-purple: #733D9D;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    src: LEMONMILK-Light.otf;
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    src: LEMONMILK-Bold.otf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-black);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--clr-light-purple);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar #nav-logo {
+    width: 13em;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.navbar-list-item {
+    list-style: none;
+    margin-right: 4rem;
+}
+
+.navbar-list-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+.navbar-list-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+/* Main */
+.main {
+    grid-area: main;
+    width: auto;
+}
+
+.single-grid {
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-areas:
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main";
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--clr-white);
+    margin-bottom: 4rem;
+}
+
+.hero h1 {
+    background-image: url('file:///c:/Users/Alfonso%20Gamino/Downloads/ezgif-2-f21dc866e037.gif');
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero img {
+    width: 25rem;
+    height: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(#FF8F8C, #A375ED);
+    width: 40px;
+    height: 100%;
+    grid-area: sidebar;
+    justify-self: end;
+}
+
+.card {
+    font-family: "Lemon Milk";
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--clr-white);
+    padding-bottom: 1rem;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.card-part-2 {
+    background-color: transparent;
+    color: var(--clr-white);
+    margin: 2rem 0;
+    margin-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.card-part-3 {
+    font-family: "Lemon Milk";
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: var(--clr-white);
+    margin: 2rem 0;
+    margin-right: 2rem;
+    padding-top: 100px;
+}
+
+.card h2 {
+    font-family: "Lemon Milk";
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: var(--clr-white);
+}
+
+.column h2 {
+    padding-top: 30px;
+}
+
+.card p {
+    font-family: "Lemon Milk";
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: var(--clr-white);
+}
+
+.card-part-2 h2 {
+    font-family: "Lemon Milk"; 
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+}
+
+.column h2 {
+    background-color: transparent;
+}
+
+
+/* For the stats/graphics to line up in 3's */
+
+.row {
+  display: flex;
+}
+
+.not-hero h2 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sec h2 {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    color: white;
+    justify-content: center;
+    position: relative;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.sec img {
+    justify-content: center;
+}
+
+.sec h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.sec p {
+    font-family: "Lemon Milk"
+    font-weight: light;
+}
+
+.footer img {
+    max-width: 80px;
+}
+    
+.sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 20px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin-left: 150px;
+    padding-top: 50px;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-direction: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: green;
+}
+    
+.sci li a .fa {
+    color: white;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks li {
+    list-style: none;
+}
+    
+.quicklinks li a {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover {
+    color: white;
+}
+
+.banner {
+  color: white;
+  background: url('file:///c:/Users/Alfonso%20Gamino/Downloads/ezgif-2-f21dc866e037.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.banner h1 {
+  text-size: 200px;
+  font-family: "Lemon Milk";
+  font-weight: light;
+  margin: 10;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main {
+    grid-area: main;
+    width: auto;
+}
+
+.side {
+    grid-area: side;
+    width: auto;
+    min-width: 0px;
+}
+
+.side img {
+    max-width: 500px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    grid-template-areas:
+    "leftside rightside"
+    "leftside rightside"
+    "leftside rightside"
+    "leftside rightside"
+    "leftside rightside"
+    "leftside rightside";
+}
+
+.leftside {
+    grid-area: leftside;
+}
+
+.rightside {
+    grid-area: rightside;
+}
+
+.column img {
+    max-width: 500px;
+}
+
+/* Footer stuff */
+.footer {
+    position: relative;
+    width: 100%
+    height: auto;
+    padding: 50px 100x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#A375ED, #FF8F8C);
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.footer-list-item {
+    list-style: none;
+    align-items: center;
+}
+
+.footer-list-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 2rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+.not-hero h2 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sec h2 {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    color: white;
+    justify-content: center;
+    position: relative;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.sec img {
+    margin-left: 60px;
+}
+
+.sec h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.sec p {
+    font-family: "Lemon Milk"
+    font-weight: light;
+}
+
+.footer img {
+    max-width: 80px;
+}
+    
+.sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 20px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: 38px;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    justify-content: center;
+    text-direction: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: green;
+}
+    
+.sci li a .fa {
+    color: white;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks li {
+    list-style: none;
+}
+    
+.quicklinks li a {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover {
+    color: white;
+}
+
+.rhi li {
+    list-style: none;
+}
+
+.rhi-exp {
+    display: grid;
+}
+    
+@media only screen and (max-width: 768px) {
+    .grid {
+       display: block;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column img {
+        max-width: 300px;
+    }
+    
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .rhi {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rhi-exp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sec img {
+        margin-left: 20px;
+    }
+
+
+    .quicklinks {
+        margin-left: 50px;
+    }
+}
+}
