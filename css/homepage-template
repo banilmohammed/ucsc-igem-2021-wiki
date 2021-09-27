@@ -1,0 +1,379 @@
+<html>
+<style>
+
+/* Fonts */
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: 300;
+    src: url("https://2021.igem.org/wiki/images/5/5a/T--UCSC--lemon_milk_light.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: 500;
+    src: url("../fonts/Lemon_milk/LEMONMILK-Medium.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: normal;
+    src: url("https://2021.igem.org/wiki/images/a/a8/T--UCSC--lemon_milk_regular.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    src: url("https://2021.igem.org/wiki/images/f/f0/T--UCSC--lemon_milk_bold.otf");
+}
+
+:root {
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-mcherry-red: #FF423E;
+    --clr-pale-red: #FF8F8C;
+    --clr-white-pink: #FFD4C5;
+    --clr-light-purple: #A375ED;
+    --clr-mint: #89EACE;
+    --clr-dark-purple: #733D9D;
+
+    --ff-header: "Lemon Milk";
+    --fw-light: 300;
+    --fw-default: normal;
+    --fw-semi-bold: 500;
+    --fw-bold: bold;
+    --fc-banner: #FFFFFF
+
+    --fs-header: clamp(1rem, 10vw, 8rem);
+    --fs-subheader: clamp(1.125rem, 4vw + 1rem, 4.125rem);
+    --fs-default: clamp(1rem, 0.5vw + 1rem, 1.5rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+
+/* General Settings */
+.total-body {
+    background-color: var(--clr-black);
+}
+
+#content {line-height: auto !important;}
+
+/* Navbar */
+.nav {
+    background-color: var(--clr-light-purple);
+}
+
+.nav .nav-toggle {
+    position: absolute;
+    cursor:pointer;
+    right: 0;
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+.nav svg {
+    width: 1.5rem;
+    fill: var(--clr-white);
+}
+
+.nav .close {
+    display: none;
+}
+
+.nav .menu {
+    margin-top: 0.2rem;
+}
+
+.nav .nav-checkbox {
+    display: none;
+}
+
+.nav .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+.nav .navbar li {
+    list-style: none;
+    display: none;
+}
+
+.nav .navbar li:first-child {
+    margin-right: auto;
+    display: block;
+}
+
+.nav .navbar a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    font-family: var(--ff-header);
+    font-weight: var(--fw-default);
+}
+
+.nav .navbar img {
+    margin-top: 0.5rem;
+    width: 8rem;
+}
+
+#nav-checkbox:checked ~ .navbar li {
+    display: block;
+}
+
+#nav-checkbox:checked ~ label .menu  {
+    display: none;
+}
+
+#nav-checkbox:checked ~ label .close{
+    display: block;
+}
+
+.banner {
+  color: white;
+  background: url('https://2021.igem.org/wiki/images/8/88/T--UCSC--mcherry-ecoli-microscope-gif.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.banner h2 {
+  font-size: 2.5rem !important;
+  text-color: #FFFFFF !important;
+  font-family: "Lemon Milk";
+  font-weight: light;
+  margin: 10;
+  text-align: center;
+}
+
+/* Main */
+.main {
+    grid-area: main;
+    width: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    grid-template-areas:
+    "leftside rightside"
+    "leftside rightside"
+    "leftside rightside"
+    "leftside rightside"
+    "leftside rightside"
+    "leftside rightside";
+}
+
+.leftside {
+    grid-area: leftside;
+}
+
+.rightside {
+    grid-area: rightside;
+}
+
+.card-part-3 {
+    font-family: "Lemon Milk";
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: var(--clr-white);
+    margin: 2rem 0;
+    margin-right: 2rem;
+    padding-top: 100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+.column {
+  flex: 33.33%;
+}
+
+
+#HQ_page h2 {color: white;}
+#HQ_page h2 {font-family: "Lemon Milk";}
+#HQ_page p {color: white;}
+#HQ_page p {font-family: "Lemon Milk";}
+#content {line-height:normal;}
+
+.single-grid {
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-areas:
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main";
+}
+
+.card {
+    font-family: "Lemon Milk";
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--clr-white);
+    padding-bottom: 1rem;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.card h2 {
+    font-family: "Lemon Milk";
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: var(--clr-white);
+}
+
+.column h2 {
+    padding-top: 30px;
+}
+
+.card p {
+    font-family: "Lemon Milk";
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: var(--clr-white);
+}
+
+/* For desktop view */
+@media only screen and (min-width: 767.98px) {
+    .nav .nav-toggle {
+        display: none;
+    }
+
+    .nav .navbar {
+        flex-direction: row;
+    }
+
+    .nav .navbar li {
+        display: block;
+    }
+
+    .nav .navbar img {
+        width: 13rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid {
+       display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+
+    .aside {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .rhi {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rhi-exp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sec img {
+        margin-left: 20px;
+    }
+
+
+    .quicklinks {
+        margin-left: 50px;
+    }
+    
+    .hero h6 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+   
+    .card img {
+        width: 80%
+    }
+ 
+    .card-image img {
+        width: 100%;
+}
+
+}
+@media only screen and (max-width: 768px) {
+    .grid {
+       display: block;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column img {
+        max-width: 300px;
+    }
+    
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .rhi {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rhi-exp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sec img {
+        margin-left: 20px;
+    }
+
+
+    .quicklinks {
+        margin-left: 50px;
+    }
+}
+</style>
+</html>
