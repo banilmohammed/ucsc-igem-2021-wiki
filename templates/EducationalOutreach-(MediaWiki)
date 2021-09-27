@@ -1,0 +1,165 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+
+<html>
+    <div class="total-body">
+        <header>
+            <nav class="nav">
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+                <label for="nav-checkbox" class="nav-toggle">
+                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                    </svg>
+                    <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                    </svg>
+                </label>
+                <ul class="navbar">
+                    <li class="item"><a href="#"><img src="https://2021.igem.org/wiki/images/4/4c/T--UCSC--main_logo.svg" id="nav-logo"/></a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Project">Project</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Human_Practices">Human Practices</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Team">Team</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Parts">Parts</a></li>
+                    <!--<li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Safety">Safety</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Poster">Poster</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Awards">Awards</a></li>-->
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <img src="https://cliply.co/wp-content/uploads/2021/02/392102850_EARTH_EMOJI_400px.gif" alt="spinning planet"/>
+            <h6> Educational Outreach </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section class="hero">
+                <div class="card-modified">
+                    <h2> Why We Need to Do Educational Outreach: </h2>
+                </div>
+            </section>
+            <section class="hero">
+                <div class="card-image">
+                    <div class="image-fixer">
+                        <img src="https://callhub.io/wp-content/uploads/2018/10/community-outreach-strategy-example.png"/>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <h2> Our Goal for Educational Outreach: encourage more students to engage with, and not be intimidated by, scientific concepts. </h2>
+                    <p> We introduced the topic of synthetic biology, which is not familiar within the K-12 demographic. Throughout the presentation we
+                        discussed real-world applications of synthetic biology and familiarized students with our process of research in the college setting
+                        which can many times look different from high school lab courses. This gave students a better outlook on what it meant to be a part
+                        of the STEM field. In the end, our hope was for students to feel more comfortable going forth in pursuing biological
+                        research in the future. </p>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <h2> Presentation and Strategy for Scott Valley High - 9th graders: </h2>
+                    <p> The Scotts Valley High School presentation was set up with Mikayla Heffner’s freshman biology classes. Since this is their first
+                        dedicated biology class, this audience had no prior knowledge of molecular biology therefore we started the presentation with the
+                        basic fundamentals of biology such as “What is a gene?”. We then built our way up to cover                more complex topics including the central
+                        dogma of biology and pathogens. </p>
+                    <h2> Our Approach with Freshman </h2>
+                    <p> Our technique involves breaking down concepts by using analogies. For example, the explanation of the central dogma would be analogous
+                        to someone translating the instructions of a Lego set into the structure itself. </p>
+                    <div class="subcaption-edit">
+                        <h2><em> To make the presentation interactive, we created a storyline that involves a character falling ill to a stomach bug. We had the audience
+                        act as detectives to figure out what made them sick. We used this storyline as a segue into a high level overview of Progenie. </em></h2>
+                    <img src="https://2021.igem.org/wiki/images/a/af/T--UCSC--character_getting_sick.png"/>
+                    </div>
+                    <div class="subcaption-edit">
+                        <h2><em> We designed the end of our presentation to connect our research with their current “Scientific Methods” unit in which we highlighted the
+                        key differences between what they learn in school versus how real-life research projects occur both in higher education and the industry. </em></h2>
+                    <img src="https://2021.igem.org/wiki/images/0/06/T--UCSC--working_in_a_lab_experience.png"/>
+                    </div>
+            </section>
+            <section>
+                <div class="card">
+                    <h2> Presentation and Strategy for Kaohsiung American School - 12th graders: </h2>
+                    <p> The Kaohsiung American School presentation was set up with Jeff Roth-Vinson’s senior IB 2nd year biology classes. Our audience had a solid
+                        background in cell biology, and also had a basic understanding of plasmids and restriction sites. Based on their level of understanding,
+                        we were able to go over more scientific topics about our project such as the CRISPR mechanism, transposons, and in-depth project design.
+                        We also ended with an inclusive discussion regarding our personal experiences going into STEM as college students as well as emphasizing the
+                        importance of trying new things, making mistakes, and being yourself. </p>
+                    <h2> Our Approach with Seniors </h2>
+                    <div class="subcaption-edit">
+                        <h2><em> We broke down our project into different stages and summarized our step-by-step process from gene elimination to infection to conjugation. </em></h2>
+                    </div>
+                    <div class="image-fixer-edit">
+                        <img src="https://2021.igem.org/wiki/images/3/3c/T--UCSC--three_experiment_stages_slide.png"/>
+                    </div>
+                    <div class="subcaption-edit">
+                        <h2><em> We shared our individual experiences and journey to incoming college students to give them advice on how to become involved members of
+                            the scientific community. </em></h2>
+                    </div>
+                    <div class="image-fixer-edit">
+                        <img src="https://2021.igem.org/wiki/images/c/c4/T--UCSC--personal_experiences_joining_igem_slide.png"/>
+                    </div>
+                    <div class="subcaption-edit">
+                        <h2><em> We dived deep into how Shiga Toxin affects humans on a cellular level using a detailed graphic from a scientific paper. </em></h2>
+                    </div>
+                    <div class="image-fixer-edit">
+                        <img src="https://2021.igem.org/wiki/images/c/c4/T--UCSC--shiga_toxins_effect_slide.png"/>
+                    </div>
+                    <div class="image-fixer-edit">
+                        <img src="https://2021.igem.org/wiki/images/b/b8/T--UCSC--zoom_screenshot_educational_outreach.png"/>
+                    </div>
+                </div>
+            </section>  
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1> Scotts Valley High School </h1>
+                        <h1> Approach with Freshman </h1>
+                        <h1> Kaohsiung American School </h1>
+                        <h1> Approach with Seniors </h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                            <u1 class="sci">
+                                  <li><a href=="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </u1>
+
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
