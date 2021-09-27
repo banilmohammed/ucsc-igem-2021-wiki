@@ -1,0 +1,115 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+
+<html>
+    <div class="total-body">
+        <header>
+            <nav class="nav">
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+                <label for="nav-checkbox" class="nav-toggle">
+                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                    </svg>
+                    <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                    </svg>
+                </label>
+                <ul class="navbar">
+                    <li class="item"><a href="#"><img src="https://2021.igem.org/wiki/images/4/4c/T--UCSC--main_logo.svg" id="nav-logo"/></a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Project">Project</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Human_Practices">Human Practices</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Team">Team</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Parts">Parts</a></li>
+                    <!--<li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Safety">Safety</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Poster">Poster</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Awards">Awards</a></li>-->
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <img src="https://cliply.co/wp-content/uploads/2021/02/392102850_EARTH_EMOJI_400px.gif" alt="spinning planet"/>
+            <h6> Safety </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section>
+                <div class="card">
+                    <h2> Lab Safety </h2>
+                    <p> Before entering the wet lab space, each member of the team was required to complete an online Lab Hazard Assessment course created
+                        by the UCSC Environmental Health and Safety department (EH&S). This assessment provided information on different levels of hazards,
+                        emergency response, waste disposal, and use of basic wet lab equipment. EH&S also provided us with lab coats suitable for work in a BSL1
+                        laboratory. We were also provided with protective UVEX lab goggles, and disposable nitrile gloves. </p>
+
+                    <p> Our lab safety practices included wiping down work benches after experiments, changing gloves often to prevent contamination, and
+                        disposing of them in biohazardous waste bins in the event that we were working with cells or harmful chemicals. Our graduate student
+                        advisor, James Hahn, taught us how to safely operate the autoclave and dishwasher in the Baskin Engineering building. We consulted EH&S
+                        equipment engineers in the Biomedical Sciences and Physical Sciences buildings when our original autoclave broke and we needed to be
+                        retrained on their equipment. Work done in the wet lab or the autoclave rooms was done with at least one other lab member present
+                        at all times. </p>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <h2> COVID-19 Safety </h2>
+                    <p> Working in person during the global pandemic has added another layer of safety to our routine. Preventative measures have been taken
+                        since May 2021, when we started in-person lab work. Lab members are required to wear masks indoors at all times, regardless of
+                        vaccination status. Per the UC rules, all students and employees who work or live on campus also have to fill out a daily symptom survey
+                        and get tested at least twice a week to be “cleared” for building entry. UCSC has a qPCR COVID-19 testing center on campus that makes
+                        testing accessible for all team members. As a team we have also discussed holding each other accountable and keeping the group safe by
+                        staying home if you feel unwell and returning once a negative test result is received. We were lucky to have no positive cases in our
+                        lab this summer, and these practices will continue for the duration of iGEM to ensure our safety throughout the project. </p>
+                </div>
+            </section>
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1> Lab Safety </h1>
+                        <h1> COVID-19 Safety </h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                            <u1 class="sci">
+                                  <li><a href=="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </u1>
+
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
