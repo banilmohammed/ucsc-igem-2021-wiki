@@ -1,0 +1,303 @@
+<html>
+<style>
+
+/* Fonts */
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: 300;
+    src: url("https://2021.igem.org/wiki/images/5/5a/T--UCSC--lemon_milk_light.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: 500;
+    src: url("../fonts/Lemon_milk/LEMONMILK-Medium.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: normal;
+    src: url("https://2021.igem.org/wiki/images/a/a8/T--UCSC--lemon_milk_regular.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    src: url("https://2021.igem.org/wiki/images/f/f0/T--UCSC--lemon_milk_bold.otf");
+}
+
+:root {
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-mcherry-red: #FF423E;
+    --clr-pale-red: #FF8F8C;
+    --clr-white-pink: #FFD4C5;
+    --clr-light-purple: #A375ED;
+    --clr-mint: #89EACE;
+    --clr-dark-purple: #733D9D;
+
+    --ff-header: "Lemon Milk";
+    --fw-light: 300;
+    --fw-default: normal;
+    --fw-semi-bold: 500;
+    --fw-bold: bold;
+    --fc-banner: #FFFFFF
+
+    --fs-header: clamp(1rem, 10vw, 8rem);
+    --fs-subheader: clamp(1.125rem, 4vw + 1rem, 4.125rem);
+    --fs-default: clamp(1rem, 0.5vw + 1rem, 1.5rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+
+/* General Settings */
+.total-body {
+    background-color: var(--clr-black);
+}
+
+#content {line-height: auto !important;}
+
+/* Navbar */
+.nav {
+    background-color: var(--clr-light-purple);
+}
+
+.nav .nav-toggle {
+    position: absolute;
+    cursor:pointer;
+    right: 0;
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+.nav svg {
+    width: 1.5rem;
+    fill: var(--clr-white);
+}
+
+.nav .close {
+    display: none;
+}
+
+.nav .menu {
+    margin-top: 0.2rem;
+}
+
+.nav .nav-checkbox {
+    display: none;
+}
+
+.nav .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+.nav .navbar li {
+    list-style: none;
+    display: none;
+}
+
+.nav .navbar li:first-child {
+    margin-right: auto;
+    display: block;
+}
+
+.nav .navbar a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    font-family: var(--ff-header);
+    font-weight: var(--fw-default);
+}
+
+.nav .navbar img {
+    margin-top: 0.5rem;
+    width: 8rem;
+}
+
+#nav-checkbox:checked ~ .navbar li {
+    display: block;
+}
+
+#nav-checkbox:checked ~ label .menu  {
+    display: none;
+}
+
+#nav-checkbox:checked ~ label .close{
+    display: block;
+}
+
+.banner {
+  color: white;
+  background: url('https://2021.igem.org/wiki/images/8/88/T--UCSC--mcherry-ecoli-microscope-gif.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.banner h2 {
+  font-size: 2.5rem !important;
+  text-color: #FFFFFF !important;
+  font-family: "Lemon Milk";
+  font-weight: light;
+  margin: 10;
+  text-align: center;
+}
+
+/* Card */
+.main {
+    grid-area: main;
+    width: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+    grid-template-areas:
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main";
+}
+
+.card {
+    width: auto;
+    font-family: "Lemon Milk";
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--clr-white);
+}
+
+.card-edits {
+    font-family: "Lemon Milk";
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--clr-white);
+}
+    
+.card h2 {
+    margin: 50px;
+    text-align: center;
+    font-size: 2rem !important;
+    font-weight: bold;
+    background-color: black;
+    color: var(--clr-white);
+}
+
+
+.card p {
+    margin: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem !important;
+    background-color: black;
+    color: var(--clr-white);
+    margin-bottom: 3rem !important;
+}
+
+#HQ_page h2 {color: white;}
+#HQ_page h2 {font-family: "Lemon Milk";}
+#HQ_page p {color: white;}
+#HQ_page p {font-family: "Lemon Milk";}
+
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+ 
+.box1 {
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+
+.box2 {
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+
+.box3{
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+.box4 {
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+
+ 
+.circle {
+  list-style-type: none;
+  font-family: "Lemon Milk";
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  background: red;
+  border: 6px solid purple;
+}
+
+
+.box-container-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+</style>
+</html>
