@@ -1,0 +1,60 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/landing-page-css}}
+
+<html>
+    <div class="total-body">
+        <header>
+            <nav class="nav">
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+                <label for="nav-checkbox" class="nav-toggle">
+                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                    </svg>
+                    <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                    </svg>
+                </label>
+                <ul class="navbar">
+                    <li class="item"><a href="#"><img src="https://2021.igem.org/wiki/images/4/4c/T--UCSC--main_logo.svg" id="nav-logo"/></a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Project">Project</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Human_Practices">Human Practices</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Team">Team</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Parts">Parts</a></li>
+                    <!--<li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Safety">Safety</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Poster">Poster</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Awards">Awards</a></li>-->
+                </ul>
+            </nav>
+        </header>
+       <div class="banner">
+           <div class="banner-text">
+                <h2>Journal</h2>
+           </div>
+       </div>
+        <main class="grid">
+            <section>
+                <div class="flexbox-container">
+                    <div class="card">
+                        
+                        <p> Welcome to our Journal. If you’ve ever wondered, “Ok but how, when, and where did they do all this stuff?” this is the section for you. Here we provide a week-by-week recap of our project, detailed descriptions and protocols for the experiments we conducted, and the safety measures we took to ensure the wellbeing of our team. </p>
+
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="box1">
+                        <li class="box-container-item"><a href="https://2021.igem.org/Team:UCSC/Project">Notebook</a></li>
+                    </div>
+                    <div class="box2">
+                        <li class="box-container-item"><a href="https://2021.igem.org/Team:UCSC/Project">Experiments</a></li>
+                    </div>
+                    <div class="box3">
+                        <li class="box-container-item"><a href="https://2021.igem.org/Team:UCSC/Project">Safety</a></li>
+                    </div>
+                    <div class="box4">
+                        <li class="box-container-item"><a href="https://2021.igem.org/Team:UCSC/Project">Glossary</a></li>
+                    </div>
+                </div> 
+            </section>
+        </main>
+    </div>
+</html>
