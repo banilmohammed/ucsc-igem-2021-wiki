@@ -1,0 +1,110 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+
+<html>
+    <div class="total-body">
+        <header>
+            <nav class="nav">
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+                <label for="nav-checkbox" class="nav-toggle">
+                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                    </svg>
+                    <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                    </svg>
+                </label>
+                <ul class="navbar">
+                    <li class="item"><a href="#"><img src="https://2021.igem.org/wiki/images/4/4c/T--UCSC--main_logo.svg" id="nav-logo"/></a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Project">Project</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Human_Practices">Human Practices</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Team">Team</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Parts">Parts</a></li>
+                    <!--<li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Safety">Safety</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Poster">Poster</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Awards">Awards</a></li>-->
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <img src="https://cliply.co/wp-content/uploads/2021/02/392102850_EARTH_EMOJI_400px.gif" alt="spinning planet"/>
+            <h6> Project Description </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section>
+                <div class="card">
+                    <h2> Inspiration </h2>
+                    <p> California has an agriculture-centric economy, and food safety is a concern for growing, harvesting, and distributing foods. Salinas and Watsonville, both neighboring cities to Santa Cruz, are some of the largest producers of leafy green vegetables in the country[cite]. Given our proximity to farms and processing plants, we felt motivated to help the communities that provide us with food every day. Beyond our team, people around the world rely on the California Central Valley for reliable and safe food.  </p>
+
+                    <p> We investigated the agricultural practices around us and found that many large scale food recalls are caused by foodborne pathogens. Shiga Toxin Producing E.Coli (STEC) is one of the top three causes of food poisoning in the United States and primarily contaminates beef and leafy greens(cite). In severe cases Shiga Toxin causes Hemolytic Uremic Syndrome (HUS), which can lead to life-threatening conditions such as acute or chronic kidney failure. As a result, most recalled food goes straight to the landfill, and in this economy, no one likes to see food wasted. </p>
+
+                    <p> The persistence and prevalence of this issue inspired our new UCSC iGEM project: Progenie. Our goal is to prevent outbreaks and recalls by developing a method to stop the spread of STEC at its source. </p>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <h2> Approach </h2>
+                    <p> There are a number of prominent food borne pathogens, but the simplicity of STEC makes it an ideal focus; its toxicity is conferred by a single chromosomal gene, stx2. Additionally, its transmission pathway is widely understood to stem from bacteria in the bovine intestinal tract. </p> 
+
+                    <p> One of our primary goals for the elimination mechanism is to maintain the health of the existing bacterial microbiome.The shortcoming of antibiotics, for example, is their indiscriminate destruction of bacterial populations, which allows other potentially more harmful bacteria to recolonize the site of antibiotic application. Bacteria can also develop resistance to antibiotics, which is an increasingly problematic phenomenon. Instead, we intend to target genes without killing the bacterial host. By specifically editing the problematic stx2 gene, a non-harmful bacterial population of E. coli could be propagated in place of the originally toxic pathogen.  </p>
+
+                    <p> We’ve engineered Progenie to infect bacterial cells with gene editing machinery, disrupt the toxic gene, then spread the machinery horizontally through the bacterial population. Its dependance on loci-specific guides makes it adaptable to new targets.  </p>
+
+                    <p> To test our design and avoid working with dangerous toxin producing bacteria, we’ve designed an mCherry-expressing E.coli strain as a model target for Progenie. The mCherry protein fluoresces red when functional, but loses its crimson glow when disrupted. After successfully knocking out the mCherry gene, we will apply Progenie to the non-toxic subunits of a recombinant Shiga Toxin protein. Eliminating stx2, our first actual toxin, will launch us into the future of our system and its many applications. </p>
+
+                </div>
+            </section>  
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1> Inspiration </h1>
+                        <h1> Approach </h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                            <u1 class="sci">
+                                  <li><a href=="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </u1>
+
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
