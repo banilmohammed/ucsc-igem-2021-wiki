@@ -1,0 +1,167 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+
+<html>
+    <div class="total-body">
+        <header>
+            <nav class="nav">
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+                <label for="nav-checkbox" class="nav-toggle">
+                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                    </svg>
+                    <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                    </svg>
+                </label>
+                <ul class="navbar">
+                    <li class="item"><a href="#"><img src="https://2021.igem.org/wiki/images/4/4c/T--UCSC--main_logo.svg" id="nav-logo"/></a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Project">Project</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Human_Practices">Human Practices</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Team">Team</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Parts">Parts</a></li>
+                    <!--<li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Safety">Safety</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Poster">Poster</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Awards">Awards</a></li>-->
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <img src="https://cliply.co/wp-content/uploads/2021/02/392102850_EARTH_EMOJI_400px.gif" alt="spinning planet"/>
+            <h6> Collaborations </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section>
+                <div class="card">
+                    <h2> Detection of Bovine Mastitis </h2>
+                    <p> The IISER-K iGEM team aims to reduce the burden of bovine mastitis and to improve cattle health by developing a cost effective detection method as well as an antibiotic-free solution for bovine mastitis in dairy farms. Thus, Progenie will conduct certain synthetic biology experiments for Namooste to further their progress on developing an easy-to-use device for detection of bovine mastitis. </p>
+
+                    <p> Namooste’s device design has two main aspects: nucleic acid detection using an RNA guided CRISPR system, known as SHERLOCKv2, and a colorimetric µPAD detection device. Progenie will only be working with SHERLOCKv2, and will not be optimizing the µPAD.  </p>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <h2> RNA detection using SHERLOCKv2 and Csm6 </h2>
+                    <p> The SHERLOCKv2 platform allows for rapid nucleic acid detection and elimination using Cas13, a class 2 type IV CRISPR-Cas effector. Nucleic acids can be detected by Cas13 upon recognition of a target RNA sequence, which activates non-specific RNase activity that degrades fluorescently-labeled RNA reporters; cleavage of the reporters results in fluorescence. The signal is amplified by the inclusion of CRISPR type III effector nuclease Csm6. </p>
+                    
+                    <p> Cas13a is the best at cutting reporters and preferentially cuts between an adenine and a uracil and produces cleavage products with 2’,3’-cyclic phosphate ends (Gootenberg et al. 2018). Oligoadenylates with 2’,3’-cyclic phosphate ends are common signaling molecules in various pathways (Opoku-Temeng et al. 2016), such as in the Csm effector pathway in type III CRISPR-Cas systems. </p>
+
+                    <div class="subcaption-edit">
+                        <h2><em> Figure 1: Cas13a cleavage products have a 5’ hydroxyl and a 2’,3’-cyclic phosphate end. Not final figure, it is just a place holder but it is reproduced from Shigematsu et al. 2018.  </em></h2>
+                    <img src="https://2021.igem.org/wiki/images/3/38/T--UCSC--cas13a-cylic-phosphate-ends.png"/>
+                    </div>
+
+                    <p> Similar to the type IV CRISPR-Cas system that includes Cas13a, Cas proteins use crRNA to fight invading nucleic acids in the Csm effector pathway. The Cas proteins assemble into a complex and use Cas10 to find and destroy invader sequences. Cas10 also exhibits non-specific cleavage abilities, like Cas13a, that result in cyclic adenylate-signaling molecules that activate a secondary effector molecule Csm6 (Kazlauskiene et al. 2017). Upon activation, Csm6 non-specifically cleaves single stranded RNA (ssRNA) in order to enhance nucleic acid destruction (Niewoehner et al. 2016). </p>
+
+                    <p> Even though Csm6 activation in vivo is by cyclic adenylates produced by Cas10, Kazlauskiene et al. show that linear adenine homopolymers terminated with a 2’,3’-cyclic phosphate (Cas13a cleavage products) are also capable of activating Csm6. SHERLOCKv2 exploits this ability in order to amplify signal detection by cutting more fluorescent reporters, resulting in more fluorescence upon detection of the target sequence.  </p>
+
+                    <p> However, the Csm6 protein has not been highly characterized in the context of the SHERLOCKv2 system nor in activation by linear adenine homopolymers terminated with a 2’,3’-cyclic phosphate. Thus in order to develop a highly-specific detection method for bovine mastitis using Cas13 from SHERLOCKv2, our team will characterize the Csm6 protein using different activators with a 2’,3’- cyclic phosphate end at varying concentrations as well as Csm6 protein sequences from different species. </p>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <h2> Protein Production and Purification </h2>
+                    <p> We constructed a universal destination and expression vector using pET-52b(+) containing a ccdB toxin gene insert flanked with type IIS restriction enzyme sites for Golden Gate assembly. Using ccdB as the insert allows for simple identification of cells containing the successful Golden Gate Assembly insert when grown on cell lines lacking the ccdA antitoxin gene; cells without successful integrants results in cytotoxicity due to the production of ccdB (M. Lemiux 2016). </p>
+
+                    <p> The insert was constructed by amplifying the BBa_1016 BioBrick part from pOSIP-KC (Addgene), which contains the ccdB gene and two promoters. We designed PCR primers with 5' overhangs containing type II and IIS restriction enzyme sites: 5' type II - type IIS - annealing sequence 3'. The forward primer contains an NcoI restriction enzyme site, and BlpI for the reverse primer; both restriction enzymes create overhangs upon cleavage. Construction of the vector was completed by performing a restriction digest on the insert and on pET-52b(+) in separate reactions. This is followed by heat inactivation and removal of the enzymes, which prevents further cleavage during construction. The ligation of the insert and backbone results in the universal destination and expression vector. </p>
+
+                    <p> We designed the type IIS restriction enzyme recognition sites to use BfuAI for use in Golden Gate assembly. The vector is designed such that upon cleavage using BfuAI, the recognition sites do not remain in the plasmid backbone; the sites leave with the ccdB toxin gene, which prevents further cleavage during Golden Gate Assembly. In addition, there is only a two-amino acid residue at the beginning of the protein coding sequence, which we hypothesize will not greatly impact protein structure and folding. </p>
+
+                    <p> Protein-coding gene inserts require designing the insert with protease cut sites or polyhistidine tags for protein purification. We purposefully did not include a protease cut site because we wanted to make this vector as general as possible; users will be able to use any protease or purification tag desired by designing such tags in bioinformatic software such as Geneious Prime. </p>
+                </div>
+            </section>  
+            <section>
+                <div class="card">
+                    <h2> RNA detection using SHERLOCKv2 and Csm6 </h2>
+                    <p> The SHERLOCKv2 platform allows for rapid nucleic acid detection and elimination using Cas13, a class 2 type IV CRISPR-Cas effector. Nucleic acids can be detected by Cas13 upon recognition of a target RNA sequence, which activates non-specific RNase activity that degrades fluorescently-labeled RNA reporters; cleavage of the reporters results in fluorescence. The signal is amplified by the inclusion of CRISPR type III effector nuclease Csm6. </p>
+                    
+                    <p> Cas13a is the best at cutting reporters and preferentially cuts between an adenine and a uracil and produces cleavage products with 2’,3’-cyclic phosphate ends (Gootenberg et al. 2018). Oligoadenylates with 2’,3’-cyclic phosphate ends are common signaling molecules in various pathways (Opoku-Temeng et al. 2016), such as in the Csm effector pathway in type III CRISPR-Cas systems. </p>
+
+                    <div class="subcaption-edit">
+                        <h2><em> Figure 1: Cas13a cleavage products have a 5’ hydroxyl and a 2’,3’-cyclic phosphate end. Not final figure, it is just a place holder but it is reproduced from Shigematsu et al. 2018.  </em></h2>
+                    <img src="https://2021.igem.org/wiki/images/3/38/T--UCSC--cas13a-cylic-phosphate-ends.png"/>
+                    </div>
+
+                    <p> Similar to the type IV CRISPR-Cas system that includes Cas13a, Cas proteins use crRNA to fight invading nucleic acids in the Csm effector pathway. The Cas proteins assemble into a complex and use Cas10 to find and destroy invader sequences. Cas10 also exhibits non-specific cleavage abilities, like Cas13a, that result in cyclic adenylate-signaling molecules that activate a secondary effector molecule Csm6 (Kazlauskiene et al. 2017). Upon activation, Csm6 non-specifically cleaves single stranded RNA (ssRNA) in order to enhance nucleic acid destruction (Niewoehner et al. 2016). </p>
+
+                    <p> Even though Csm6 activation in vivo is by cyclic adenylates produced by Cas10, Kazlauskiene et al. show that linear adenine homopolymers terminated with a 2’,3’-cyclic phosphate (Cas13a cleavage products) are also capable of activating Csm6. SHERLOCKv2 exploits this ability in order to amplify signal detection by cutting more fluorescent reporters, resulting in more fluorescence upon detection of the target sequence.  </p>
+
+                    <p> However, the Csm6 protein has not been highly characterized in the context of the SHERLOCKv2 system nor in activation by linear adenine homopolymers terminated with a 2’,3’-cyclic phosphate. Thus in order to develop a highly-specific detection method for bovine mastitis using Cas13 from SHERLOCKv2, our team will characterize the Csm6 protein using different activators with a 2’,3’- cyclic phosphate end at varying concentrations as well as Csm6 protein sequences from different species. </p>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <h2> Methods </h2>
+                    <div class="subcaption-edit">
+                        <h2><em> We test the activation of the Csm6 proteins using the synthetic activators in the following table:  </em></h2>
+                    <img src="https://2021.igem.org/wiki/images/a/af/T--UCSC--character_getting_sick.png"/>
+                    </div>
+                    <div class="subcaption-edit">
+                        <h2><em> We use the following RNA targets for Csm6 that will serve as templates in qPCR and a TaqMan assay using digital PCR in order to measure level of activation: </em></h2>
+                    <img src="https://2021.igem.org/wiki/images/a/af/T--UCSC--character_getting_sick.png"/>
+                    <img src="https://2021.igem.org/wiki/images/a/af/T--UCSC--character_getting_sick.png"/>
+                    </div>
+                    <p> Typically, a TaqMan is used to quantify the presence or absence of a certain target sequence. The reaction uses a fluorescently labeled probe whose sequence matches to the target. The probe binds to the target sequence as well as forward and reverse primers. The primers allow Taq polymerase to start amplifying the target, but once it reaches the fluorophore on the end of the probe, Taq cuts the probe which causes it to fluoresce. Thus, fluorescence would indicate the presence of the target. </p>
+
+                    <p> However, in our case we intend to use this method to quantify how much RNA is cut by Csm6. So we will incubate the Csm6 with the activators and target sequence, then add the products to the TaqMan assay in a digital PCR machine. If Csm6 was properly activated, then it should have destroyed the target sequence, preventing the primers and/or probes from attaching properly, leading to no fluorescence. Thus if there is no fluorescence, Csm6 was activated; if there is fluorescence, Csm6 did not work.  </p>
+                    <div class="subcaption-edit">
+                        <h2><em> Caption for figure below this ----> </em></h2>
+                    <img src="https://2021.igem.org/wiki/images/a/af/T--UCSC--character_getting_sick.png"/>
+                    </div>
+            </section>
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1> Detection of    Bovine mastitis </h1>
+                        <h1> RNA detection using SHERLOCKv2 and Csm6 </h1>
+                        <h1> Protein producing and purification </h1>
+                        <h1> Methods </h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                            <u1 class="sci">
+                                  <li><a href=="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </u1>
+
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
