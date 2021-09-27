@@ -1,0 +1,107 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+
+<html>
+    <div class="total-body">
+        <header>
+            <nav class="nav">
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+                <label for="nav-checkbox" class="nav-toggle">
+                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                    </svg>
+                    <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                    </svg>
+                </label>
+                <ul class="navbar">
+                    <li class="item"><a href="#"><img src="https://2021.igem.org/wiki/images/4/4c/T--UCSC--main_logo.svg" id="nav-logo"/></a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Project">Project</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Human_Practices">Human Practices</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Team">Team</a></li>
+                    <li class="item"><a href="https://2021.igem.org/Team:UCSC/Parts">Parts</a></li>
+                    <!--<li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Safety">Safety</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Poster">Poster</a></li>
+                    <li class="navbar-list-item"><a href="https://2021.igem.org/Team:UCSC/Awards">Awards</a></li>-->
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <img src="https://cliply.co/wp-content/uploads/2021/02/392102850_EARTH_EMOJI_400px.gif" alt="spinning planet"/>
+            <h6> Contributions </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section>
+                <div class="card">
+                    <h2> Troubleshooting </h2>
+                    <p> The final step in Clonetegration (the method we used to engineer our <em> mcherry </em>-integrated <em> E. coli </em> model as described in Project → Proof of concept) includes transforming <em> E. coli </em> cells with pE-FLP. This transformation is done after verifying that the initial transformation with pOSIP was successful. Initially, we aimed to do the Clonetegration of <em> mcherry </em> in C41 pLysS cells [cite Sigma Aldrich], but ran into problems during our transformations with pE-FLP which required troubleshooting. </p>
+
+                    <p> We were unable to excise the integration module in C41 pLysS-pOSIP integrants. We were able to integrate the pOSIP-KL-mcherry plasmid into the chromosome of C41 pLysS, but pE-FLP was unable to be transformed into this cell line. We troubleshot the inability of our C41 pLysS-pOSIP integrants by transforming native, known-competent C41 pLysS cells with pE-FLP. We observed no colonies for both pOSIP integrants and native, competent C41 pLysS cells, indicating that the C41 pLysS strain is unable to take up the pE-FLP plasmid. This inability to take up this specific plasmid is possibly due to plasmid incompatibility between the p15A ori in the pLysS plasmid and the pSC101 ori on the pE-FLP plasmid [Openwetware, see below]. To relieve this incompatibility, we switched strains to DH5α E. coli (NEB) which do not contain any native plasmids. After performing the initial integration of pOSIP-KL-mcherry into NEB DH5α, we were able to transform pE-FLP and verify the excision of the integration module from the chromosome (as seen in Results). </p>
+
+                    <p> We learned the importance of checking individual origins of replication for incompatibility when working with multiple plasmids in a single chassis. We made a visual representation of plasmid incompatibility groups for future teams to reference when using multiple plasmids at once. </p>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <div class="subcaption-edit">
+                        <h2><em> Plasmid Incompatibility Groups (why does this image only stretch when the caption is long????? </em></h2>
+                    </div>
+                    <div class="image-fixer-edit">
+                        <img src="https://2021.igem.org/wiki/images/3/3c/T--UCSC--three_experiment_stages_slide.png"/>
+                    </div>
+                </div>
+            </section> 
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1> Troubleshooting </h1>
+                        <h1> Plasmid Incompatibility Groups </h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                            <u1 class="sci">
+                                  <li><a href=="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </u1>
+
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
