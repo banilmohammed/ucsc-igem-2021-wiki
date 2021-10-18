@@ -1,0 +1,159 @@
+{{UCSC}}
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+            <img src="https://2021.igem.org/wiki/images/3/35/T--UCSC--planet.gif" alt="spinning planet"/>
+            <h6> Partnership </h6>
+        </section>
+        <section class="tag">
+          <div class="paragraph-styling">
+            <h2> About IISER Kolkata </h2>
+            <p> Detection and elimination of cattle-related pathogens are two of the main aspects of our project, Progenie, and that of another iGEM team, Namooste. The Indian Institute of Science Education and Research Kolkata (IISER-K), located in West Bengal, India, hosts the Namooste iGEM team that engineered a method to detect and vaccinate bovine mastitis, a deadly disease caused by <em>Staphylococcus aureus</em> that afflicts cattle. The SARS-CoV-2 pandemic has limited Namooste’s access to a wet lab, so Progenie supports the Namooste project by conducting experiments aimed at developing a real-time colorimetric testing kit consisting of a small RNA sensor for early detection and diagnosis of subclinical mastitis. In return, members of the IISER-K iGEM team shared their experience in mathematical modeling in both Python and Matlab’s SimBiology to help develop a computational model of how Progenie will behave in the environment.</p>
+
+            <p> Scroll down to learn more about our wet lab and dry lab collaborations! </p>
+          </div>   
+        </section> 
+        <section>
+                <div class="card-image">
+                         <img src="https://2021.igem.org/wiki/images/1/19/T--Tuebingen--collaborations_Kolkatta_logo.jpeg"/>
+                </div>
+        </section>
+        <section class="tag subpage-selector-edit">
+                <div class="card-modified-edit">
+                           <nav>
+                               <ul class="subpage-list-int">
+                                 <li><a href="https://2021.igem.org/Team:UCSC/Partnership#wetlab_start"><button> Wet Lab </button></a></li>
+                                 <li><a href="https://2021.igem.org/Team:UCSC/Partnership-Dry-Lab#drylab_start"><button> Dry Lab </button></a></li>
+                               </u1>
+                           </nav>
+                </div>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div><a id="drylab_start"></a>
+            <section class="tag">
+                <div class="card"><a id="initial_design"></a>
+                    <h2> We came to Team IISER-K with an initial design for an SEIR-based model. </h2>
+                    <p> The goal of this computational model was to provide insight into how Progenie could work and spread within a set population before we could get into testing each aspect. To model this spread, we started with an SEIR model and modified it to have the representative parts of our target population.</p>
+
+                    <p> See our<p1><a href="https://2021.igem.org/Team:UCSC/Model#overview">model overview</a></p1>for more information on the current model.<p>
+
+                    <p> See our<p1><a href="https://2021.igem.org/Team:UCSC/Model#seir_model">SEIR model overview</a></p1>for more information on SEIR models.</p>
+
+                    <p> We initially recognized 4 distinct groupings of cells that would be relevant to our system: </p>
+                    <u1> 
+                       <li>  1. Those who could acquire phiMINTO from initial phage infection (S_V) </li>
+                       <li>  2. Those who were transduced with phiMINTO and could then spread it to others (I) </li>
+                       <li>  3. Those who could acquire phiMINTO through bacterial conjugation (S_C) </li>
+                       <li>  4. Those transconjugants who received phiMINTO but don’t have the machinery to spread it to others (E).</li>
+                    </u1>
+
+                    <p> Because the initial population would have only consisted of individuals who were susceptible to getting phiMINTO through phage or conjugation, we had to devise a term in the model for the introduction of phiMINTO-carrying phage. We first did this by making a compartment for phage that had influence on the flow of cells from Sv to I. </p>
+
+                    <div class="subcaption-edit">
+                    <img src="https://2021.igem.org/wiki/images/a/a4/T--UCSC--model_drawing_1.png"/>
+                        <h2> Figure 1: The initial draft of the SEIR-like model for Progenie’s transmission dynamics. </h2>
+                    </div>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="model_edits"></a>
+                    <h2> Team IISER-K’s modeling representatives helped us expand the initial design to be more realistic and informative. </h2>
+                    <p> In our first modeling meeting with Team IISER-K, we walked them through this rough draft of a model. First, they asked questions that helped us identify the weak points of the design. Some initial pointers: </p>
+
+                    <u1>
+                       <li>  1. The amount of phage present will not be constant - it will diminish over time as they bind and are destroyed. </li>
+                       <li>  2. There probably won’t be much movement from the Sc group to the I group, if any. If the individual is a conjugative recipient, it won’t be a conjugative donor after receiving phiMINTO. </li>
+                       <li>  3. It would be easier and more informative to set the model in a closed system with a carrying capacity. </li>
+                       <li>  4. The model will be more realistic if it includes aspects of Lotka-Volterra modeling for natural stochastic fluctuations in bacterial populations.</li>
+                       <li>  5. Consider Kinetic Monte-Carlo or another stochastic model to simulate cell-to-cell conjugation interactions. </li>
+                    </u1>
+
+                    <p> From these pointers, we made some initial modifications to each of their points respectively:  </p>
+
+                    <u1>
+                       <li>  1. Added arrows for the rates of phage binding and phage death, then used those rates to derive the equation for the rate of change of the amount of phage present. </li>
+                       <li>  2. Removed the arrow and term CI. </li>
+                       <li>  3. Established a carrying capacity for a closed system. </li>
+                       <li>  4. Together, we looked at simulations with and without Lotka-Volterra modeling to visualize the effect that it could have on our model. In trying to implement stochastic fluctuations to our model’s target population, we encountered difficulties and began to modify our model.  </li>
+                       <li>  5. The parameter set for simulating or model was very large and the range of values was exceedingly wide. For example, the conjugation rates were spanning over 11 orders of magnitude, creating a sensitivity issue for any stochastic model when it came to scaling for different systems. </li>
+                       <li>  6. We decided to model Progenie using a series of deterministic ordinary differential equations and not have stochastic interactions. </li>
+                    </u1>
+
+                    <div class="subcaption-edit">
+                    <img src="https://2021.igem.org/wiki/images/5/53/T--UCSC--model_drawing_2.png"/>
+                        <h2> Figure 2: Edits (red) made to the initial SEIR model plan during a Zoom meeting with Team IISER-K.  </h2>
+                    </div>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="insight"></a>
+                    <h2> After getting the model running, Team IISER-K helped us gain more insight from our model. </h2>
+                    <p> After we built a model with the modified compartments and interactions using parameters that we found from literature, Team IISER-K recommended that we use our model to analyze a range of conjugation rates to test conjugation rates Progenie and determine what rates lead to success and failure. They recommended testing other values to satisfy our goal of understanding optimal parameters for Progenie model success. </p>
+                  
+                    <div class="subcaption-edit">
+                    <img src="https://2021.igem.org/wiki/images/0/0d/T--UCSC--iiserk_collab_zoom.png"/>
+                        <h2> Figure 3: Team UCSC and Team IISER-K modeling teams meet over Zoom to discuss the model’s future directions.  </h2>
+                    </div>
+                </div>
+            </section>
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                      <u1>
+                        <h1><a href="#initial_design"> Initial Design </a></h1>
+                        <h1><a href="#model_edits"> Model Edits </a></h1>
+                        <h1><a href="#insight"> Insight </a></h1>
+                      </u1>
+                 
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                            <u1 class="sci">
+                                  <li><a href=="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </u1>
+
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
