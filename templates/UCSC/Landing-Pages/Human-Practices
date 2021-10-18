@@ -1,0 +1,36 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/landing-page-css}}
+{{Template:UCSC/navbar}}
+{{Template:UCSC/educational-outreach-js}}
+<html>
+    <div class="total-body">
+        <div class="app">
+              <video loop muted autoplay preload="auto">
+                  <source src="https://2021.igem.org/wiki/images/e/ed/T--UCSC--salinas_lettuce_field_video.mov"/>
+              </video>
+              <div class="text-box">
+                       <h1> Human Practices </h1>
+              </div>
+        </div>
+        <main class="grid">
+            <section>
+                <div class="fade-in-image flexbox-container">
+                    <div class="card">
+                        
+                        <p> Going out into the real world, interviewing stakeholders, and allowing what we learn to shape our project’s direction is the core of human practices. Along with that comes communicating our findings to the mass public, encouraging younger generations to pursue science and engineering, and collaborating with scientists around the world to help bring about the change that our project aims to create. Click down below to discover how learning from others shaped Progenie’s direction. </p>
+
+                    </div>
+                </div>
+            </section>
+          <section class="tag subpage-selector">
+            <nav>
+                <ul class="subpage-list">
+                    <li><a href="https://2021.igem.org/Team:UCSC/Human_Practices"><button> Integrated Human Practices </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Collaborations"><button> Collaborations </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Partnership"><button> Partnership </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Communication"><button> Educational Outreach </button></a></li>
+                </ul>
+            </nav>
+          </section>
+        </main>
+</html>
