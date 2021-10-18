@@ -1,0 +1,112 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+            <img src="https://2021.igem.org/wiki/images/3/35/T--UCSC--planet.gif" alt="spinning planet"/>
+            <h6> Safety </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section class="tag">
+                <div class="card"><a id="lab_safety"></a>
+                    <h2> Lab Safety </h2>
+                    <p> Before entering the wet lab space, each member of the team was required to complete an online Lab Hazard Assessment course created
+                        by the UCSC Environmental Health and Safety department (EH&S). This assessment provided information on different levels of hazards,
+                        emergency response, waste disposal, and use of basic wet lab equipment. EH&S also provided us with lab coats suitable for work in a BSL1
+                        laboratory. We were also provided with protective UVEX lab goggles, and disposable nitrile gloves. </p>
+
+                    <p> Our lab safety practices included wiping down work benches after experiments, changing gloves often to prevent contamination, and
+                        disposing of them in biohazardous waste bins in the event that we were working with cells or harmful chemicals. Our graduate student
+                        advisor, James Hahn, taught us how to safely operate the autoclave and dishwasher in the Baskin Engineering building. We consulted EH&S
+                        equipment engineers in the Biomedical Sciences and Physical Sciences buildings when our original autoclave broke and we needed to be
+                        retrained on their equipment. Work done in the wet lab or the autoclave rooms was done with at least one other lab member present
+                        at all times. </p>
+                </div>
+            </section>
+            <section>
+                <div class="card-image">
+                         <img src="https://2021.igem.org/wiki/images/7/72/T--UCSC--team_photo_2.jpg"/>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="covid_safety"></a>
+                    <h2> COVID-19 Safety </h2>
+                    <p> Working in person during the global pandemic has added another layer of safety to our routine. Preventative measures have been taken
+                        since May 2021, when we started in-person lab work. Lab members are required to wear masks indoors at all times, regardless of
+                        vaccination status. Per the UC rules, all students and employees who work or live on campus also have to fill out a daily symptom survey
+                        and get tested at least twice a week to be “cleared” for building entry. UCSC has a qPCR COVID-19 testing center on campus that makes
+                        testing accessible for all team members. As a team we have also discussed holding each other accountable and keeping the group safe by
+                        staying home if you feel unwell and returning once a negative test result is received. We were lucky to have no positive cases in our
+                        lab this summer, and these practices will continue for the duration of iGEM to ensure our safety throughout the project. </p>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="stx2_safety"></a>
+                    <h2> STX2 Safety </h2>
+                    <p> In order to mitigate the risk of toxicity when working with Shiga toxin, our team designed a recombinant version of the Shiga toxin protein without the main toxic subunit. The version of Shiga toxin we are working with is STX2 which is the most prevalent form of Shiga toxin found in most food recalls. The STX2 structure contains an A and B subunit. The A subunit is further divided into A1 and A2. The function of the A1 subunit is to inactivate the ribosome by depurinating a conserved adenine residue since A1 contains the active site. The A2 subunit is the bridge between the active site and the B pentamer as it contains a furin cleavage site. The function of the B subunit is to bind to the GB3 cell receptor in order to mediate entry into cells. In our recombinant version of the Shiga toxin protein, we remove the A1 containing the active site and leave the A2 and B subunit. In this way the aptamers could be developed to bind to the receptor binding domain and we mitigate the risk of toxicity while working with the protein in the lab. </p>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="csm6_safety"></a>
+                    <h2> Csm6 Safety </h2>
+                    <p> For our partnership with the IISER-K iGEM team, we characterize the endoribonuclease Csm6 for use with a nucleic acid detection system known as SHERLOCKv2. The protein is not known to be toxic, as it is not active unless activated by CRISPR-associated enzymes and it is not secreted extracellularly. However, in the case of activation, it is a non-specific endoribonuclease, meaning it will randomly cleave RNA in cells which may lead to death of the cell containing the gene. In the lab, expression of this gene is controlled by the lac operon and therefore will not be expressed unless induced by IPTG. Additionally, we only express this gene in C41 cells while practicing our lab safety practices outlined above.  </p>
+                </div>
+            </section>
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1><a href="#lab_safety"> Lab Safety </a></h1>
+                        <h1><a href="#covid_safety"> COVID-19 Safety </a></h1>
+                        <h1><a href="#stx2_safety"> stx2 Safety </a></h1>
+                        <h1><a href="#csm6_safety"> Csm6 Safety </a></h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                            <u1 class="sci">
+                                  <li><a href=="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </u1>
+
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
