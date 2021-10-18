@@ -1,0 +1,69 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/experiments-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/figure_css}}
+{{Template:UCSC/navbar}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+            <img id="journal-experiments" class="header-gif" src="https://2021.igem.org/wiki/images/3/30/T--UCSC--journal_experiments.gif" alt="pipet streaking a plate"/>
+            <h6> Experiments </h6>
+        </section>
+        <main class="grid">
+            <section>
+                 <div class="card">
+                     <h2> Plasmid Cloning </h2>
+                 </div>
+            </section>
+            <section class="tag subpage-selector">
+                <div class="card-modified">
+                           <nav>
+                               <ul class="subpage-list-int">
+                                 <li><a href="https://2021.igem.org/wiki/images/8/80/T--UCSC--pMADRID_restriction_enzyme.pdf"><button> pMADRID restriction enzyme cloning </button></a></li>
+                                 <li><a href="https://2021.igem.org/wiki/images/5/56/T--UCSC--pMINT_construction_protocol.pdf"><button> pMINT construction </button></a></li>
+
+                                 <li><a href="https://2021.igem.org/wiki/images/b/b4/T--UCSC--phiMINT_golden_gate.pdf"><button> phiMINT and phiMINTO Golden Gate Assembly  </button></a></li>
+
+                                 <li><a href="https://2021.igem.org/wiki/images/e/ea/T--UCSC--csm6_plasmid_assembly.pdf"><button> pET-52-Csm6 plasmid construction  </button></a></li>
+                                 <li><a href="https://2021.igem.org/wiki/images/c/cd/T--UCSC--destination_expression_plasmid_assembly.pdf"><button> pET-52-ccdB plasmid construction </button></a></li>
+                                 </ul>
+                           </nav>
+                </div>
+            </section>
+            <section>
+                 <div class="card">
+                     <h2> Fluorescence Analysis </h2>
+                 </div>
+            </section>
+            <section class="tag subpage-selector">
+                <div class="card-modified">
+                           <nav>
+                               <ul class="subpage-list-int">
+                                 <li><a href="https://2021.igem.org/wiki/images/e/ef/T--UCSC--plate_reader_protocol.pdf"><button> Plate Reader </button></a></li>
+
+                                 <li><a href=""><button> Flow Cytometry</button></a></li>
+                                 </ul>
+                           </nav>
+                </div>
+            </section>
+            <section>
+                 <div class="card">
+                     <h2> Standard Operating Procedures </h2>
+                 </div>
+            </section>
+            <section class="tag subpage-selector">
+                <div class="card-modified">
+                           <nav>
+                               <ul class="subpage-list-int">
+                                 <li><a href="https://2021.igem.org/wiki/images/9/91/T--UCSC--colony_pcr_protocol.pdf"><button> Colony PCR (Using OneTaq) </button></a></li>
+
+                                 <li><a href="https://2021.igem.org/wiki/images/6/6c/T--UCSC--chemicomp_transformation.pdf"><button> Chemicompetent Transformation </button></a></li>
+
+                                 <li><a href="https://2021.igem.org/wiki/images/8/8a/T--UCSC--Inoue_Chemicomp_cell_prep.pdf"><button> Inoue chemiompetent cell preparation </button></a></li>
+                                 </ul>
+                           </nav>
+                </div>
+            </section>
+        </main>
+    </div>
+</html>
