@@ -1,0 +1,864 @@
+<html>
+<style>
+
+/* Fonts */
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: 300;
+    src: url("https://2021.igem.org/wiki/images/5/5a/T--UCSC--lemon_milk_light.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: 500;
+    src: url("../fonts/Lemon_milk/LEMONMILK-Medium.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: normal;
+    src: url("https://2021.igem.org/wiki/images/a/a8/T--UCSC--lemon_milk_regular.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    src: url("https://2021.igem.org/wiki/images/f/f0/T--UCSC--lemon_milk_bold.otf");
+}
+
+
+@font-face {
+    font-family: "Century Gothic";
+    font-weight: 300;
+    src: url("https://2021.igem.org/wiki/images/2/2b/T--UCSC--century_gothic_normal.otf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    src: url("https://2021.igem.org/wiki/images/5/5c/T--UCSC--century_gothic_bold.otf");
+} 
+
+:root {
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-mcherry-red: #FF423E;
+    --clr-pale-red: #FF8F8C;
+    --clr-white-pink: #FFD4C5;
+    --clr-light-purple: #A375ED;
+    --clr-mint: #89EACE;
+    --clr-dark-purple: #733D9D;
+
+    --ff-header: "Lemon Milk";
+    --fw-light: 300;
+    --fw-default: normal;
+    --fw-semi-bold: 500;
+    --fw-bold: bold;
+
+    --fs-header: clamp(1rem, 10vw, 8rem);
+    --fs-subheader: clamp(1.125rem, 4vw + 1rem, 4.125rem);
+    --fs-default: clamp(1rem, 0.5vw + 1rem, 1.5rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+
+/* General Settings */
+.total-body {
+    background-color: var(--clr-black);
+}
+
+#content {line-height: auto !important;}
+
+/* Navbar */
+.nav {
+    background-color: var(--clr-light-purple);
+}
+
+.nav .nav-toggle {
+    position: absolute;
+    cursor:pointer;
+    right: 0;
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+.nav svg {
+    width: 1.5rem;
+    fill: var(--clr-white);
+}
+
+.nav .close {
+    display: none;
+}
+
+.nav .menu {
+    margin-top: 0.2rem;
+}
+
+.nav .nav-checkbox {
+    display: none;
+}
+
+.nav .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+.nav .navbar li {
+    list-style: none;
+    display: none;
+}
+
+.nav .navbar li:first-child {
+    margin-right: auto;
+    display: block;
+}
+
+.nav .navbar a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    font-family: var(--ff-header);
+    font-weight: var(--fw-default);
+}
+
+.nav .navbar img {
+    margin-top: 0.5rem;
+    width: 8rem;
+}
+
+#nav-checkbox:checked ~ .navbar li {
+    display: block;
+}
+
+#nav-checkbox:checked ~ label .menu  {
+    display: none;
+}
+
+#nav-checkbox:checked ~ label .close{
+    display: block;
+}
+
+/* Hero */
+.hero-gif-update {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--clr-white);
+    width: auto;
+    height: 100vh;
+}
+
+.hero h6 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.hero h2 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+
+.hero-modified h2 {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--clr-white);
+}
+.hero-gif-update h6 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.hero-gif-update img {
+    width: 25rem;
+    height: auto;
+}
+
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(#FF8F8C, #A375ED);
+    width: 40px;
+    height: 100%;
+    grid-area: sidebar;
+    justify-self: end;
+    margin-top: 28px;
+}
+
+
+/* Aside */
+.aside {
+    font-family: "Lemon Milk"!important;
+    display: flex;
+    min-width: 0px;
+    grid-area: aside;
+    background-color: black;
+    color: white;
+    margin-top: 33px;
+}
+
+.aside-container {
+  display: flex;
+  height: 80%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.item {
+  position: sticky;
+}
+
+.shark-3 {
+  top: 4rem;
+}
+
+
+.shark-3 a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+.shark-3 a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--clr-light-purple);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.aside a {
+    text-decoration: none;
+    color: white;
+}
+
+.shark-3 a:hover::after,
+.shark-3 a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+.aside h1 {
+    font-family:"Lemon Milk"!important;
+    font-size: 1rem;
+    color: white;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.aside h1::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+
+/* Main */
+.main-header {
+    font-family: var(--ff-header);
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--clr-light-purple);
+    padding: 3rem 0;
+}
+
+.main-header:first-of-type {
+    padding-top: 0;
+}
+
+.people-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+}
+
+.people-sections:last-of-type {
+    padding-bottom: 10rem;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#HQ_page p {font-family: Century Gothic !important;}
+
+.person-name {
+    font-family: Century Gothic;
+    font-weight: 600;
+    font-size: 1.35rem !important;
+    padding: 1em 0rem;
+    color: var(--clr-light-purple);
+}
+
+#david-headshot {
+    transform: rotate(90deg);
+}
+
+.pic-fill-ins img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.text-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.hero .text-container h1 {
+    text-align: center;
+    color: var(--clr-white);
+    font-family: var(--ff-header) !important;
+    font-weight: var(--fw-bold)!important;
+    font-size: var(--fs-header);
+}
+
+.hero .text-container p {
+    text-align: center;
+    font-family: serif;
+    font-size: var(--fs-subheader);
+    color: var(--clr-white);
+}
+
+.person-name a {
+    text-decoration: none;
+    color: var(--clr-light-purple);
+}
+
+/* Main */
+.main {
+    grid-area: main;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 80px 1fr 200px;
+    grid-template-areas:
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside"
+    "sidebar main aside";
+}
+
+section {
+    display: flex;
+    align-items: center;
+    font-family: "Lemon Milk";
+}
+
+/* Card (text stuff) */
+.card {
+    background-color: var(--clr-light-purple);
+    color: var(--clr-white);
+    margin: 2rem 2rem;
+}
+
+.card-image {
+    background-color: black;
+    color: var(--clr-white);
+    margin: 1rem 1rem;
+}
+
+.card-image img {
+    width: auto;
+}
+
+.card-modified {
+    background-color: black;
+    color: var(--clr-white);
+    margin: 2rem 2rem;
+}
+
+.card-modified h2 {
+    font-size: 2rem;
+}
+
+.card h2 {
+    color: white;
+    font-family: Lemon Milk !important;
+    font-weight: light !important;
+    text-align: left;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  width: 65%;
+}
+
+.card h7 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+.subcaption-edit h2 {
+    color: var(--clr-white);
+    margin: 2rem 2rem;
+    font-family: Arial;
+    font-weight: light;
+    font-size: 1rem;
+
+}
+
+#HQ_page p {font-family: "Century Gothic";}
+#content {line-height:normal;}
+
+.card p {
+    padding: 0 1rem;
+    font-family: Comic Sans MS;
+    font-weight: light;
+    font-size: 1.5rem !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Interview Section */
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+ 
+.circle {
+  list-style-type: none;
+  font-family: "Lemon Milk";
+  width: 250px;
+  margin: 20px;
+  height: 250px;
+  line-height: 250px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #fff;
+  background: red;
+  border: 6px solid purple;
+}
+
+.box-container-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+/* Scroll Fade Animation */
+.tag {
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    width: 100%
+    height: auto;
+    padding: 50px 100x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#A375ED, #FF8F8C);
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.footer-list-item {
+    list-style: none;
+    align-items: center;
+}
+
+.footer-list-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 2rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+.not-hero h2 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.container-edit {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sec h1 {
+    font-family:"Lemon Milk"!important;
+    font-weight: light;
+    color: white;
+    justify-content: center;
+    position: relative;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.sec img {
+    margin-left: 60px;
+}
+
+.sec h1::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.sec p {
+    font-family: "Lemon Milk"
+    font-weight: light;
+}
+
+.footer img {
+    max-width: 60px;
+}
+    
+.sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 20px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: 38px;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    justify-content: center;
+    text-direction: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: green;
+}
+    
+.sci li a .fa {
+    color: white;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks li {
+    list-style: none;
+}
+    
+.quicklinks li a {
+    font-family: "Lemon Milk";
+    font-weight: light;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover {
+    color: white;
+}
+
+.rhi li {
+    list-style: none;
+}
+
+.rhi-exp {
+    display: grid;
+}
+
+/* Subpage Selector */
+.subpage-selector {
+    margin-bottom: min(5rem, 7vh);
+    display: inline;
+}
+
+.subpage-selector ul {
+    list-style: none;
+}
+
+.subpage-list {
+    margin: 0 auto !important;
+    max-width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.subpage-list button {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    color: var(--clr-light-purple);
+    font-family: var(--ff-header);
+    font-size: 1rem;
+    font-weight: var(--fw-light);
+    padding: 0.75em;
+    border: 2px solid var(--clr-light-purple);
+    border-radius: 10px;
+}
+
+.subpage-selector li {
+    margin-bottom: 1rem;
+}
+
+.subpage-list button:hover {
+    background-color: var(--clr-light-purple);
+    color: var(--clr-white);
+}
+
+/* For desktop view */
+@media only screen and (min-width: 767.98px) {
+    .nav .nav-toggle {
+        display: none;
+    }
+
+    .nav .navbar {
+        flex-direction: row;
+    }
+
+    .nav .navbar li {
+        display: block;
+    }
+
+    .nav .navbar img {
+        width: 13rem;
+    }
+}
+
+/* Interview Section */
+
+.subpage-list-int {
+    margin: 0 auto !important;
+    max-width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.subpage-list-int button:hover {
+    background-color: var(--clr-light-purple);
+    color: var(--clr-white);
+}
+
+.subpage-list-int button {
+    background-color: transparent;
+    width: 12rem;
+    height: 12rem;
+    color: var(--clr-light-purple);
+    font-family: var(--ff-header);
+    font-size: var(--fs-default);
+    font-weight: var(--fw-light);
+    padding: 0.75em;
+    border: 2px solid var(--clr-light-purple);
+    border-radius: 10px;
+}
+@media only screen and (max-width: 1000px) {
+    .grid {
+       display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+
+    .aside {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .rhi {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rhi-exp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sec img {
+        margin-left: 20px;
+    }
+
+
+    .quicklinks {
+        margin-left: 50px;
+    }
+    
+    .hero h6 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+   
+    .card img {
+        width: 80%
+    }
+ 
+    .card-image img {
+        width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid {
+       display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+
+    .aside {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .rhi {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rhi-exp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sec img {
+        margin-left: 20px;
+    }
+
+
+    .quicklinks {
+        margin-left: 50px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .box-container-item a {
+        text-decoration: none;
+        color: var(--clr-white);
+        font-size: 1rem;
+        text-align: center;
+        font-family: "Lemon Milk";
+        font-weight: light;
+}
+
+}
+}
+</style>
+</html>
