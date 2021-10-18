@@ -1,0 +1,40 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/landing-page-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+<html>
+    <div class="total-body">
+        <div class="app">
+              <video loop muted autoplay preload="auto">
+                  <source src="https://2021.igem.org/wiki/images/8/88/T--UCSC--lighter_mcherry_video.mov"/>
+              </video>
+              <div class="overlayText">
+                   <h2 id="topText"></h2>
+              </div>
+        </div>
+        <main class="grid">
+            <section>
+                <div class="fade-in-image flexbox-container">
+                    <div class="card">
+                        
+                        <p> Our project is a solution to eliminating pathogenic genes and their byproducts. We are using new CRISPR technology to create a gene elimination system that can be easily delivered to and propagated through a bacteria population of our choice. Working with <em>E. Coli</em> as our initial target, we are using M13 bacteriophage to deliver our CRISPR system, equipped with a delivery vector that contains the necessary parts for propagation via bacterial conjugation. To achieve our goal, we have spent the past couple of months designing delivery mechanisms, conducting experiments, and creating mathematical models to ensure our technology is effective. Click on the tiles down below to learn more about our project! </p>
+
+                    </div>
+                </div>
+            </section>
+          <section class="tag subpage-selector">
+            <nav>
+                <ul class="subpage-list">
+                    <li><a href="https://2021.igem.org/Team:UCSC/Description"><button> Description </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Implementation"><button> Implementation </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Model"><button> Model </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Engineering"><button> Engineering </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Contribution"><button> Contributions </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Results"><button> Results </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/FutureLabDirections"><button> Future Lab Directions </button></a></li>
+                </ul>
+            </nav>
+          </section>
+        </main>
+    </div>
+</html>
