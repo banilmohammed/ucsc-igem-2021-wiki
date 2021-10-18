@@ -1,0 +1,182 @@
+{{UCSC}}
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+            <img src="https://2021.igem.org/wiki/images/b/bb/T--UCSC--project_contributions_header.gif" alt="spinning planet"/>
+            <h6> Contributions </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section class="tag">
+                <div class="card"><a id="plasmid_incompatibility"></a>
+                    <h2> Navigating Plasmid Incompatibility  </h2>
+                    <p> During the course of our project, we encountered several difficulties that taught us important lessons not only about working on our specific project, but also about conducting synthetic biology research. Our most significant difficulty stemmed from plasmid incompatibility. The final step in Clonetegration (the method we used to engineer our mcherry-integrated E. coli model as described in our<p1><a href="https://2021.igem.org/Team:UCSC/Proof_of_Concept">Proof of Concept</a></p1>page) includes transforming E. coli cells with pE-FLP. Initially, we aimed to clontegrate <em>mcherry</em> in C41 pLysS cells, but encountered problems during our transformations with pE-FLP. </p> 
+
+                    <p> We were able to integrate the pOSIP-KL-mcherry plasmid into the chromosome of C41 pLysS, but all attempted pE-FLP transformations failed. We explored the inability of our C41 pLysS-pOSIP integrants to take up pE-FLP by transforming native, known-competent C41 pLysS cells with pE-FLP. We observed no colonies for both pOSIP integrants and native, competent C41 pLysS cells, indicating that the C41 pLysS strain is unable to take up the pE-FLP plasmid. We determined that incompatibility between the p15A ori on the pLysS plasmid and the pSC101 ori on the pE-FLP plasmid contributed to the C41 cells’ inability to take up the plasmid [<a href="#references">1</a>]. To avoid this issue, we switched strains to DH5α E. coli (NEB) which do not contain any native plasmids. After performing the initial integration of pOSIP-KL-mcherry into NEB DH5α, we were able to transform pE-FLP and verify the excision of the integration module from the chromosome (as seen in<p1><a href="https://2021.igem.org/Team:UCSC/Results">Results</a></p1>). </p>
+
+                    <p> We learned the importance of checking individual origins of replication for incompatibility when working with multiple plasmids in a single chassis. To help other teams avoid this problem in the future, we made a visual representation of plasmid incompatibility groups for reference when using multiple plasmids at once. 
+ </p>
+
+                    <div class="subcaption-edit">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--UCSC--plasmid_incompatibility_table.png">
+                    </div>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="parts"></a>
+                    <h2> Parts </h2>
+                    <p> Progenie utilizes the INTEGRATE system, a CRISPR RNA-guided DNA integration system presented by Vo et al. in 2021 [<a href="#references">1</a>]. We reached out to Vo et al. [<a href="#references">1</a>] and received the pSPAIN plasmid as a gift to work with during our project. Here, we propose to add the pSL1142 (pSPIN, pBBR1 backbone) [<a href="#references">2</a>] plasmid to the iGEM parts registry. Along with its backbone (pBBR1 ori and kananycin resistance), this pSPIN plasmid contains the INTEGRATE cassette: J23119 constitutive promoter (iGEM part), the V. cholerae CRISPR array, TniQ, Cas8, Cas7, and Cas6 (TniQ-Cascade complex), TnsA, TnsA, and TnsC (transposase elements), and finally, the donor DNA region flanked with transposon L and R ends. The guide-RNA spacer in this construct is a placeholder that contains BsaI sites for easy Type IIS restriction enzyme cloning. This part has not yet been added to the iGEM registry, and will help future teams working with bacterial genome engineering. </p> 
+
+                    <p> During the course of our project there were a number of genetic elements utilized/developed for our gene elimination mechanism, detection system, and partnership. To support the simplicity of using Golden Gate assembly we worked to develop a number of parts that contain type IIS sites. Down below is a table containing parts and general information, as well as links to part pages on the iGEM registry. </p>
+
+                    <table>
+                        <tr> 
+                            <div class="table-categories">
+                              <th> Part Name </th>
+                              <th> Part Number </th>
+                              <th> Part Type </th>
+                              <th> Description </th>
+                              <th> Designer </th>
+                              <th> Length </th>
+                            </div>
+                        </tr>
+                        <tr>
+                            <th> <em>stx2</em> A2-B Subunit Complex (O157:H7 <em>E. Coli</em>) </th>
+                            <th> BBa_K3808007</th>
+                            <th> Cell </th>
+                            <th> Subunit of protein binds </th>
+                            <th> - </th>
+                            <th> - </th>
+                        </tr>
+                        <tr>
+                            <th> pET-52b(+) backbone</th>
+                            <th> BBa_K3808001</th>
+                            <th> Coding region </th>
+                            <th> Protein expression </th>
+                            <th> - </th>
+                            <th> - </th>
+                        </tr>
+                        <tr>
+                            <th> pET-52(+)backbone + ccdB insert </th>
+                            <th> BBa_K3808002 </th>
+                            <th> Coding region</th>
+                            <th> Protein expression</th>
+                            <th> - </th>
+                            <th> - </th>
+                        </tr>
+                        <tr>
+                            <th> INTEGRATE (pSPIN from addgene) </th>
+                            <th> BBa_K3808004 </th>
+                            <th> Coding region</th>
+                            <th> RNA-guided transposase system</th>
+                            <th> Leo Vo et al. </th>
+                            <th> 14 kb  </th>
+                        </tr>
+                        <tr>
+                            <th> phiMINTO </th>
+                            <th> BBa_K3808006 </th>
+                            <th> Coding region</th>
+                            <th> Encodes the INTEGRATE system</th>
+                            <th> - </th>
+                            <th> - </th>
+                        </tr>
+                        <tr>
+                            <th> pSPAIN F primer </th>
+                            <th> BBa_K3808008 </th>
+                            <th> Coding region </th>
+                            <th> Amplifies the CRISPR array of interest </th>
+                            <th> - </th>
+                            <th> - </th>
+                        </tr>
+                        <tr>
+                            <th> pSPAIN R primer </th>
+                            <th> BBa_K3808009 </th>
+                            <th> Coding region </th>
+                            <th> Amplifies the CRISPR array </th>
+                            <th> - </th>
+                            <th> - </th>
+                        </tr>
+                        <tr>
+                            <th> Csm6</th>
+                            <th> BBa_K3808003 </th>
+                            <th> Coding region </th>
+                            <th> Non-specifically cleaves RNA </th>
+                            <th> - </th>
+                            <th> - </th>
+                        </tr>
+                    </table>
+            </section>
+            <section class="hero-modified">
+                <div class="card-modified"><a id="references"></a>
+                    <h2> References: </h2>
+                </div>
+            </section>
+            <section class="tag subpage-selector">
+                <div class="card-modified">
+                           <nav>
+                               <ul class="subpage-list">
+                                 <li><a href="https://doi.org/10.1038/s41587-020-00745-y"><button> [1] CRISPR RNA-guided integrases for high-efficiency, multiplexed bacterial genome engineering</button></a></li>
+                               </ul>
+                               <ul class="subpage-list">
+                                 <li><a href="http://www.addgene.org/160730/"><button> [2] pSL1142 (pSPIN, pBBR1 backbone)</button></a></li>
+                               </ul>
+                           </nav>
+                </div>
+            </section> 
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1><a href="#plasmid_incompatibility"> Plasmid Incompatibility </a></h1>
+                        <h1><a href="#parts"> Parts </a></h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                            <u1 class="sci">
+                                  <li><a href=="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </u1>
+
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
