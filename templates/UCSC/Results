@@ -18,18 +18,18 @@
 
                     <p> The chromosomally integrated <em>mcherry</em> model was generated utilizing a Clonetegration protocol [<a href="#references">1</a>]. NEB 5-alpha Competent E. coli cells were transformed with pOSIP-KL-mCherry [cite addgene] to integrate the entire pOSIP cassette into the genome at the lambda <em>attB</em> site. We made those transformants chemically competent, then subsequently transformed them with pE-FLP to “flip out”, or excise the integration cassette containing the Kanamycin resistance and phage integrase genes.</p>
 
-                    <p> We verified successful Clonetegration by streaking colonies on ampicillin and kanamycin plates and observing that pE-FLP transformants lost their resistance to kanamycin. We also performed colony PCR on the chromosomal lambda <em>attB</em> site in order to demonstrate successful integration after transformation of pOSIP-KL-mCherry, and excision of the integration cassette after transformation with pE-FLP (Fig. 1  Colony PCR of DH5&#945;-<em>mcherry</em> <em>attB</em>  sites). Fluorescence was verified utilizing plate reader where DH5&#945; non-fluorescent cells were compared to three replicates of non-targeting pMADRID into DH5&#945;-<em>mcherry</em> cells (Fig. 2 Increase in Fluorescence in <em>mcherry</em>-integrated E. coli shown on plate reader).</p>
+                    <p> We verified successful Clonetegration by streaking colonies on ampicillin and kanamycin plates and observing that pE-FLP transformants lost their resistance to kanamycin. We also performed colony PCR on the chromosomal lambda <em>attB</em> site in order to demonstrate successful integration after transformation of pOSIP-KL-mCherry, and excision of the integration cassette after transformation with pE-FLP [<a href="fig_1">Fig. 1</a>]Fluorescence was verified utilizing plate reader where DH5&#945; non-fluorescent cells were compared to three replicates of non-targeting pMADRID into DH5&#945;-<em>mcherry</em> cells [<a href="#fig_2">Fig. 2</a>]</p>
 
                 </div>
             </section>
             <section>
-                <div class="card-image">
+                <div class="card-image"><a id="fig_1"></a>
                          <img src="https://2021.igem.org/wiki/images/8/8d/T--UCSC--colony_pcr_dh5_mcherry.png"/>
                         <h2> A 1% agarose gel depicting colony PCR products of both pOSIP-KL-mcherry integrants and colonies flipped after pE-FLP transformation. The primers used in this colony PCR were designed to amplify the lambda <em>attB</em> site on the DH5a chromosome. The expected product when the entire OSIP cassette is integrated is 6.8 kb, and the expected product for flipped integrants is 3.4 kb. </h2>
                 </div>
             </section>
             <section>
-                <div class="card-image">
+                <div class="card-image"><a id="fig_2"></a>
                          <img src="https://2021.igem.org/wiki/images/0/0e/T--UCSC--plate_reader.png"/>
                         <h2> Plot of relative fluorescence units for DH5&#945; and DH5&#945;-<em>mcherry</em> integrants measured from plate reader. Error bars represent standard error and data was normalized using OD600. A Mann-Whitney U test was performed between a DH5&#945; non-fluorescent control and DH5&#945;-<em>mcherry</em> integrants with p=1.28E-6 (<0.05) indicating that the DH5&#945;-<em>mcherry</em> integrants are significantly more fluorescent than the non-fluorescent control. Analysis performed in R and figures made with Adobe Illustrator. </h2>
                 </div>
@@ -37,23 +37,23 @@
             <section class="tag">
                 <div class="card"><a id="pmadrid"></a>
                     <h2> Assembled our destination vector pMADRID </h2>
-                    <p> The BamHI-DR-BSAI-gRNA-BSAI-DR-SalI region was PCR amplified from pSL1142 (pSPIN) plasmid [ pSL1142 (pSPIN) cite addgene], DpnI treated, and cleaned using a Monarch PCR clean up kit (Fig. 3). The PCR product and pSL1812 (pSPAIN, generously donated by Leo Vo and the Sternberg lab at Columbia university) were double digested with BamHI and SalI. The vector pSPAIN was incubated with TSAP to dephosphorylate both the backbone and the excised DNA, then ligated with the PCR product from pSPIN. The ligation product was transformed into NEB 5-alpha Competent E. coli. Colonies growing on kanamycin with this new construct (pMADRID) were screened for using colony PCR (Fig. 4). Positive samples were grown in liquid cultures and miniprepped, and successful cloning was verified with Sanger sequencing (Fig. 5). </p> 
+                    <p> The BamHI-DR-BSAI-gRNA-BSAI-DR-SalI region was PCR amplified from pSL1142 (pSPIN) plasmid [ pSL1142 (pSPIN) cite addgene], DpnI treated, and cleaned using a Monarch PCR clean up kit [<a href="fig_3">Fig. 3</a>]. The PCR product and pSL1812 (pSPAIN, generously donated by Leo Vo and the Sternberg lab at Columbia university) were double digested with BamHI and SalI. The vector pSPAIN was incubated with TSAP to dephosphorylate both the backbone and the excised DNA, then ligated with the PCR product from pSPIN. The ligation product was transformed into NEB 5-alpha Competent E. coli. Colonies growing on kanamycin with this new construct (pMADRID) were screened for using colony PCR [<a href="#fig_4">Fig. 4</a>]. Positive samples were grown in liquid cultures and miniprepped, and successful cloning was verified with Sanger sequencing [<a href="fig_5">Fig. 5</a>]. </p> 
                 </div>
              </section>
             <section>
-                <div class="card-image">
+                <div class="card-image"><a id="fig_3"></a>
                          <img src="https://2021.igem.org/wiki/images/6/6f/T--UCSC--pcr_pmadrid_crispr.png"/>
                         <h2> A 2% agarose gel depicting the expected PCR product from the pSPIN BamHI-DR-BSAI-gRNA-BSAI-DR-SalI region. The bands are the expected 227 bp length, and these fragments were used as the insert to assemble the pMADRID construct from pSPAIN. </h2>
                 </div>
             </section>
              <section>
-                <div class="card-image">
+                <div class="card-image"><a id="fig_4"></a>
                     <img src="https://2021.igem.org/wiki/images/2/29/T--UCSC--pMADRID_construct.png"/>
                         <h2> A 2% agarose gel showing the colony PCR products from pMADRID assembly transformant colonies. With primers that bind to the pMADRID-specific spacer, the presence of a and indicates the presence of a properly assembled pMADRID construct. We miniprepped six positive samples and verified successful cloning with Sanger sequencing. </h2>
                 </div>
              </section>
              <section>
-                <div class="card-image">
+                <div class="card-image"><a id="fig_5"></a>
                     <img src="https://2021.igem.org/wiki/images/3/33/T--UCSC--figure_6_results.png"/>
                         <h2> A screenshot of Sanger sequencing reads (forward and reverse) for the pMADRID CRISPR array. This image is zoomed into the CRISPR array to show that the 32 nt. spacer was successfully replaced with the expected BsaI placeholder sequence. The rest of the reads agreed with the reference sequence. Figure made with Geneious Prime.</h2>
                 </div>
@@ -67,11 +67,11 @@
 
                     <p> We then attempted to assemble <em>mcherry</em>-targeting constructs by separating digestion and ligation in two different steps. Again, transformation yielded no colonies.</p>
 
-                    <p> Finally, we succeeded to assemble <em>mcherry</em>-targeting by substituting our BsaI gBlocks with hybridized oligonucleotides that did not require digestion at all, and had no end fragments that got in the way of ligation. We mixed two oligonucleotides with 34 bases of complementarity corresponding to the 32 nt. <em>mcherry</em>-targeting spacer and two extra bases corresponding to the V. cholerae repeat. The oligos included four extra bases on their 5’ ends that were able to anneal to the overhangs on the vector left behind by the BsaI. The oligos in the mixture were phosphorylated with T4 PNK, then heated to 95℃ for 2 mins and allowed to slowly cool at room temperature. These hybridized oligoduplexes were mixed with digested pMADRID and ligated for 30 mins at room temperature. The ligation product was transformed into NEB 5-alpha Competent E. coli. Colonies growing on kanamycin with this <em>mcherry</em>-targeting construct (pMINT) were screened for using colony PCR. Potentially positive samples were grown in liquid cultures and miniprepped, and successful cloning was verified with Sanger sequencing (Fig. 6 and 7). </p>
+                    <p> Finally, we succeeded to assemble <em>mcherry</em>-targeting by substituting our BsaI gBlocks with hybridized oligonucleotides that did not require digestion at all, and had no end fragments that got in the way of ligation. We mixed two oligonucleotides with 34 bases of complementarity corresponding to the 32 nt. <em>mcherry</em>-targeting spacer and two extra bases corresponding to the V. cholerae repeat. The oligos included four extra bases on their 5’ ends that were able to anneal to the overhangs on the vector left behind by the BsaI. The oligos in the mixture were phosphorylated with T4 PNK, then heated to 95℃ for 2 mins and allowed to slowly cool at room temperature. These hybridized oligoduplexes were mixed with digested pMADRID and ligated for 30 mins at room temperature. The ligation product was transformed into NEB 5-alpha Competent E. coli. Colonies growing on kanamycin with this <em>mcherry</em>-targeting construct (pMINT) were screened for using colony PCR. Potentially positive samples were grown in liquid cultures and miniprepped, and successful cloning was verified with Sanger sequencing [<a href="fig_6">Fig. 6 and 7</a>]. </p>
                 </div>        
              </section>
              <section>
-                <div class="card-image">
+                <div class="card-image"><a id="fig_6"></a>
                     <img src="https://2021.igem.org/wiki/images/e/ea/T--UCSC--pMINT_guide.png"/>
                         <h2> Sanger sequencing data for minipreps from three screened colonies mapped to the reference CRISPR array for guide 2. The six reads below the reference correspond to forward and reverse sequencing reactions for the three preps. They all showed perfect sequence homology, indicating that the cloning worked for guide 2. Sequencing data analyzed with Geneious Prime. </h2>
                 </div>
@@ -85,13 +85,13 @@
             <section class="tag">
                 <div class="card"><a id="pmint_assay"></a>
                     <h2> Functional assay verified the <em>mcherry</em> targeting and elimination abilities of pMINT </h2>
-                    <p> pMINT-Guide-2, pMINT-Guide-3, and non-targeting (NT) pMADRID were transformed into  our model DH5&#945;-<em>mcherry</em> cells and plated on Kanamycin for 24 hours. Resulting colonies and DH5&#945; Non-Fluorescent cells were grown up in liquid culture for 16 hours and analyzed on the Spectramax ID3 plate reader to determine relative fluorescence. Decrease in fluorescence was observed utilizing plate reader and fluorescence microscopy, and flow cytometry, where DH5&#945; non-fluorescent cells were compared to three replicates of non-targeting pMADRID into DH5&#945;-<em>mcherry</em> cells, pMINT with guide 2 into DH5&#945;-<em>mcherry</em> cells, and pMINT with guide 3 into DH5&#945;-<em>mcherry</em> cells (Fig. 8)   </p>
+                    <p> pMINT-Guide-2, pMINT-Guide-3, and non-targeting (NT) pMADRID were transformed into  our model DH5&#945;-<em>mcherry</em> cells and plated on Kanamycin for 24 hours. Resulting colonies and DH5&#945; Non-Fluorescent cells were grown up in liquid culture for 16 hours and analyzed on the Spectramax ID3 plate reader to determine relative fluorescence. Decrease in fluorescence was observed utilizing plate reader and fluorescence microscopy, and flow cytometry, where DH5&#945; non-fluorescent cells were compared to three replicates of non-targeting pMADRID into DH5&#945;-<em>mcherry</em> cells, pMINT with guide 2 into DH5&#945;-<em>mcherry</em> cells, and pMINT with guide 3 into DH5&#945;-<em>mcherry</em> cells [<a href="#fig_8">Fig. 8</a>]  </p>
 
                     <p> Figure 8 shows a plot of relative fluorescence units for non-fluorescent cells, and cells transformed with non-targeting pMINT, and pMINT guides 2 and 3. We saw significant reduction in fluorescence for our <em>mcherry</em>-targeting constructs, indicating that guided DNA integration into the promoter of a gene will knock out expression. Figure 9 shows pictures taken of DH5&#945;-<em>mcherry</em> cells transformed with non-targeting pMADRID and pMINT guide 2 under a microscope. The top two images show the non-targeting transformants under different light conditions, and the bottom two images show the pMINT guide 2 transformants under the same conditions. We can see a similar amount of cells in both streaks, but the targeting constructs resulted in a decrease in fluorescence. </p>
                 </div>
              </section>
              <section>
-                <div class="card-image">
+                <div class="card-image"><a id="fig_8"></a>
                      <img src="https://2021.igem.org/wiki/images/4/4d/T--UCSC--figure_plate_reader.png"/>
                         <h2> Plot of relative fluorescence units for plain DH5&#945; transformed with control plasmid and DH5&#945;-<em>mcherry</em> transformed with pMADRID (non-targeting guide), pMINT Guide 2, and pMINT Guide 3 as measured using a plate reader. Error bars represent standard error and data was normalized using OD600. Results indicate transformation of pMINT Guides 2 and 3 decrease fluorescence of DH5&#945;-<em>mcherry</em> integrants. A Mann-Whitney U test performed between the DH5&#945;-<em>mcherry</em> non-targeting control and pMINT Guide 2 (p = 2.20E-10 < 0.05) and pMINT Guide 3 (p = 1.48E-8 < 0.05), indicate significantly decreased fluorescence. Analysis performed in R and figures made with Adobe Illustrator. </h2>
                 </div>
@@ -116,11 +116,11 @@
 
                     <p> The first phagemid, termed &#966;MINT, was assembled using an f1 ori gBlock for M13 phage packaging and a chloramphenicol resistance gene (CmR) to replace pMINT’s kanamycin resistance gene. The second phagemid, termed &#966;MINTO, was assembled using an f1 ori, CmR, and an oriT specific to the F’ DH5&#945; strain from NEB. The addition of an oriT should allow the phagemid to be conjugated by cells infected by the M13 phages. </p>
 
-                    <p> These phagemids were assembled using a one-pot Golden Gate reaction with BsaI and a cycling protocol that cycled between 37C and 16C. The assembly was transformed into chemically competent DH5&#945; and transformants were plated on chloramphenicol plates to select against unmodified plasmids. Transformants growing on chloramphenicol were grown up, miniprepped, and analyzed with gel electrophoresis (Fig. 13). In the future, we plan to sequence these constructs with NGS. </p>
+                    <p> These phagemids were assembled using a one-pot Golden Gate reaction with BsaI and a cycling protocol that cycled between 37C and 16C. The assembly was transformed into chemically competent DH5&#945; and transformants were plated on chloramphenicol plates to select against unmodified plasmids. Transformants growing on chloramphenicol were grown up, miniprepped, and analyzed with gel electrophoresis [<a href="#fig_12">Fig. 12</a>]. In the future, we plan to sequence these constructs with NGS. </p>
                 </div>
              </section>
              <section>
-                <div class="card-image">
+                <div class="card-image"><a id="fig_12".</a>
                     <img src="https://2021.igem.org/wiki/images/c/ca/T--UCSC--gel_phiMINT.png"/>
                         <h2> A 0.7% agarose gel depicting minipreps from two phiMINTO transformants and six phiMINT transformants. For phiMINT, we see four bands near the expected size (12.3 kb) in four of the six preps. For phiMINTO, we see one band near the expected size (12.7 kb). In the future, we plan to get both of these constructs sequenced with NGS.  </h2>
                 </div>
