@@ -1,0 +1,117 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+              <img src="https://2021.igem.org/wiki/images/2/2a/T--UCSC--project_description.gif" alt="project description"/>
+              <h6> Project Description </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section class="tag">
+                <div class="card"><a id="inspiration"></a>
+                    <h2> Inspiration </h2>
+
+                    <div class="subcaption-edit">
+                    </div>
+
+                    <p> California’s Central Valley distributes agricultural products to people worldwide, making food safety a major concern in order to provide safe and reliable food. Our team’s location, Santa Cruz, neighbors Salinas, Monterey, and Watsonville, which are some of the largest producers of leafy green vegetables in the country [<a href="#references">1</a>]. Given our proximity to farms and processing plants, we felt motivated to help the communities that provide us with food every day.    </p>
+                </div>
+            </section>
+            <section>
+                <div class="card-image">
+                         <img src="https://2021.igem.org/wiki/images/thumb/d/da/T--UCSC--california_out.png/800px-T--UCSC--california_out.png"/>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card">
+                    <p> We investigated the agricultural practices around us and found that many large-scale food recalls are caused by foodborne pathogens.<p1><a href="https://2021.igem.org/Team:UCSC/Glossary#stec">Shiga toxin-producing <em>E.Coli</em> (STEC)</a></p1>is one of the top three leading causes of food recalls in the United States due to its ability to infect humans through contaminated meat and produce [<a href="#references">2</a>]. In severe cases, Shiga toxin causes<p1><a href="https://2021.igem.org/Team:UCSC/Glossary#hus">Hemolytic Uremic Syndrome (HUS)</a></p1>which can lead to life-threatening conditions such as acute or chronic kidney failure [<a href="#references">3</a>]. As a result, most recalled food ends up in a landfill, and in California’s agricultural-centered economy, no one likes to see food wasted. </p>
+
+                    <p> The persistence and prevalence of this issue inspired our UCSC iGEM project: Progenie.<p2>Our goal is to prevent outbreaks and recalls by developing a method to stop the spread of foodborne pathogens at their source.</p2></p>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="approach"></a>
+                    <h2> Approach </h2>
+                    <p> There are a number of prominent food borne pathogens, but only a single chromosomal gene, <em>stx2</em>, is associated with high toxicity in STEC [<a href="#references">1</a>], making it an ideal target for a gene elimination mechanism. Additionally, its transmission pathway is well-studied and widely understood to stem from bacteria in the bovine intestinal tract.</p> 
+
+                    <p> One of our primary goals for <em>stx2</em> elimination is to maintain the health of the existing bacterial microbiome. The shortcoming of antibiotics, for example, is their indiscriminate destruction of bacterial populations, potentially allowing more harmful bacteria to colonize the treated areas. Bacteria can also develop resistance to antibiotics, which is an increasingly problematic phenomenon. Instead, we intend to target genes without killing the bacterial host. By specifically editing the problematic <em>stx2</em> gene, a non-harmful bacterial population of <em>E.Coli</em> could be propagated in place of the originally toxic pathogen.  </p>
+
+                    <p> Our mechanism, Progenie, infects bacterial cells with the gene editing machinery<p1><a href="https://2021.igem.org/Team:UCSC/Engineering">INTEGRATE</a></p1>, developed by Vo et al [<a href="#references">2</a>], a system that combines Cas proteins with transposable elements to execute RNA-guided DNA integration of a desired genetic payload. Its dependence on loci-specific guides makes it adaptable to new targets. We utilize INTEGRATE machinery to disrupt the toxic gene, and spread horizontally through the bacterial population. 
+ </p>
+
+                    <p> To test our design and avoid working with dangerous toxin producing bacteria, we’ve designed an <em>mcherry</em>-expressing <em>E.Coli</em> strain as a model target for Progenie. The mCherry protein fluoresces red when functional, but loses its crimson glow when its gene is disrupted. After successfully knocking out the <em>mcherry</em> gene, we will apply Progenie to the promoter of a non-toxic, recombinant Shiga toxin protein. Eliminating <em>stx2</em>, our first actual toxin, will launch us into the future of our system and its many applications. </p>
+
+                </div>
+            </section>
+            <section class="hero-modified">
+                <div class="card-modified"><a id="references">
+                    <h2> References: </h2>
+                </div>
+            </section>
+            <section class="tag subpage-selector">
+                <div class="card-modified">
+                           <nav>
+                               <ul class="subpage-list">
+                                 <li><a href="https://doi.org/10.1038/srep16663"><button> [1] Shiga toxin 2 production levels in enterohemorrhagic Escherichia coli O157:H7 is correlated with the subtypes of toxin-encoding phage. </button></a></li>
+                                 <li><a href="https://doi.org/10.1038/s41587-020-00745-y"><button> [2] CRISPR RNA-guided integrases for high-efficiency, multiplexed bacterial genome engineering</button></a></li>
+                                 <li><a href="https://www.mayoclinic.org/diseases-conditions/hemolytic-uremic-syndrome/symptoms-causes/syc-20352399"><button> [3] An Overview of Hemolytic Uremic Syndrome (HUS) </button></a></li>
+                               </ul>
+                           </nav>
+                </div>
+            </section> 
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1><a href="#inspiration"> Inspiration </a></h1>
+                        <h1><a href="#approach"> Approach </a></h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                            <u1 class="sci">
+                                  <li><a href=="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </u1>
+
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
