@@ -1,0 +1,41 @@
+<html>
+<style>
+/* Fonts */
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: 300;
+    src: url("https://2021.igem.org/wiki/images/5/5a/T--UCSC--lemon_milk_light.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: 500;
+    src: url("../fonts/Lemon_milk/LEMONMILK-Medium.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: normal;
+    src: url("https://2021.igem.org/wiki/images/a/a8/T--UCSC--lemon_milk_regular.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    src: url("https://2021.igem.org/wiki/images/f/f0/T--UCSC--lemon_milk_bold.otf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    font-weight: 300;
+    src: url("https://2021.igem.org/wiki/images/2/2b/T--UCSC--century_gothic_normal.otf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    src: url("https://2021.igem.org/wiki/images/5/5c/T--UCSC--century_gothic_bold.otf");
+}
+
+</style>
+</html>
