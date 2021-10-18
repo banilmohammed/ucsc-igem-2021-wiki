@@ -1,0 +1,485 @@
+{{Template:UCSC/fonts}}
+{{Template:UCSC/root}}
+<html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+/* General Settings */
+.total-body {
+    background-color: var(--clr-black);
+}
+
+#content {line-height: auto !important;}
+
+/* Banner */
+
+.background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.banner {
+  color: white;
+  display: flex;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+}
+.banner h1 {
+  font-size: 2.5rem !important;
+  text-color: #FFFFFF !important;
+  font-family: "Lemon Milk";
+  font-weight: light;
+  margin: 10;
+  text-align: center;
+}
+
+/* attempt at making video background */
+
+.app {
+   height: auto;
+   width: auto;
+}
+
+.text-box {
+  color: white !important;
+  width: 100%;
+  height: 100%
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app video {
+   width: 100%;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   z-index: 5;
+   object-fit: cover;
+}
+
+
+
+.text-box {
+  color: white !important;
+}
+
+.overlayText {
+  position:absolute;
+  font-size: 3rem;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app h2 {
+  z-index: 7;
+  font-size: 5rem !important;
+  text-color: #FFFFFF !important;
+  font-family: "Lemon Milk";
+  font-weight: light;
+  margin: 10;
+  text-align: center;
+}
+
+.topText {
+  color: white;
+  font-size: 20px;
+  align-self: center;
+}
+
+/* Subpage Selector */
+.subpage-selector {
+    margin-bottom: min(5rem, 7vh);
+}
+
+.subpage-selector ul {
+    list-style: none;
+}
+
+.subpage-selector li {
+    margin-bottom: 3rem;
+}
+
+.subpage-list {
+    margin: 0 auto !important;
+    max-width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.subpage-list button {
+    background-color: transparent;
+    width: 20em;
+    height: 9em;
+    color: var(--clr-light-purple);
+    font-family: var(--ff-header);
+    font-size: var(--fs-default);
+    font-weight: var(--fw-light);
+    padding: 0.75em;
+    border: 2px solid var(--clr-light-purple);
+    border-radius: 10px;
+}
+
+.subpage-list button:hover {
+    background-color: var(--clr-light-purple);
+    color: var(--clr-white);
+}
+
+@media screen and (max-width: 767.98px) {
+    .subpage-list {
+        flex-direction: column;
+    }
+
+    .subpage-list button {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Card */
+.main {
+    grid-area: main;
+    width: auto;
+}
+
+.grid-landing {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+    grid-template-areas:
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main";
+}
+
+.card {
+    width: auto;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--clr-white);
+}
+
+.card-edits {
+    font-family: "Lemon Milk";
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--clr-white);
+}
+    
+.card h2 {
+    margin: 50px;
+    text-align: center;
+    font-size: 2rem !important;
+    font-weight: bold;
+    background-color: black;
+    color: var(--clr-white);
+}
+
+
+.card p {
+    margin: 90px;
+    font-family: Century Gothic !important;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem !important;
+    background-color: black;
+    color: var(--clr-white);
+    margin-top: 6rem !important;
+    margin-bottom: 6rem !important;
+}
+
+#HQ_page h2 {color: white;}
+#HQ_page h2 {font-family: "Lemon Milk";}
+#HQ_page p {color: white;}
+#HQ_page p {font-family: "Lemon Milk";}
+
+/* Scroll Fade Animation */
+.tag {
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-container-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+ 
+.box1 {
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+
+.box2 {
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+
+.box3{
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+.box4 {
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+
+.box5 {
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+
+.box6 {
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+
+.box7 {
+	width:200px;
+	height:200px;
+	margin:10px;
+	padding:10px;
+        border: 5px white;
+        border-style: solid;
+        border-radius: 25px;
+}
+.circle {
+  list-style-type: none;
+  font-family: "Lemon Milk";
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  background: red;
+  border: 6px solid purple;
+}
+
+
+.box-container-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+/* banner fade-in */
+.fade-in-image {
+  justify-content: center;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+/* For desktop view */
+@media only screen and (min-width: 767.98px) {
+    .nav .nav-toggle {
+        display: none;
+    }
+
+    .nav .navbar {
+        flex-direction: row;
+    }
+
+    .nav .navbar li {
+        display: block;
+    }
+
+    .nav .navbar img {
+        width: 13rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid {
+       display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+
+    .aside {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .rhi {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rhi-exp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sec img {
+        margin-left: 20px;
+    }
+
+
+    .quicklinks {
+        margin-left: 50px;
+    }
+    
+    .hero h6 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+   
+    .card img {
+        width: 80%
+    }
+    .card p {
+        margin: 80px;
+    }
+
+    .card-image img {
+        width: 100%;
+}
+
+}
+</style>
+</html>
