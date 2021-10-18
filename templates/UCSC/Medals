@@ -1,0 +1,131 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+              <img src="https://2021.igem.org/wiki/images/5/56/T--UCSC--medals_header_gif.gif" alt="medal"/>
+              <h6> Medals </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section class="hero-modified">
+                <div class="card-modified"><a id="references">
+                    <h2> Bronze: </h2>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="bronze"></a>
+                    <h2> Deliverables </h2>
+                    
+                    <p> 1. Wiki - Here it is! </p>
+                    <p> 2. Our presentation video can be found<p2><a href="">here</a></p2></p>
+                    <p> 3. Our judging form can be found<p2><a href="">here</a></p2> </p>
+
+                    <h2> Attributions </h2>
+                    <p> To see what each member of the team has been working on this year, check out our<p1><a href="https://2021.igem.org/Team:UCSC/Attributions">Attributions</a></p1>page!</p>
+
+                    <h2> Project Description </h2>
+                    <p> Many food recalls due to STEC outbreaks have been traced back to the region surrounding Santa Cruz. Detection and prevention methods already exist that provide short term solutions and often are not paired together in a user-friendly way.</p>
+                    <p> Creating a gene targeting system that can prevent the phenotype of Stx2 to be expressed, and propagate this effect through an ongoing bacterial population reduces the need for a lot of involvement from farmers.</p>
+                    <p> Check out more specifics on our design and how PROGENIE came to be on our<p1><a href="https://2021.igem.org/Team:UCSC/Description">Project Description</a></p1>page! </p>
+
+                    <h2> Contribution </h2>
+                    <p> When working on the conjugation aspect of our project, we ran into the issue of plasmid incompatibility. See how we were able to pivot once we learned about incompatibility groups in F’ strains of E. coli by checking out our<p1><a href="https://2021.igem.org/Team:UCSC/Contribution">Contributions</a></p1>page! </p>
+                </div>
+            </section>
+            <section class="hero-modified">
+                <div class="card-modified"><a id="references">
+                    <h2> Silver: </h2>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="silver"></a>
+                    <h2> Engineering Success </h2>
+                    <p> Each intermediate step of our proof of concept required plasmid design and wet lab experiments to verify presence of antibiotic resistance genes that marked successful build. To learn more about our process, see our<p1><a href="https://2021.igem.org/Team:UCSC/Engineering">Engineering</a></p1>page! </p>
+
+                    <h2> Collaboration </h2>
+                    <p> We have collaborated with two iGEM teams throughout the iGEM season: IISER-K and UC Davis. Collaboration for our team has looked like holding virtual meetups over zoom to discuss broader ideas behind our respective projects, sharing material for educational outreach events, modeling talks, and wet lab assistance. Find out more on our<p1>Collaborations</p1>page!</p>
+
+                    <h2> Human Practices </h2>
+                    <p> From the beginning, food safety and better accessibility to solutions have been strong values for our team. Talking to researchers, farmers, and food processors helped us pivot our human practices approach to incorporate key players in the industry and understand areas in which food safety and treatment availability has been lacking. You can follow our Human Practices journey through our<p1><a href="https://2021.igem.org/Team:UCSC/Notebook">Notebook</a></p1>and<p1><a href="https://2021.igem.org/Team:UCSC/Human_Practices">Human Practices</a></p1>pages! </p>
+
+                    <h2> Proposed Implementation </h2>
+                    <p> After developing a successful proof of concept, the PROGENIE system can be programmed to target the Stx2 gene in the field. We have created a digital mock up for a detection device that would be used before the PROGENIE treatment is applied, making the detection AND treatment quick, easy, and effective. To learn more about the safety and constraints behind our full design, check out our<p1><a href="https://2021.igem.org/Team:UCSC/Implementation">Implementation</a></p1>page! </p>
+                </div>
+            </section>
+            <section class="hero-modified">
+                <div class="card-modified"><a id="references">
+                    <h2> Gold: </h2>
+                </div>
+            </section>
+                <div class="card"><a id="gold"></a>
+                    <h2> Integrated Human Practices </h2>
+                    <p> Through our own research we determined that the main source of STEC is from the gut of cattle, and wanted to see what the transmission pathway looks like from cow to leafy greens. We were left with many questions about who is responsible when STEC outbreaks occur, and who takes the damage in food recalls. We reached out to people from many different sectors of agriculture to get these questions answered, and understand more about where PROGENIE can fit in agriculture. Check out the our interviews<p1><a href="https://2021.igem.org/Team:UCSC/Human_Practices">here</a></p1>! </p> 
+
+                    <h2> Model </h2>
+                    <p> We designed population dynamics models using Python to better understand how PROGENIE will be spread through a mixed bacterial population; check out our<p1><a href="https://2021.igem.org/Team:UCSC/Model">Model</a></p1>page! </p> 
+
+                    <h2> Partnership </h2>
+                    <p> Due to the pandemic, IISER-K has not been able to get into the lab for a majority of the iGEM season. To help with their project, Namooste, dedicated members of our team have been working on csm6 protein characterization and expression. In exchange for wet lab assistance, our modeling team has been meeting periodically with the members of IISER-K with modeling experience to work on population dynamic modeling. To learn more about our partnership, visit our<p1><a href="https://2021.igem.org/Team:UCSC/Partnership">Partnership</a></p1>page! </p> 
+
+                    <h2> Proof of Concept </h2>
+                    <p> We have developed a proof of concept model using mCherry in non-toxic E. coli due to the safety concerns surrounding Shiga Toxin gene stx2. We can measure efficiency in targeting and eliminating mCherry expression because loss of fluorescence is a quantifiable factor. To see our full proof of concept, click<p1><a href="https://2021.igem.org/Team:UCSC/Proof_of_Concept">here</a></p1>1</p> 
+
+                </div>
+            </section>
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1><a href="#bronze"> Bronze </a></h1>
+                        <h1><a href="#silver"> Silver </a></h1>
+                        <h1><a href="#gold"> Gold </a></h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src=""/>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                                <li><a href=="#"><img src=""/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                            <u1 class="sci">
+                                  <li><a href=="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                  <li><a href=="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </u1>
+
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
