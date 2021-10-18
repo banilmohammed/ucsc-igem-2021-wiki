@@ -1,3 +1,8 @@
+{{UCSC}}
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
 <html>
     <div class="total-body">
         <section class="hero">
@@ -41,11 +46,11 @@
 vaccines that only confer immunity for a short period of time. This gave them a clear direction on the next steps they would have to take for a successful running model. 
 </p>
             </section>  
-            <section class="hero-modified">
-                <div class="card-modified"><a id="references">
-                    <h2> To learn about our project-long collaborative partnership with IISER-K,<p1>click this link!</p1></h2>
-                </div>
-            </section>
+            <section class="tag">
+                <div class="card"><a id="iiser_k_intro"></a>
+                    <h2> IISER Kolkata </h2>
+                    <p> To learn about our project-long collaborative partnership with the iGEM team at the Indian Institute of Science Education and Research - Kolkata, check out our<p1><a href="https://2021.igem.org/Team:UCSC/Partnership">Partnership</a></p1>page! </p>
+            </section>  
             <div class="aside">
                 <div class="aside-container">
                     <div class="item shark-3">
@@ -53,6 +58,7 @@ vaccines that only confer immunity for a short period of time. This gave them a 
                         <h1><a href="#about_uc_davis"> About UC Davis </a></h1>
                         <h1><a href="#uc_davis_educational_outreach"> Educational Outreach </a></h1>
                         <h1><a href="#uc_davis_modeling"> Modeling </a></h1>
+                        <h1><a href="#iiser_k_intro"> IISER K </a></h1>
                  
                     </div>
                 </div>
