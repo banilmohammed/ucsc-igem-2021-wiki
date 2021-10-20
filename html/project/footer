@@ -1,0 +1,53 @@
+{{UCSC}}
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/footer-css}}
+<html>
+             <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-2">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--ucsc_white_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--baskin_logo_white.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/33/T--UCSC--geneious_prime_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/39/T--UCSC--idt_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/2/29/T--UCSC--aether_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/93/T--UCSC--biolink_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/4/42/T--UCSC--benchling_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/c/cc/T--UCSC--biorender_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-4">
+                                <li><a href="https://twitter.com/ucsc_igem20?lang=en"><img src="https://2021.igem.org/wiki/images/9/9e/T--UCSC--twitter_page_icon.png"/></a></li>
+                                <li><a href="https://www.instagram.com/igemucsc/?hl=en"><img src="https://2021.igem.org/wiki/images/f/f2/T--UCSC--ig_icon.png"/></a></li>
+                                <li><a href="mailto:ucsc.igem.2021@gmail.com"><img src="https://2021.igem.org/wiki/images/3/3b/T--UCSC--email_icon.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+</html>
