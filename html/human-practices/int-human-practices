@@ -1,0 +1,247 @@
+{{UCSC}}
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+{{Template:UCSC/modalPopup}}
+{{Template:UCSC/integrated-human-practices-css}}
+{{Template:UCSC/integrated-human-practices-2-css}}
+<html>
+    <div class="total-body">
+        <section class="hero-gif-update">
+            <div class="hero-gif-update">
+               <img src="https://2021.igem.org/wiki/images/3/31/T--UCSC--hp_collaborations_header.gif" alt="handshake"/>
+               <h6> Integrated Human Practices </h6>
+            </div>
+        </section>
+        <section class="tag">
+          <div class="paragraph-styling">
+            <h2> Intro </h2>
+            <p> Our team recognises that to successfully combat STEC we needed to understand the food production pipeline inside out. Food production does not just impact the consumer, but also the businesses dedicated to packaging and distribution of produce. Because of this, we were curious about how individual ranches have been affected by food recalls, what measures are being used to protect cattle, and how well a new product or treatment would be received. </p>
+
+            <p> After preliminary research, we had conflicting viewpoints on whether our project should target cattle or produce in order to find the best way to eliminate STEC in its entirety. At this point we were also unsure about how to engineer a system to successfully solve the issue at hand. This led us to contact synthetic biologists, local farms and ranches, sanitation companies, agricultural pathogen researchers, and physicians throughout our project to make sure that every question or doubt would be answered by someone who has valuable insight on various aspects of the system. </p>
+          </div>   
+        </section>
+        <section>
+          <div class="interview-intro">
+             <h2> For details on our interviews, click the names underneath the photos! </h2>
+          </div>
+        </section>
+        <section class="tag">
+          <div class="paragraph-styling">
+            <h2> Inspiration for Progenie: </h2>
+            <p>How do we put our plan into action? </p>
+          </div>
+        </section>
+        <main class="main-content">
+            <div class="container">
+                <div class="people-sections-twos">
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/5/57/T--UCSC--amar_zarrinpar_headshot.png" alt="Amir Zarrinpar">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup1"> Amir Zarrinpar </a></p>
+                        <div id="modalPopup1" class="modal">
+                            <div class="modalContent">
+                                <h1> Amir Zarrinpar </h1>
+                                <p> Amir Zarrinpar (MD/PhD) is a practicing gastroenterologist and an assistant professor at the University of California, San Diego Department of Medicine. Dr. Zarrinpar sees patients with a distrubed digestive system and is involved in basic, translational, and clinical science on the role of the gut and the microbiome in obesity and metabolic disease. His research on gut health and the microbiome led him to study methods of altering the microbiome by reintroducing locally-sourced, but engineered gut microbes.</p>
+                                <p> We met with him to discuss methods of targeting and altering resident microbial communities. He mentioned the importance of vector design and choice with altering the gut microbiome within the lab setting and in real world applications. He also emphasized that lab strains of engineered bacteria are easily outcompeted in the environment and recommended methods around creating a niche, using phages, altering existing bacteria in that environment, or transitively introducing a conjugative donor microbe to conjugate DNA into neighboring cells. From our discussion with Dr. Zarrinpar, we learned the importance of vector design and methodology behind expressing a transgene in an environmental microbial community. This talk established the basis behind our proposed implementation and design practices behind Progenie.</p>
+
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/e/e3/T--UCSC--sternberg_lab.png" alt="Sam Sternberg and Leo Vo ">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup2"> Sam Sternberg and Leo Vo  </a></p>
+                        <div id="modalPopup2" class="modal">
+                            <div class="modalContent">
+                                <h1> Sam Sternberg and Leo Vo </h1>
+                                <p> Sam Sternberg and Leo Vo from Sternberg lab at Columbia University published a paper in May of 2021 about their CRISPR-guided transposase system INTEGRATE. In the process of researching CRISPR-guided mechanisms to use in our project, the INTEGRATE system stood out significantly. While designing our plasmids, we noticed parallels between their pSPAIN plasmid and the pSPIN plasmid we were trying to modify; after directly reaching out to the researchers they offered to send us an aliquot of their pSPAIN to use in our gene elimination experiments. Graduate student Vo provided technical advice about cloning spacer sequences into the autonomous plasmid and performing experiments to verify integration. Receiving support from this lab gives us reassurance that Progenie is headed in the right direction, and that our vision is achievable.    </p>
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+               </div>
+             </main>
+        <section class="tag">
+          <div class="paragraph-styling">
+            <h2> Hearing from Farmers:   </h2>
+            <p> What effects are field specialists seeing first hand? </p>
+          </div>   
+        </section>
+        <main class="main-content">
+            <div class="container">
+                <div class="people-sections-threes">
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/e/ea/T--UCSC--pomponio_ranch_square.jpg" alt="Pomponio Ranch">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup3"> Pomponio Ranch </a></p>
+                        <div id="modalPopup3" class="modal">
+                            <div class="modalContent">
+                                <h1> Pomponio Ranch </h1>
+                                <p> Pomponio Ranch is a local California ranch that has been raising beef and dairy cattle since the 1880's. Morgan Nicodemus, Pomponio Ranch's Administrative Assistant, specified more on general ranch practices and suggested treatment methods. </p>
+                                <p> When asked about current preventative measures, Nicodemus shared that most ranchers are required to vaccinate their cattle once or twice a year to maintain general health and protect herds from disease prior to the calving season. Most ranches in the area have been in service for years, making it unlikely for farmers to deviate from their current animal care routine.</p>
+                                <p>However this does not mean that ranchers are against new treatments. The method of delivery needs to be adapted to align with current cattle maintenance to be well received. Nicodemus encouraged our team to look into vaccinations or feed additives as a method of delivery, since farmers are already required to uphold these practices. </p>
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/9/97/T--UCSC--pacific_international_marketing.png" alt="Pacific International Marketing">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup4"> Pacific International Marketing </a></p>
+                        <div id="modalPopup4" class="modal">
+                            <div class="modalContent">
+                                <h1> Pacific International Marketing </h1>
+                                <p> Pacific International Marketing is a leafy green farm and distributor located in Salinas Valley, California. We reached out to this company to learn about logistics behind the foodborne pathogen testing that they currently use, to identify any parts that need to be improved upon in the food safety process. Food safety coordinator, Diego Vasquez, is in charge of implementing and overseeing preventative measures concerning foodborne pathogens including STEC. He mentioned that their company spends up to $800 per week to test for foodborne pathogens, confirming the need for cheaper testing procedures. Vasquez also taught us that a large amount of manual labor is required in order to have enough samples to confidently predict the likelihood of an outbreak. Hundreds of individual samples are taken and sent to an independent lab for molecular testing. Vasquez supported our team’s goal of creating a cheaper and more efficient way to test for STEC. </p>
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/8/83/T--UCSC--taylor_farms.png" alt="Taylor Farms">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup5"> Taylor Farms</a></p>
+                        <div id="modalPopup5" class="modal">
+                            <div class="modalContent">
+                                <h1> Taylor Farms </h1>
+                                <p> Taylor Farms is one of the world’s largest processors of leafy green vegetables. We wanted to get in contact with Taylor Farms in order to understand what action they take to prevent food recalls and outbreaks as a larger company. With the Taylor Farms’ base being located in Salinas, California, we had the opportunity to meet face-to-face with the chairman of produce safety, Drew McDonald.  Based on our previous interviews, we expected McDonald to reinforce the idea that cattle farms are the main source of STEC. Instead, we were surprised to learn that the transmission pathways of STEC remain unclear. Some theories he raised were that STEC may be indigenous in the soil, or that contamination may occur during product transportation. These theories seemed to be less feasible than the most supported theory of STEC transmission through cattle manure. In response to our goal of preventing outbreaks, he put us in contact with SmartWash Solutions, to further discuss our proposed treatment. </p>
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+               </div>
+             </main>
+        <section class="tag">
+          <div class="paragraph-styling">
+            <h2> Professional Opinion: </h2>
+            <p> Where do we fit in the industry?</p>
+          </div>   
+        </section>
+        <main class="main-content">
+            <div class="container">
+                <div class="people-sections-threes">
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/d/da/T--UCSC--vaxxinova_logo_update.png" alt="Vaxxinova">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup6"> Vaxxinova </a></p>
+                        <div id="modalPopup6" class="modal">
+                            <div class="modalContent">
+                                <h1> Vaxxinova </h1>
+                                <p> Vaxxinova is a vaccine company that aims to reduce disease in livestock. We met with Senior Technical Services Veterinarian Robert Rust to learn about what current treatments exist to tackle STEC. Due to the increase of HUS cases following STEC outbreaks in Argentina, Vaxxinova created an innovative autogenous vaccine that isolates and destroys the microorganism of interest, thus helping mitigate antimicrobial resistance. However, due to bioethical concerns and the extensive manual labor needed to vaccinate an entire cattle farm, implementing this treatment has proven to be extremely challenging because of the high cost of vaccination and lack of government support. Besides logistical issues, contamination most often occurs during processing rather than at the farms, meaning that if even one farmer decides not to vaccinate their cattle, STEC will continue to spread to vaccinated cattle at the processing plant, jeopardizing not only the health of consumers, but also disrupts the potential of having an efficient vaccination system. Rust reaffirmed that our project would be able to solve the issue of STEC contamination while also avoiding the technical and bioethical issues that arise with trying to implement the vaccine. </p>
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/a/af/T--UCSC--smartwash_update.png" alt="SmartWash Solutions">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup7"> SmartWash Solutions </a></p>
+                        <div id="modalPopup7" class="modal">
+                            <div class="modalContent">
+                                <h1> SmartWash Solutions </h1>
+                                <p> SmartWash Solutions is a food processing plant subsidized by Taylor Farms that is responsible for washing produce after harvest. They also have a chemical testing facility used to research new washing methods and products. We spoke to their Senior Research Consultant, Eric Wilhelmsen, and Director of Operations and Engineering, Chris McGinnis. We asked if they thought that implementing Progenie would be viable within the leafy green processing system. As one of the biggest processors of produce, talking to these experts would help give our team guidance to create a new technology and validate our Progenie system. They told us that our project only had one available window to realistically work and would have to reliably follow strict parameters: work within 3 hours of harvest, be UV resistant, and be heat stable. Our system would also have to be more efficient than the current bacterial spray that they apply at harvest. For these reasons, they expressed how this project would be difficult to implement in this industry and also cautioned us about past failures of bacteriophage treatments becoming resistant. Although we took their concerns into consideration, we also recognize that they are our competitors in the industry, and that their statements potentially held a bias. </p>
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/9/94/T--UCSC--birko_edit.jpg" alt="Birko Corporation">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup8"> Birko Corporation </a></p>
+                        <div id="modalPopup8" class="modal">
+                            <div class="modalContent">
+                                <h1> Birko Corporation </h1>
+                                <p> Birko Corporation is a producer and innovator of professional food safety products used for cleaning and sanitation. Considering how food safety has been emphasized over the years following significant recalls, we wanted to see how the producers of cleaning and sanitation products have been working to meet the needs of the industry. We met the Director of Technical Services under R&D, Elis Owens, to answer our questions. Owens explained that tracing the origin of STEC would be the key to our project; while STEC is found on produce, this is most probably due to the use of water supplies that are contaminated with animal feces. Current preventative measure is separation of cattle feedlots from agricultural fields and testing of irrigation water for E. coli. He cautioned us on our method of using phage infection, although phage works well in the lab environment, field applications can be expensive and demonstrated mixed results .  </p>
+                                <p> Although Elis Owens was concerned with STEC, he was deeply interested in the applications of Progenie to other food borne illnesses, such as <em>Listeria monocytogenes</em> and <em>Cyclospora cayetanensis</em>, helping us consider a broader scope for our system. </p>
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+               </div>
+             </main>
+        <section class="tag">
+          <div class="paragraph-styling">
+            <h2> Expert Advice on Pathogenesis:   </h2>
+            <p> How does it spread and how do we stop it?</p>
+          </div>   
+        </section>
+        <main class="main-content">
+            <div class="container">
+                <div class="people-sections-twos">
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/d/dd/T--UCSC--joji_muramoto_update.png" alt="Dr. Joji Muramoto">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup9"> Dr. Joji Muramoto </a></p>
+                        <div id="modalPopup9" class="modal">
+                            <div class="modalContent">
+                                <h1> Dr. Joji Muramoto </h1>
+                                <p> Joji Muramoto is an assistant adjunct professor and assistant Cooperative Extension specialist at UC Santa Cruz. Joji mainly studies fertility and soilborne disease management in organic strawberries and vegetables in coastal California. We wanted to get his opinion on the need for a product that specifically targets E. coli, as well as some insight on practices that are already in place to detect and treat E. coli contamination in plants. He shared that some farmers use a culture-based detection kit that can generally identify the presence of bacteria, but that further molecular diagnostics have to be paired with the kit. This reinforced the idea that our Progenie system should be paired with a detection device that can specifically identify Shiga Toxin, so that the phage treatment is actually worthwhile. He agreed that E. coli is a prominent threat to food safety, and shared that typically animal manure is the main source of E. coli that ends up in produce such as leafy greens either by direct contact or through contaminated water. Finally, in order to effectively reduce the spread of E. coli bacteria in agricultural settings, Joji encouraged us to tailor our working model to treat STEC at its source.   </p>
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/9/9f/T--UCSC--gregory_gilbert.png" alt="Gregory Gilbert">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup10"> Gregory Gilbert </a></p>
+                        <div id="modalPopup10" class="modal">
+                            <div class="modalContent">
+                                <h1> Gregory Gilbert </h1>
+                                <p> Gregory Gilbert is a Professor of Environmental Studies and the current Robert Headly Presidential Chair for Integral Ecology and Environmental Science at the University of California Santa Cruz. His research focuses on exploring how evolutionary ecology could help in understanding what factors go into maintaining biological diversity and also address important environmental problems. As an expert of environmental studies, we wanted to learn more about the transmission pathways of STEC and how farms maintain testing regimens in the status quo that follow water and safety guidelines under organizations such as LGMA. He shared that sampling for STEC once it is out in fields and irrigation systems is expensive and difficult to get comprehensive results. The best way to manage STEC is to be able to detect at the source and link that we control at the source. This helped us decide that we wanted our system, Progenie, to not only detect but also proactively inhibit STEC right at its source to break this entire transmission pathway. </p>
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+               </div>
+             </main>
+        <section class="tag">
+          <div class="paragraph-styling">
+            <h2> Implementations in Healthcare:   </h2>
+            <p> How can we make a difference outside the agricultural sector? </p>
+          </div>   
+        </section>
+        <main class="main-content">
+            <div class="container">
+                <div class="people-sections-single">
+                    <div class="person">
+                        <div class="pic-fill-ins">
+                            <img src="https://2021.igem.org/wiki/images/e/e1/T--UCSC--dr_rodems.png" alt="Dr. Jeannine Rodems">
+                        </div>
+                        <p class="person-name"><a href="#modalPopup11"> Dr. Jeannine Rodems </a></p>
+                        <div id="modalPopup11" class="modal">
+                            <div class="modalContent">
+                                <h1> Dr. Jeannine Rodems </h1>
+                                <p> Dr. Jeannine Rodems is a family doctor at Santa Cruz Primary Direct Care who provides tailored care to her patients and is extremely experienced in determining the best treatment options for pathogenic bacteria. Initially, we discussed targeting STEC, but also addressed our concerns for antibiotic resistance, which led to the conversation about the relevance of alternative treatments; we were curious to learn if Progenie could be applied outside of food safety. Some pathogens of interest that we found to be more prevalent in the hospital setting included Vibrio cholerae, Pseudomonas aeruginosa, and Cronobacter Sakazakii; we wanted to see if these were feasible targets given our current system and her expertise in the field. She suggested that targets such as Cholera and Pseudomonas are really important to treat as they pose serious threats to the local community. Targeting these bacteria will allow us to make a promising contribution to the healthcare community with the guidance and support of Dr. Rodems.  </p>
+                                <a href="#captains" class="modalClose">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+              </div>
+        <section class="tag">
+          <div class="paragraph-styling">
+            <h2> Next Steps for Progenie  </h2>
+            <p> While taking testimony from potential stakeholders and agricultural pathogen researchers, it became apparent that the issue of targeting STEC effectively is multi-faceted; there are disagreements on who is responsible for preventing food contamination within the chain of transmission, and solutions such as cattle vaccines already exist to slow the spread of STEC through manure. This led us to reconsider the scope of our project with hopes to find a novel solution that could realistically be applied in the real world. Luckily, our plan to disrupt <em>stx2</em> based on a specific guide sequence can be altered to target other genes, allowing the impact of our project to expand beyond one foodborne pathogen. A further application of Progenie that we want to explore is targeting and eliminating antibiotic resistance genes. This system would be adapted to gram-negative bacteria, which have a similar conjugation machinery to STEC, making the propagation and conjugation of Progenie replicable. See more about the specific bacteria we hope to target<p1><a href="https://2021.igem.org/Team:UCSC/Future_Directions?">here!</a></p1></p>
+
+
+          </div>   
+        </section>
+          </div>
+       </main>
+    </div>
+</html>
