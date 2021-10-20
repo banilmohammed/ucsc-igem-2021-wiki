@@ -1,0 +1,317 @@
+{{UCSC}}
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+{{Template:UCSC/footer-css}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+              <img src="https://2021.igem.org/wiki/images/3/35/T--UCSC--project_model_header.gif" alt="spinning planet"/>
+              <h6> Model </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section class="tag">
+                <div class="card"><a id="overview"></a>
+                    <h2> Overview </h2>
+                    <p> Progenie is introduced to a prokaryotic population via phage then spreads throughout that population via bacterial conjugation, eliminating the target gene from the genome of each cell as it spreads. The success of Progenie is wholly dependent on the extent of that secondary spread. ​​Because of this, we developed a statistical model of the spread of φMINTO through a population of <em>mcherry</em>-expressing <em>E. coli</em>. We started with an SEIR model, then modified it to reflect the representative parts and dynamics of our target population.  </p>
+
+                    <p> Our modeling goals:</p>
+                    <u1>
+                       <li>  1. Establish optimal parameters that must be met for Progenie spread.</li>
+                       <li>  2. Quantify the proliferation of Progenie in a target mixed population.</li>
+                       <li>  3. Understand the timescales in which Progenie acts. </li>
+                    </u1>
+                  <p><p2> Based on our initial model runs, we conclude that Progenie can successfully invade, propagate, and eliminate the <em>mcherry</em> gene from populations of <em>E. coli</em> in laboratory settings. </p2></p>
+
+                    <p> As this first model was run before we could test our infection and conjugation mechanisms experimentally, the values for each parameter used in this run were gathered from relevant literature. As we collect data in future wet lab experiments, we will iteratively adjust those parameter values and improve our model.   </p>
+
+                    <p> Insights we gain from this model will be used to further inform our experimental design as we shift from the mCherry towards using Progenie in real-world applications.   </p>
+
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="seir_model"></a>
+                    <h2> Our model is based on an SEIR model </h2>
+                    <p> This model is an adaptation of an<p1><a href="https://2021.igem.org/Team:UCSC/Glossary#seir">SEIR compartment model</a></p1>, a model that is frequently used in epidemiology to visualize disease transmission. Each compartment represents a category of homogeneous entities. Individuals flow between compartments at specified rates, often influenced by interactions with other compartments. These rates are usually determined through clinical study, experiment, or literature review on the specific pathogen and situation.</p> 
+
+                    <p> In the standard SEIR model, there are 4 compartments, each representing the proportion of the population that fits the following categories: </p> 
+
+                    <u1>
+                       <li><p2>S:</p2> Individuals that have not yet been infected with the pathogen, and are thus Susceptible (<p2>S</p2>)</li>
+                       <li><p2>E:</p2> Individuals that have been Exposed (<p2>E</p2>) to the pathogen, but are not actively contagious.</li>
+                       <li><p2>I:</p2> Individuals that have been Infected (<p2>I</p2>) with the pathogen and can transmit it to others.</li>
+                       <li><p2>R:</p2> Individuals that were Infected but have Recovered (<p2>R</p2>) and are no longer infectious.</li>
+                    <u1>
+
+                    <p> The SEIR compartment model is built to determine differential equations for the rate of change of each compartment. Those equations are then used to run simulations of the pathogen’s spread throughout a population; the simulation can be used to determine if a pathogen will invade a population or die out, and how quickly, under a variety of circumstances. </p> 
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="compartment_model"></a>
+                    <h2> Progenie mCherry Compartment Model </h2>
+                    <p> Although Progenie is not an infectious disease, the ability of F+, F’, and HFR cells to conjugate φMINTO to F- cells makes our plasmid spread similar to an infectious agent. For more information on conjugation and F-status, see our <p1><a href="https://2021.igem.org/Team:UCSC/Conjugation?">Conjugation</a></p1>. So, the SEIR model basis is a relevant system to use to model the transmission of our mobiliable plasmid throughout a mixed bacterial population.   </p> 
+                    <p> In our experimental chromosomally-integrated mCherry model, we modified the standard SEIR model described above into a three-compartment model. The new compartments are: </p>
+
+                    <u1>
+                       <li><p2>S:</p2> DH5a-mcherry cells are conjugative recipients and are thus Susceptible (<p2>S</p2>) to receiving φMINTO through conjugation. </li>
+                       <li><p2>I:</p2> DH5a F’-mcherry-eliminated cells are conjugative donors that were transfected with φMINTO. They can conjugate φMINTO to susceptible recipients and thus make up the Infectious (<p2>I</p2>) group. </li>
+                       <li><p2>E:</p2>  Susceptible DH5a-mcherry cells that received φMINTO by conjugation and lose mCherry fluorescence; these<p1><a href="https://2021.igem.org/Team:UCSC/Glossary#transconjugant">transconjugants</a></p1>lack conjugative ability, thus are simply Exposed (<p2>E</p2>). </li>
+                       <li> There is no Recovered (<p2>R</p2>) compartment in this model, as we expect that any recipient cell of our gene-elimination machinery will not lose the effect of φMINTO.</li>
+                    <u1>
+
+                    <p> And the rates that change the composition of those compartments are: </p>
+
+                    <u1>
+                       <li><p2>C:</p2> rate of conjugation </li>
+                       <li><p2>B:</p2> rate of cell “birth” </li>
+                       <li><p2>μ:</p2> rate of natural cell death </li>
+                       <li><p2>α:</p2> rate of Progenie-accelerated cell death </li>
+                    <u1>
+
+                    <p> In this model, we expect that cells from I conjugate φMINTO into cells from S, causing those individuals to leave the S group and join the E group. For Progenie to be completely successful, the S group must be eliminated, leaving a population made up of only E and I. </p>
+
+                </div>
+            </section>
+            <section>
+                <div class="card-image">
+                      <div class="compartment-model">
+                         <img src="https://2021.igem.org/wiki/images/b/bc/T--UCSC--compartment_model.png"/>
+                      </div>
+                         <h2> Figure 1: Compartment model depicting the transmission dynamics of the &#966;MINTO plasmid in a bacterial population. Each compartment represents the population count of a celltype. The red compartment S represents the count of cells that are susceptible to conjugation (F-), contain the target gene, and do not yet carry &#966;MINTO. In our mCherry model, these are the DH5&#945;--<em>mcherry</em> cells. The top purple box I represents the count of cells initially transfected with &#966;MINTO and that can spread the plasmid to S cells via conjugation (F+, F’, or HFR). The purple box E represents the count of transconjugant cells, having received &#966;MINTO through bacterial conjugation but unable to conjugate the plasmid to others. Thick arrows are the rate of movement of individuals from one compartment into another. Thin arrows show the role one compartment plays in the changing of another compartment. </h2>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="assumptions"></a>
+                    <h2> Assumptions </h2>
+                    <p> The most important rate of the model is the rate of conjugation. This rate is highly variable, depending on the relatedness of the species interacting, cell density, mating time, plasmid size, and many environmental conditions [<a href="#references">1</a>]. In a study by Alderliesten et. al, the highest and lowest frequencies of conjugation differed by 11 orders of magnitude. With such fluctuation, we could not expect a computational model to be relevant for all instances of Progenie. In our experimental “mixed” culture, all cells are only DH5a and DH5a F’ E. coli; in future applications in the environment, a population will include a wide variety of species. Thus, this computational model is tailored to our mCherry experiments involving conjugation between strains of E. coli, rather than future applications to different pathogens across mixed-cultures of varying strain and species composition.  </p>
+
+                    <p> For our model, we make the following assumptions: </p>
+
+                    <u1>
+                       <li>  1. All cells in the system start either as an F- cell susceptible to conjugation or an infected F’ conjugative donor cell </li>
+                       <li>  2. The initial Infected population corresponds to the initial phage dosage</li>
+                       <li>  3. The liquid culture is homogeneous </li>
+                       <li>  4. The birth rate is exponential and limited by a carrying capacity </li>
+                       <li>  5. One <em>E. coli</em> generation represents a doubling time of 20 minutes </li>
+                       <li>  6. There is a constant death rate for each compartment </li>
+                       <li>  7. Conjugative recipients do not become conjugative donors  </li>
+                       <li>  8. Conjugation occurs with an equal chance into any susceptible F- cell </li>
+                       <li>  9. Any cell containing the target gene that is afflicted with Progenie has the target gene irreversibly disabled </li>
+                    </u1>
+
+                    <h2> Variables: </h2>
+                    <table>
+                        <tr>
+                            <th> <p2>K</p2> </th>
+                            <th> Number of cells for a carrying capacity </th>
+                        </tr>
+                        <tr>
+                            <th> <p2>S</p2> </th>
+                            <th> Number of cells in the Susceptible population </th>
+                        </tr>
+                        <tr>
+                            <th> <p2>I</p2> </th>
+                            <th> Number of cells in the Infected population </th>
+                        </tr>
+                        <tr>
+                            <th> <p2>E</p2> </th>
+                            <th> Number of cells in the Exposed population </th>
+                        </tr>
+                        <tr>
+                            <th> <p2>N</p2> </th>
+                            <th> Sum of all cells (<p2>I</p2>, <p2>S</p2>, <p2>E</p2>) in the population if modeling carrying capacity, else 0 </th>
+                        </tr>
+                    </table>
+                             
+                    <p> Depending on if we model using a carrying capacity or perpetual exponential growth, N may be the sum of all cells in the population, else <p2>N</p2> is 0 where carrying capacity is irrelevant to growth. </p>
+
+                    <h2> Parameters: </h2>
+                    
+                    <table>
+                        <tr>
+                            <th> <p2>B</p2> </th>
+                            <th> "Birth" rate </th>
+                        </tr>
+                        <tr>
+                            <th> <p2>C</p2> </th>
+                            <th> Conjugation rate </th>
+                        </tr>
+                        <tr>
+                            <th> <p2>μ</p2> </th>
+                            <th> Death rate of susceptible cells (natural) </th>
+                        </tr>
+                        <tr>
+                            <th> <p2>&#945;</p2> </th>
+                            <th> Death rate of infected cells (possibly accelerated) </th>
+                        </tr>
+                    </table>
+
+
+                    <p> Using a series of formulas we derive rates for our model and plug in literature-derived constants. Converting from the exponential function to an ordinary differential equation, we can derive a formula to determine the percent change per generation from a doubling time in generations: </p>
+
+                    <div class="subcaption-edit">
+                       <img src="https://2021.igem.org/wiki/images/c/c2/T--UCSC--rate_eqn_colored.png">
+                    </div>
+
+                    <p> From a generational percent change, we can determine a rate as follows: </p>
+
+                    <div class="subcaption-edit">
+                       <img src="https://2021.igem.org/wiki/images/b/b7/T--UCSC--percent_changed.png">
+                    </div>
+
+                    <p> Following our assumption that <em>E. coli</em> doubling time is 20 min when not limited by nutrients or space, we set our generational change as 20 min, as such the percent increase in cells per generation is 1.0 (100%) and the birth rate (B) is 0.693. Following a similar procedure, we convert the constant death rate (mu) of 2.7% per generation in the absence of the SOS response to a rate of 0.0266. Alpha may vary from mu as the death rate of cells with the Progenie system may die at a faster rate or grow slower [<a href="#references">2</a>]. </p>
+                    <h2> Equations: </h2>
+                    <div class="subcaption-edit">
+                        <img src="https://2021.igem.org/wiki/images/1/11/T--UCSC--seir_equations-updated.jpg">
+                    </div>
+                </div>
+
+            </section>
+            <section class="tag">
+                <div class="card"><a id="results"></a>
+                    <h2> Results </h2>
+                    <p> Following the aforementioned assumptions and in the context of our experiments, we simulate 8 hours (24 generations) runs of Progenie. Interactions between cells follow as depicted in the figure with birth and death rates described above. Note that our wet lab experiments are not a mixed-culture as we are only working with two strains of NEB DH5DH5&#945; cells: F- and F’. Model parameters we may alter include initial population sizes of I and S, the death rate of cells containing &#x3C6;MINTO (alpha), carrying capacity (K), and conjugation rate (C).   </p>
+
+                    <p> Our code is available<p1><a href="https://github.com/igemsoftware2021/UCSC">here</a></p1></p>
+                </div>
+             </section>
+             <section>
+                <div class="card-image">
+                    <img src="https://2021.igem.org/wiki/images/a/a2/T--UCSC--base_raw.png"/>
+                        <h2> Figure 2: Graph of raw cell counts with SIE lines </h2>
+                </div>
+             </section>
+             <section>
+                <div class="card-image">
+                   <img src="https://2021.igem.org/wiki/images/1/12/T--UCSC--base_norm.png"/>
+                        <h2> Figure 3: Base model simulation of normalized cell count SIE compartments using literature-derived parameters. </h2><a id="fig_3"></a>
+                </div>
+             </section>
+             <section>
+                <div class="card-image">
+                    <img src="https://2021.igem.org/wiki/images/7/74/T--UCSC--sensitivity_log.png"/>
+                        <h2> Figure 4: Sensitivity analysis of varying conjugation rates on the number of generations for Progenie to reach the majority of the population. </h2><a id="fig-4"</a>
+                </div>
+             </section>
+             <section>
+                 <div class="card-image">
+                    <img src="https://2021.igem.org/wiki/images/c/c4/T--UCSC--low_c_norm_8hr.png"/>
+                    <img src="https://2021.igem.org/wiki/images/d/d2/T--UCSC--low_C_norm_10hr.png"/>
+                        <h2> Figures 5 & 6: Graphs of normalized dynamics with a low conjugation rate (C=1e-10) at 8 and 10 hours </h2><a id="fig_7"></a>
+                 </div>
+             </section>
+             <section>
+                 <div class="card-image">
+                    <img src="https://2021.igem.org/wiki/images/c/c2/T--UCSC--normalized_dynamics_low_conj_rate.png"/>
+                        <h2> Figure 7: Graph of normalized dynamics with low conjugation rate and high cell death for &#966;MINTO-carrying cells (I and E). </h2><a id="fig_7"></a>
+                 </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="conclusions"></a>
+                    <h2> Conclusions </h2>
+                    <p><p2> We established the range of parameters that must be met for Progenie success. </p2></p>
+
+                    <p> Using a birth, death, and conjugation rate derived from literature, our model demonstrated the success of Progenie to fully propagate into a susceptible population. [Fig <a href="#fig_3">3</a> & <a href="#fig_4">4</a> ]</p>
+
+                    <p> We then varied conjugation rates to determine the lower bounds of conjugation efficiency that must be required for Progenie success. We measure success as the Exposed population reaching a relative majority in the timeframe of 8 hours. Modeling 16 conjugation rates across 4 values for carrying capacity, we found that a conjugation rate of 1e-10 is required for our system to succeed for reasonable carrying capacities. [Fig <a href="#fig_5">5</a>] </p>
+
+                    <p> At lower carrying capacities and conjugation rates, Progenie does not have sufficient time to spread fully in a population. We modeled this using a conjugation rate of 1e-10, where 8 hours was not sufficient for E to reach a relative maximum; when the model timeframe was increased to 10 hours, we found success. [Fig <a href="#fig_6">6</a>]</p>
+
+                    <p> Using our base model, we then varied parameters to explore necessary values for minimum cell death and initial infectious population. We increased the death rate of cells containing &#966;MINTO by over a magnitude of the literature derived death of 2.7% and found that in this model as long as cell death for the infectious population is under 28% per generation, Progenie would succeed within the 8 hour time frame. By varying the initial infectious cell population, we found that the ratio of donor : recipient cells is 3:1e10. This means that even a smaller phage dose will ensure Progenie success in the system. </p>
+
+                    <h2> Progenie proliferated in our simulated mixed population. </h2>
+                    <p> Our models demonstrate that Progenie will be successful in an experimental setting as the parameters at which Progenie fails is beyond what can be expected in normal use cases. Across the range of parameters we tested, Progenie either fully propagates to 99.99+% of the population or is unable to reach an inflection point and is lost in the system. The 8 hour cutoff means that we don’t always fully simulate and visualize the system to steady-state, but additional tests to 100 generations demonstrate that Progenie either fully proliferates or is lost.  </p>
+
+                    <p> The simulation depicted in [Fig <a href="#fig_7">7</a>] involves lower than expected conjugation rates and higher than expected death rate to demonstrate a possible scenario of Progenie failing to fully propagate with the &#966;MINTO exposed population outcompeted by the still susceptible population. Our simulations with biologically relevant parameters maintain that Progenie will be successfully proliferated.  </p>
+
+                    <h2> How long it takes Progenie to succeed is heavily dependent on the conjugation rate. </h2>
+                    <p> From our simulations depicted in [Fig <a href="#fig_5">5</a>] and our conclusions from the range of conjugation efficiencies, we determine that Progenie is effective in the space of 22 generations, or roughly 7.5 hours. Progenie may reach a majority in fewer generations, but generally within the first 8 hour period is when Progenie acts within a system. Beyond this time point, growth and spread of Progenie is constrained by carrying capacity. </p>
+
+                    <h2> Summary and Future Directions: </h2>
+                    <p> Our mathematical model simulating Progenie with biologically-relevant, literature-derived parameters supports that Progenie will be successful in propagating in a mixed population of cells within a reasonable timeframe. </p>
+
+                    <p> We first simulated Progenie with relevant parameters and discovered that the demonstrates  success in Progenie proliferation. We then tested a range of parameters including initial population of conjugative donors, death rate, carrying capacity, and conjugation rate and found that <p2>Progenie success is robust to variation in parameters</p2>. Progenie still succeeds with a magnitude higher death rate, a starting population of 3e-08% conjugative donors, and across varying carrying capacity and conjugation rates. </p>
+
+                    <p> In the future, we plan to expand our model to incorporate more compartments involving varying cell types and F-status. This will allow us to more accurately model applications within a more complicated environment. We may explore additional scenarios in which recipients may become conjugative donors or that the initial infectious population may lose &#966;MINTO. Nonetheless, from the robustness and effectiveness of Progenie in our current simulations, we expect Progenie will be applicable and successful in varied situations.</p>
+                </div>
+            </section>
+            <section class="tag hero-modified">
+                <div class="card-modified"><a id="references">
+                    <h2> References: </h2>
+                </div>
+            </section>
+            <section class="tag subpage-selector">
+                <div class="card-modified">
+                           <nav>
+                               <ul class="subpage-list">
+                                 <li><a href=" https://doi.org/10.1186/s12866-020-01825-4"><button> [1] Effect of Donor-Recipient Relatedness on the Plasmid Conjugation Frequency: A Meta-Analysis. </button></a></li>
+                                 <li><a href="https://doi.org/10.1016/j.cub.2010.04.045"><button> [2] Robust growth of Escherichia coli </button></a></li>
+                               </ul>
+                           </nav>
+                </div>
+            </section> 
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1><a href="#overview"> Overview </a></h1>
+                        <h1><a href="#seir_model"> SEIR Model </a></h1>
+                        <h1><a href="#compartment_model"> Compartment Model </a></h1>
+                        <h1><a href="#assumptions"> Assumptions </a></h1>
+                        <h1><a href="#results"> Results </a></h1>
+                        <h1><a href="#conclusions"> Conclusions </a></h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+             <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-2">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--ucsc_white_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--baskin_logo_white.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/33/T--UCSC--geneious_prime_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/39/T--UCSC--idt_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/2/29/T--UCSC--aether_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/93/T--UCSC--biolink_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/4/42/T--UCSC--benchling_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/c/cc/T--UCSC--biorender_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-4">
+                                <li><a href="https://twitter.com/ucsc_igem20?lang=en"><img src="https://2021.igem.org/wiki/images/9/9e/T--UCSC--twitter_page_icon.png"/></a></li>
+                                <li><a href="https://www.instagram.com/igemucsc/?hl=en"><img src="https://2021.igem.org/wiki/images/f/f2/T--UCSC--ig_icon.png"/></a></li>
+                                <li><a href="mailto:ucsc.igem.2021@gmail.com"><img src="https://2021.igem.org/wiki/images/3/3b/T--UCSC--email_icon.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
