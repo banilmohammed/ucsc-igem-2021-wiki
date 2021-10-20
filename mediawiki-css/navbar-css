@@ -1,0 +1,232 @@
+{{Template:UCSC/fonts}}
+{{Template:UCSC/root}}
+
+<html>
+<style>
+/* resize logo text */
+#progenie-logo{
+    width: 10rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* default header stuff */
+header {
+    font-size: 22px;
+    line-height: 32px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-light-purple);
+    word-wrap: break-word !important;
+}
+
+/* styles for chebckboxes */
+.toggle, [id^=drop] {
+    display: none;
+}
+
+/* logo styles */
+#logo {
+    display: block;
+    padding: 0 30px;
+    float: left;
+}
+
+/* hamburger menu */
+#main-toggle {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.nav-icon {
+    background: white;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+}
+
+.nav-icon:before, .nav-icon:after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.nav-icon:before {
+    top: 5px;
+}
+
+.nav-icon:after {
+    top: -5px;
+}
+
+/* desktop view navbar */
+.top-nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.top-nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 3;
+}
+
+.top-nav ul li {
+    background-color: var(--clr-light-purple);
+    margin: 0;
+    float: left;
+    
+}
+
+.top-nav a {
+    display: block;
+    padding: 0 20px;
+    color: white;
+    font-family: var(--ff-header);
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+
+/* change color on hover for sub pages of navbar */
+.top-nav ul li ul li:hover {
+    background-color: var(--clr-dark-purple);
+}
+
+/* hide all subpages */
+.top-nav ul ul{
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+/* subpages within a dropdown */
+.top-nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+.top-nav ul ul li a {
+    font-family: Century Gothic;
+    font-size: 20px;
+}
+
+/* subpage of a subpge in dropdown */
+.top-nav ul ul  ul li  {
+    position: relative;
+    top: -61px;
+    left: 200px;
+}
+
+.top-nav ul ul ul ul li {
+    position: relative;
+    top: -60px;
+}
+
+.top-nav ul li:hover>ul {
+    display: inherit;
+}
+
+li>a:after {
+    content " +";
+}
+
+li>a:only-child:after {
+    content: "";
+}
+
+/* mobile navbar */
+@media screen and (max-width: 768px) {
+    .top-nav {
+        margin: 0;
+    }
+
+    .top-nav ul {
+        float: none;
+    }
+
+    .toggle+a, .menu {
+        display: none;
+    }
+
+    .toggle{
+        display: block;
+        background-color: var(--clr-light-purple);
+        padding: 0 20px;
+        color:  white;
+        font-size: 20px;
+        text-decoration: none;
+        line-height: 60px;
+        border: none;
+    }
+
+    .toggle:hover {
+        background-color: var(--clr-dark-purple);
+    }
+
+    [id^=drop]:checked+ul {
+        display: block;
+    }
+
+    .top-nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .top-nav ul ul .toggle,
+    .top-nav ul ul a {
+        padding: 0 40px;
+    }
+
+    .top-nav ul ul ul a {
+        padding: 0 80px;
+        /* third tier background color */
+        background-color: orange;
+    }
+
+    .top-nav ul li ul li .toggle,
+    .top-nav ul ul a {
+        /* second tier background color */
+        background-color: brown;
+    }
+
+    .top-nav ul ul{
+        float: none;
+        position: static;
+        color: white;
+    }
+
+    nav ul ul li:hover>ul,
+    nav ul li:hover>ul {
+        display: none;
+    }
+
+    .top-nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .top-nav ul ul ul li {
+        position: static;
+    }
+}
+</style>
+</html>
