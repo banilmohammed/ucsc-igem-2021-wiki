@@ -1,0 +1,207 @@
+{{UCSC}}
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+{{Template:UCSC/footer-css}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+            <img src="https://2021.igem.org/wiki/images/3/35/T--UCSC--planet.gif" alt="spinning planet"/>
+            <h6> Partnership </h6>
+        </section>
+        <section class="tag">
+          <div class="paragraph-styling">
+            <h2> About IISER Kolkata </h2><a id="about_iiser_kolkata"></a>
+            <p> Detection and elimination of cattle-related pathogens are two of the main aspects of our project, Progenie, and that of another iGEM team, Namooste. The Indian Institute of Science Education and Research Kolkata (IISER-K)’s iGEM team, located in West Bengal, India, is working on project Namooste. Namooste’s goal is to detect and vaccinate against bovine mastitis, a deadly disease caused by <em>Staphylococcus aureus</em> that afflicts cattle. The SARS-CoV-2 pandemic has limited Namooste’s access to a wet lab, so Progenie supports the Namooste project by conducting experiments aimed at developing a real-time colorimetric testing kit consisting of a small RNA sensor for early detection and diagnosis of subclinical mastitis. In return, members of the IISER-K iGEM team shared their experience in mathematical modeling in both Python and Matlab’s SimBiology to help develop a computational model of how Progenie will behave in the environment. </p>
+
+            <p> Scroll down to learn more about our wet lab and dry lab collaborations! </p>
+          </div>   
+        </section> 
+        <section>
+                <div class="card-image">
+                         <img src="https://2021.igem.org/wiki/images/b/bc/T--UCSC--collab_logos_updated.png"/>
+                </div>
+        </section>
+        <section class="tag subpage-selector-edit">
+                <div class="card-modified-edit">
+                           <nav>
+                               <ul class="subpage-list-int">
+                                 <li><a href="https://2021.igem.org/Team:UCSC/Partnership#wetlab_start"><button> Wet Lab </button></a></li>
+                                 <li><a href="https://2021.igem.org/Team:UCSC/Partnership-Dry-Lab#drylab_start"><button> Dry Lab </button></a></li>
+                               </u1>
+                           </nav>
+                </div>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div><a id="wetlab_start"></a>
+            <section class="tag">
+                <div class="card"><a id="detection_of_bovine_mastitis"></a>
+                    <h2> Detection of Bovine mastitis </h2>
+
+                    <p> The IISER-K iGEM team, Namooste, aims to reduce the burden of bovine mastitis and to improve cattle health by developing a cost effective detection method as well as an antibiotic-free solution for bovine mastitis in dairy farms. Thus, Progenie conducted certain synthetic biology experiments for Namooste to further their progress on developing an easy-to-use device for detection of bovine mastitis.  </p>
+
+                    <p> Namooste’s device design has two main aspects: nucleic acid detection using an RNA-guided CRISPR system, known as SHERLOCKv2, and a colorimetric µPAD detection device. Progenie works directly with SHERLOCKv2 in order to optimize the system using the novel signal enhancer, Csm6. </p>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="rna_detection"></a>
+                    <h2> RNA Detection Using SHERLOCKv2 and Csm6  </h2>
+
+                    <p> The SHERLOCKv2 platform allows for rapid nucleic acid detection and elimination using Cas13, a class 2 type IV CRISPR-Cas effector. Nucleic acids can be detected by Cas13 upon recognition of a target RNA sequence, which activates non-specific RNase activity that degrades fluorescently-labeled RNA reporters; cleavage of the reporters results in fluorescence. The signal is amplified by the inclusion of CRISPR type III effector nuclease Csm6.  </p>
+
+                    <p> Cas13a, an efficient RNA-reporter cleaver and the one used in SHERLOCKv2, preferentially cuts between an adenine and a uracil to produce cleavage products consisting of adenines terminated with a 2’,3’-cyclic phosphate (A>p) [<a href="#references">1</a>]. Oligoadenylates (OAs) with 2’,3’-cyclic phosphate ends are common signaling molecules in various pathways, such as in the Csm effector pathway in type III CRISPR-Cas systems [<a href="#references">2</a>].  </p>
+
+
+                    <p> Similar to the type IV CRISPR-Cas system that includes Cas13a, Cas proteins  in the Csm effector pathway use crRNA to fight invading nucleic acids. The Cas proteins assemble into a complex and use Cas10 to find and destroy invader sequences. Cas10 also exhibits non-specific cleavage abilities, like Cas13a, that result in cyclic oligoadenylate-signaling molecules (cOAs) that activate a secondary effector molecule Csm6 [<a href="#references">3</a>]. Upon activation, Csm6 non-specifically cleaves single stranded RNA (ssRNA) in order to enhance nucleic acid destruction [<a href="#references">4</a>].   </p>
+
+
+                    <p> Even though Csm6 activation in vivo is mediated by cyclic adenylates produced by Cas10, Kazlauskiene et al. [<a href="#references">3</a>] show that linear A>p (Cas13a cleavage products) are also capable of activating Csm6. SHERLOCKv2 exploits this ability in order to amplify signal detection by cutting more fluorescent reporters, resulting in more fluorescence upon detection of the target sequence.   </p>
+
+                </div>
+            </section>
+            <section>
+                <div class="card-image">
+                         <img src="https://2021.igem.org/wiki/images/f/fc/T--UCSC--csm6_enhancement_sherlock.png"/>
+                         <h2> Recognition of a target sequence activates Cas13, allowing it to non-specifically cleave fluorescently-labeled RNA reporters. The cleavage products are linear A>p that can activate Csm6, resulting in signal amplification by additional non-specific cleavage of the reporters. </h2>
+                </div>
+            </section>
+            <section>
+                <div class="card-cutoff">
+                    <p> However, the Csm6 protein has not been highly characterized in the context of the SHERLOCKv2 system nor in activation by linear A>p. Thus in order to develop a highly-specific detection method for bovine mastitis using Cas13 from SHERLOCKv2, our team will characterize the Csm6 protein using different activators with a 2’,3’- cyclic phosphate end at varying concentrations as well as Csm6 protein sequences from different species.   </p>
+                </div>
+            </section>
+            <section class="hero-modified">
+                <div class="card-modified"><a id="protein_production"></a>
+                    <h2> Methods </h2>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card">
+                    <h2> Production and Purification of Csm6 </h2>
+                    <p> Among the different species that naturally express the Csm effector pathway, their Csm6 proteins vary in their ability to be activated by linear A>ps. Gootenberg et al. [<a href="#references">1</a>] showed that Csm6 proteins from Enterococcus italicus had the highest level of activity when activated by linear A>p Cas13a cleavage products, when compared to Csm6 from <em>Thermus Thermophilus</em> and <em>Lactobacillus salivarius</em>. Additionally, Csm6 from <em>Streptococcus tuberculosis</em> was shown to have sufficient activation when treated with linear A>p. Mycobacterium tuberculosis also expresses a Csm6 protein, but no studies have shown its activation level when activated by linear A>p.   </p>
+
+                    <p> Thus, for our characterization we built off of Gootenberg et al.’s [<a href="#references">1</a>] assessment of Csm6 activation with linear A>p by using Csm6 sequences from both <em>Enterococcus italicus</em> and <em>Thermus Thermophilus</em> as well as Csm6 from <em>Mycobacterium tuberculosis</em> (EiCsm6, TtCsm6, and MtCsm6, respectively). EiCsm6 was chosen since it has previously been shown to be activated by linear A>p; TtCsm6 was chosen because it can be heat purified, making it easier to purify the protein; MtCsm6 was chosen because it has not been shown to be activated by linear A>p.   </p>
+
+                    <h2> Restriction Cloning of Csm6 into an Expression Vector </h2>
+
+                    <p> We used gene blocks for EiCsm6, TtCsm6, and MtCsm6 that featured a 6x-His tag, tobacco etch virus protease cut site, and restriction enzyme cut sites on the 5’ end and 3’ end for NcoI and BlpI, respectively. The gene fragments were digested with the appropriate restriction enzymes and then ligated to the pET-52b expression vector.   </p>
+
+                    <h2> Generating Csm6 Activators </h2>
+
+                    <p> As stated previously, Csm6 can be activated by cyclic adenylates and linear A>p. Cyclic hexadenylate (cA6) activates EiCsm6 most efficiently while TtCsm6 requires cyclic tetradenylate (cA4) [<a href="#references">5</a>]. Additionally, linear A6>p activates EiCsm6 and linear A4>p activates TtCsm6 [<a href="#references">1</a>]. The cyclic oligoadenylate molecules can be purchased from the BIOLOG Life Science Institute, but the linear A>p had to be synthesized in the lab. To do so, we use the hepatitis delta virus ribozyme (HDVR) to produce the 2’,3’-cyclic phosphate end and the hammerhead ribozyme (HHR) to produce the hydroxylated 5’ end on the adenine homopolymers.   </p>
+
+                    <p> Parts BBa_K1614002 and BBa_K598000 contain the sequence for HDVR  and HHR, respectively. We planned to amplify the HDVR region from BBa_K1614002 using flagged primers that add Golden Gate sites on either side. Additionally, we planned to add Golden Gate sites to the HHR-containing plasmid BBa_K598000 in addition to tetra- and hexadenine sequences at the HHR sequence’s 3’ end using inverse PCR. Then, the HDVR amplicon could be cloned in at the 3’ end of the adenine sequence. When the messenger RNA is transcribed, the ribozymes activate and can cleave the sequence at the 5’ and 3’ ends, producing linear adenine homopolymers with a 5’ hydroxyl and a 2’,3’-cyclic phosphate. Gel extraction would be used to isolate the 4-6bps sequences that can then serve as Csm6 activators.   </p>
+
+                    <h2> Nuclease Assay Using Csm6  </h2>
+
+                    <p> We will use Csm6 cleavage products as templates in qPCR and a TaqMan assay using digital PCR in order to measure level of activation. Typically, a TaqMan is used to quantify the presence or absence of a certain target sequence. The reaction uses a fluorescently labeled probe whose sequence matches to the target. The probe binds to the target sequence along with forward and reverse primers. The primers allow Taq polymerase to start amplifying the target, but once it reaches the fluorophore on the end of the probe, Taq cuts the probe which causes it to fluoresce. Thus, fluorescence would indicate the presence of the target.   </p>
+
+                    <p> However, in our case we intend to use this method to quantify how much RNA is cut by Csm6. We will incubate the Csm6 with the activators and target sequence, then add the products to the TaqMan assay in a digital PCR machine. If Csm6 is properly activated, then it should destroy the target sequence, preventing the primers and/or probes from attaching properly, leading to no fluorescence. Thus if there is no fluorescence, Csm6 was activated; if there is fluorescence, Csm6 did not work.   </p>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="results"></a>
+                    <h2> Results </h2>
+
+                    <p> Using the Csm6-assembly protocol, detailed in the void, we used restriction cloning to clone the Csm6 gene blocks synthesized from IDT into our protein expression vector pET-52b. After transformation of the assembled plasmid into C41 pLysS cell line, colonies grew on selective media, indicating that resistance was acquired through the transformed plasmid containing the Csm6 gene. In order to ensure the transformants had the correct expression vectors, we used colony PCR to amplify the Csm6 gene from the plasmid. The results of the PCR are presented below:    </p>
+
+                </div>      
+            </section>
+        <section>
+                <div class="card-image">
+                   <div class="partnership-gel">
+                    <img src="https://2021.igem.org/wiki/images/d/d6/T--UCSC--100512-TI-EiTtCsm6.png"/>
+                   </div>
+                       <h2> Results of the colony PCR performed on the transformants. Our Csm6 insert that include the 6x His tag and the TEV protease site is expected to be around 1.4kb for both TtCsm6 and EiCsm6. Shown are 10 colonies from EiCsm6 and TtCsm6 transformants run on a 0.7% gel. </h2>
+                </div>
+        </section>
+        <section>
+                <div class="card-cutoff">
+                    <p> Definitive positive bands were observed for two of the ten EiCsm6 transformant colonies tested, and faint bands appeared for two TtCsm6 colonies. Using those colonies, we proceeded with protein purification by first inducing expression with IPTG overnight, followed by cell lysis and sonication, however the final results were not obtained before the wiki freeze.     </p>
+
+                </div>
+            </section>
+            <section class="hero-modified">
+                <div class="card-modified"><a id="references">
+                    <h2> References: </h2>
+                </div>
+            </section>
+            <section class="tag subpage-selector">
+                <div class="card-modified">
+                           <nav>
+                               <ul class="subpage-list">
+                                 <li><a href="https://link.springer.com/article/10.1007%2Fs10544-019-0388-7"><button> [1] μPAD </button></a></li>
+                                 <li><a href="https://doi.org/10.1126/science.aaq0179"><button> [2] Multiplexing </button></a></li>
+                                 <li><a href="https://doi.org/10.1039/C6CC03439J"><button> [3] Cyclic dinucleotide  signalings </button></a></li>
+                                 <li><a href="https://doi.org/10.1039/C6CC03439J"><button> [4] Cyclic oligonucleotide signaling pathway in type III CRISPR-Cas systems </button></a></li>
+                                 <li><a href="https://doi.org/10.1039/C6CC03439J"><button> [5] Structural basis for the endoribonuclease activity of the type III-A CRISPR-associated protein Csm6 </button></a></li>
+                                 <li><a href="https://doi.org/10.1038/s41467-020-15334-5"><button> [6] Activation and self-inactivation mechanisms of the cyclic oligoadenylate-dependent CRISPR ribonuclease Csm6 </button></a></li>
+                               </ul>
+                           </nav>
+                </div>
+            </section>  
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                      <u1>
+                        <h1><a href="#about_iiser_kolkata"> About IISER Kolkata </a></h1>
+                        <h1><a href="#detection_of_bovine_mastitis"> Detection of    Bovine mastitis </a></h1>
+                        <h1><a href="#rna_detection"> RNA detection using SHERLOCKv2 and Csm6 </a></h1>
+                        <h1><a href="#protein_production"> Methods </a></h1>
+                        <h1><a href="#results"> Results  </a></h1>
+                 
+                    </div>
+                </div>
+            </div>
+        </main>
+             <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-2">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--ucsc_white_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--baskin_logo_white.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/33/T--UCSC--geneious_prime_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/39/T--UCSC--idt_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/2/29/T--UCSC--aether_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/93/T--UCSC--biolink_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/4/42/T--UCSC--benchling_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/c/cc/T--UCSC--biorender_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-4">
+                                <li><a href="https://twitter.com/ucsc_igem20?lang=en"><img src="https://2021.igem.org/wiki/images/9/9e/T--UCSC--twitter_page_icon.png"/></a></li>
+                                <li><a href="https://www.instagram.com/igemucsc/?hl=en"><img src="https://2021.igem.org/wiki/images/f/f2/T--UCSC--ig_icon.png"/></a></li>
+                                <li><a href="mailto:ucsc.igem.2021@gmail.com"><img src="https://2021.igem.org/wiki/images/3/3b/T--UCSC--email_icon.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
