@@ -1,0 +1,221 @@
+<html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+/* General Settings */
+.total-body {
+    background-color: var(--clr-black);
+}
+
+#content {
+    line-height: normal;
+}
+
+/* Interview Intro */
+.interview-intro {
+    color: white;
+}
+
+.interview-intro h2 {
+    font-size: 3rem !important;
+    font-family: "Lemon Milk" !important;
+    text-align: center;
+    color: var(--clr-white);
+    margin-top: 1rem;
+    margin-bottom: 4rem !important;
+}
+
+/* Hero */
+
+.text-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.hero .text-container h1 {
+    text-align: center;
+    color: var(--clr-white);
+    font-family: var(--ff-header) !important;
+    font-weight: var(--fw-bold)!important;
+    font-size: var(--fs-header);
+}
+
+.hero .text-container p {
+    text-align: center;
+    font-family: serif;
+    font-size: var(--fs-subheader);
+    color: var(--clr-white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+main {
+    position: relative;
+}
+
+.container {
+    max-width: 87.5rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.25rem;
+    /* 100% of parent container */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main */
+.main-header {
+    font-family: var(--ff-header);
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--clr-light-purple);
+    padding: 3rem 0;
+}
+
+.main-header:first-of-type {
+    padding-top: 0;
+}
+
+.people-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+}
+
+.people-sections-twos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+}
+
+.people-sections-threes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+}
+
+.people-sections-single {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+}
+.people-sections:last-of-type {
+    padding-bottom: 10rem;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#HQ_page p {font-family: Century Gothic !important;}
+
+.person-name {
+    font-family: Century Gothic;
+    font-weight: 600;
+    font-size: 1.35rem !important;
+    padding: 1em 0rem;
+    color: var(--clr-light-purple);
+}
+
+#david-headshot {
+    transform: rotate(90deg);
+}
+
+.pic-fill-ins img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.text-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.hero .text-container h1 {
+    text-align: center;
+    color: var(--clr-white);
+    font-family: var(--ff-header) !important;
+    font-weight: var(--fw-bold)!important;
+    font-size: var(--fs-header);
+}
+
+.hero .text-container p {
+    text-align: center;
+    font-family: serif;
+    font-size: var(--fs-subheader);
+    color: var(--clr-white);
+}
+
+.person-name a {
+    text-decoration: none;
+    color: var(--clr-light-purple);
+}
+
+/* paragraph styling */
+
+.paragraph-styling {
+    background-color: var(--clr-light-purple);
+    margin-bottom: min(4rem, 5vh);
+    margin-left: min(3rem, 4vw);
+    margin-right: min(3rem, 4vw);
+    padding: clamp(1rem, 2vw + 1rem, 3rem);
+    border-radius: 20px;
+    width: 100%;
+}
+
+.paragraph-styling h2 {
+    color: white !important;
+    font-size: 2rem !important;
+    font-family: "Lemon Milk" !important;
+
+}
+
+.paragraph-styling p {
+    color: white !important;
+    font-family: "Century Gothic" !important;
+    font-size: 1.5rem !important;
+}
+
+.paragraph-styling p1 {
+    color: var(--clr-white-pink);
+    text-decoration: underline;
+    text-decoration-color: var(--clr-white-pink);
+    padding: 0 1rem;
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 1.5rem !important;
+    margin-bottom: 2rem !important;
+}
+</style>
+</html>
