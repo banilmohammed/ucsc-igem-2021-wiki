@@ -1,0 +1,316 @@
+<html>
+<style>
+
+/* Fonts */
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: 300;
+    src: url("https://2021.igem.org/wiki/images/5/5a/T--UCSC--lemon_milk_light.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: 500;
+    src: url("../fonts/Lemon_milk/LEMONMILK-Medium.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: normal;
+    src: url("https://2021.igem.org/wiki/images/a/a8/T--UCSC--lemon_milk_regular.otf");
+}
+
+@font-face {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    src: url("https://2021.igem.org/wiki/images/f/f0/T--UCSC--lemon_milk_bold.otf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    font-weight: 300;
+    src: url("https://2021.igem.org/wiki/images/2/2b/T--UCSC--century_gothic_normal.otf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    src: url("https://2021.igem.org/wiki/images/5/5c/T--UCSC--century_gothic_bold.otf");
+}
+
+:root {
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-mcherry-red: #FF423E;
+    --clr-pale-red: #FF8F8C;
+    --clr-white-pink: #FFD4C5;
+    --clr-light-purple: #A375ED;
+    --clr-mint: #89EACE;
+    --clr-dark-purple: #733D9D;
+
+    --ff-header: "Lemon Milk";
+    --fw-light: 300;
+    --fw-default: normal;
+    --fw-semi-bold: 500;
+    --fw-bold: bold;
+
+    --fs-header: clamp(1rem, 10vw, 8rem);
+    --fs-subheader: clamp(1.125rem, 4vw + 1rem, 4.125rem);
+    --fs-default: clamp(1rem, 0.5vw + 1rem, 1.5rem);
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    width: 100%
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#A375ED, #FF8F8C);
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.footer-list-item {
+    list-style: none;
+    align-items: center;
+}
+
+.footer-list-item a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 2rem;
+    font-family: "Lemon Milk";
+    font-weight: light;
+}
+
+.not-hero h2 {
+    font-family: "Lemon Milk";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.container {
+    position: absolute:
+    bottom: 0;
+    padding-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sec h1 {
+    font-family: "Lemon Milk" !important;
+    font-weight: normal;
+    color: white;
+    justify-content: center;
+    position: relative;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.sec img {
+    margin-left: 60px;
+}
+
+.sec h1::before {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -5px !important;
+    left: 0 !important;
+    width: 50px !important;
+    height: 2px !important;
+    background: white !important;
+}
+
+.sec p {
+    font-family: "Lemon Milk"
+    font-weight: light;
+    margin-right: 20px !important;
+}
+
+.footer img {
+    max-width: 120px;
+    margin-bottom: 60px;
+}
+
+
+.sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 20px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li img {
+    max-width: 20px;
+}
+
+.sci li a {
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: 38px;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    justify-content: center;
+    text-direction: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: green;
+}
+    
+.sci li a .fa {
+    color: white;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks li {
+    list-style: none;
+}
+
+.quicklinks h2 {
+    font-family: "Lemon Milk" !important;
+    font-size: 2.5rem;
+}
+
+.quicklinks li a {
+    font-family: "Lemon Milk";
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover {
+    color: white;
+}
+
+.rhi li {
+    list-style: none;
+}
+
+.rhi-better li {
+    list-style: none;
+}
+
+.rhi-exp {
+    display: grid;
+}
+
+.rhi-exp-2 img {
+    display: grid;
+    max-width: 250px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.rhi-exp-3 img {
+    margin-top: 40px;
+    max-width: 120px;
+    margin-bottom: 40px;
+}
+.rhi-exp-4 img {
+    max-width: 35px;
+}
+
+.rhi-exp-5 img {
+    margin-top: 50px;
+    max-width: 120px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer {
+       display: none;
+    }
+
+    .grid {
+       display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+
+    .aside {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .rhi {
+        display: none;
+    }
+
+    .rhi-better {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+
+    .rhi-exp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sec img {
+        text-align: center;
+    }
+
+    .quicklinks {
+        text-align: center;
+    }
+
+    .quicklinks img {
+        text-align: center;
+    }
+    
+   
+    .hero h6 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+   
+    .card img {
+        width: 80%
+    }
+ 
+    .card-image img {
+        width: 100%;
+}
+
+</style>
+</html>
