@@ -1,0 +1,117 @@
+{{UCSC}}
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+{{Template:UCSC/footer-css}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+            <img src="https://2021.igem.org/wiki/images/3/31/T--UCSC--hp_collaborations_header.gif" alt="spinning planet"/>
+            <h6> Collaborations </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section class="tag">
+                <div class="card"><a id="about_uc_davis"></a>
+                    <h2> About UC Davis </h2>
+                    <p> Over our iGEM season, we met with members of UC Davis’s iGEM team over Zoom a few times to discuss our projects, give progress updates, and provide support to each others’ teams where it was needed. Although our projects are different in structure, both of our teams had overlapping goals in Educational Outreach and Modeling. It was in these aspects that we combined our expertise to complement each other’s projects. </p>
+
+
+                    <div class="subcaption-edit">
+                    <img src="https://2021.igem.org/wiki/images/5/5d/T--UCSC--ucd_ucsc_zoom_meeting.png"/>
+                        <h2> UCSC and UCD modelers celebrate progress at the end of a meeting </h2>
+                    </div>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="uc_davis_educational_outreach"></a>
+                    <h2> Educational Outreach with UC Davis </h2>
+                    <p> Each of our teams independently identified how important it is to expose highschool students to synthetic biology, research, and humanitarian science. Many of us wished we could have known about these sorts of opportunities sooner, so we wanted to talk about our experiences with younger students. </p>
+                    
+                    <p> To share both of our stories to more students, UCSC and UCD worked together on an educational outreach presentation. UCSC contributed slides and a video that UCD shared to chemistry honor students at Davis High School. These students were both freshman and sophomores, so it was important for us to tailor what we shared to supplement the prior knowledge and interests of our student audience.  </p>
+
+                    <p> Our contributions explained the role of the common chassis Escherichia coli in the lab. In order to make understanding bacterial nomenclature and functions more palatable, we used dog breeds as an analogy to E. coli strains. With this discussion on strains, we discussed how some strains of a bacterium can be useful and others can be pathogenic. </p>
+
+                    <p> We also provided the high school students a glimpse into what working in a research lab is like. We explained the importance of teamwork, collaboration, and lab safety in getting effective work done. We also discussed the different forms that research can take: wet lab, dry lab, or a combination of both.  </p>
+
+                    <p> Our end goal was to inspire them to pursue science by using our own experiences as a model for how their own futures could potentially look. </p>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="uc_davis_modeling"></a>
+                    <h2> Modeling with UC Davis  </h2>
+                    <p> It was the goal of both UC Davis and UCSC to build computational models to supplement our projects. The goal of Progenie’s model is to gain insight into how our gene-targeting plasmid spreads throughout a population by conjugation, whereas UCD’s project aimed to model the effect of various vaccination states on the spread of a virus. We both planned to build both of these mathematical models to be modifications of the classic SIR model used to model disease transmission's effects on population dynamics.  </p>
+
+                    <p> At the time of meeting, UCD had written mathematical equations that represented the classic SIR model, but were unsure of how best to incorporate a vaccinated state into that model. Our modeling team walked them through the visual narrative of the SIR compartment model, drawing out the 3 compartments and arrows to represent flow between them. We walked through the logic of why basic vaccination is a flow from the Susceptible compartment to the Recovered compartment, and how to incorporate a vaccination rate into their initial equations. We then discussed how different types of vaccines might affect an SIR model, such as 2-dose vaccines or 
+vaccines that only confer immunity for a short period of time. This gave them a clear direction on the next steps they would have to take for a successful running model. 
+</p>
+            </section>  
+            <section class="tag">
+                <div class="card"><a id="iiser_k_intro"></a>
+                    <h2> IISER Kolkata </h2>
+                    <p> To learn about our project-long collaborative partnership with the iGEM team at the Indian Institute of Science Education and Research - Kolkata, check out our<p1><a href="https://2021.igem.org/Team:UCSC/Partnership">Partnership</a></p1>page! </p>
+            </section>  
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                      <u1>
+                        <h1><a href="#about_uc_davis"> About UC Davis </a></h1>
+                        <h1><a href="#uc_davis_educational_outreach"> Educational Outreach </a></h1>
+                        <h1><a href="#uc_davis_modeling"> Modeling </a></h1>
+                        <h1><a href="#iiser_k_intro"> IISER K </a></h1>
+                 
+                    </div>
+                </div>
+            </div>
+        </main>
+             <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-2">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--ucsc_white_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--baskin_logo_white.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/33/T--UCSC--geneious_prime_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/39/T--UCSC--idt_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/2/29/T--UCSC--aether_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/93/T--UCSC--biolink_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/4/42/T--UCSC--benchling_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/c/cc/T--UCSC--biorender_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-4">
+                                <li><a href="https://twitter.com/ucsc_igem20?lang=en"><img src="https://2021.igem.org/wiki/images/9/9e/T--UCSC--twitter_page_icon.png"/></a></li>
+                                <li><a href="https://www.instagram.com/igemucsc/?hl=en"><img src="https://2021.igem.org/wiki/images/f/f2/T--UCSC--ig_icon.png"/></a></li>
+                                <li><a href="mailto:ucsc.igem.2021@gmail.com"><img src="https://2021.igem.org/wiki/images/3/3b/T--UCSC--email_icon.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
