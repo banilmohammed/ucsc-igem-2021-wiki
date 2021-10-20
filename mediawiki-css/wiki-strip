@@ -1,0 +1,28 @@
+<html>
+<style>
+#top_title {
+    display: none;
+}
+
+#content {
+    left: 0px;
+    height: 100%;
+    padding:0px;
+    width:100%;
+    margin-top:-7px;
+    margin-left:0px;
+}
+
+body {
+    background-color:white;
+    width:100%;
+}
+
+.mw-body {width:100% !important;}
+
+#globalWrapper {padding-bottom:0px;}
+
+#HQ_page p {margin-bottom:0px;}
+
+</style>
+</html>
