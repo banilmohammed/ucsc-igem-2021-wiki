@@ -1,0 +1,113 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/root}}
+{{Template:UCSC/engineering-css}}
+{{Template:UCSC/navbar}}
+{{Template:UCSC/reference_css}}
+{{Template:UCSC/figure_css}}
+{{Template:UCSC/gif-header-css}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+                <img class="header-gif" src="https://2021.igem.org/wiki/images/a/a7/T--UCSC--project_implementation.gif">
+            <div class="text-container">
+                <h6> Future Directions </h6>
+            </div>
+        </section>
+        <section class="subpage-selector">
+            <nav>
+                <ul class="subpage-list-main">
+                    <li><form action="https://2021.igem.org/Team:UCSC/Implementation">
+                            <button type="submit"> Implementation </button> 
+                    </form></li>
+                    <li><form action="https://2021.igem.org/Team:UCSC/Future_Directions">
+                            <button type="submit"> Future Directions </button>
+                    </form></li>
+                </ul>
+            </nav>
+        </section>
+        <main>
+            <section class="main-text">
+                <div class="main-text-gif">
+                    <div class="text-block">
+                        <h2> Overview </h2>
+                        <p> After carefully considering the issues that arose in the proposed implementation and human practices, our team made the group decision to pivot our focus from specifically targeting STEC to targeting multiple pathogenic bacteria with antimicrobial resistance. While this opened the door for many different applications we wanted to keep the integrity of the project by sticking with food-borne illnesses that continue to cause harm to people on a global scale. Antibiotic resistance has made it increasingly more difficult to treat illness that arises from contaminated food. We narrowed down our range to four pathogenic bacteria known to cause food-borne illness. Two will be similar to our STEC model where a <p1><a href="https://2021.igem.org/Team:UCSC/Glossary#virulence_factor">virulence factor</a></p1> gene will be targeted and two where the antimicrobial resistance gene will be targeted.</p>
+                    </div>
+                </div>
+                <div class="main-text-gif">
+                    <div class="text-block">
+                        <h2> Initial Research </h2>
+                        <p> Once we decided to research other bacteria, the question arose of what bacteria could be easily adapted to function with our system. <p1><a href="https://2021.igem.org/Team:UCSC/Glossary#gm_bacteria">Gram-negative Bacteria</a></p1> are most similar to our current model as our <p1><a href="https://2021.igem.org/Team:UCSC/Glossary#phage_system">phage system</a></p1> and <p1><a href="https://2021.igem.org/Team:UCSC/Glossary#conjugation_machinery">conjugation machinery</a></p1> are designed to function in  <em>E. coli</em>, a gram-negative bacteria. Another influence in choosing gram-negative bacteria is that they often have more antibiotic resistance genes than gram-positive bacteria, creating a wider avenue for our project <a href="#future-direction1">[1]</a>. We concluded that <em>Vibrio Cholerae, Cronobacter Sakazakii, Campylobacter</em>, and <em>Yersinia Enterocolitica</em>  are the best fit for the Progenie system by following this set of criteria:</p>
+                    </div>
+                </div>
+                <div class="main-text-gif">
+                    <img id="criteria-list" class="body-fig" src="https://2021.igem.org/wiki/images/c/cc/T--UCSC--criteria_list.png">
+                </div>
+
+            </section>
+            <section class="bacterial-split">
+                <div class="split-category"> 
+                      <h1> Virulence Factors </h1>
+                      <div class="bacteria-container">
+                        <img id="campy" class="bacteria-gif" src="https://2021.igem.org/wiki/images/4/4f/T--UCSC--campylobacter.gif" alt="campylobactor gif">
+                        <div class="text-block">
+                            <h2> Campylobacter and the <em>cdtB</em> gene </h2>
+                            <p> <em>Campylobacter</em> is a spiral-shaped, curved zoonosis bacteria recognized as a prevalent foodborne pathogen <a href="#future-direction9">[9]</a>. Each year, bacteria in the <em>Campylobacter</em> genus cause over 400-500 million gastrointestinal infections worldwide <a href="#future-direction11">[11]</a>. The most common pathogenic <em>Campylobacter</em> species, <em>C. jejuni</em> and <em>C. coli</em>, causes about 40,000-100,000 cases of diarrhea in developing countries as well as possesses antibiotic resistance, contributing to its threat to public health <a href="#future-direction11">[11]</a>. In order to apply our Progenie system to <em>C. jejuni</em> and <em>C. coli</em>, we would target the cytolethal distending toxin (CDT) pathway, as it interrupts the host’s cell cycle and host cell apoptosis <a href="#future-direction9">[9]</a>. The CDT toxin consists of three subunits, CdtA, CdtB, and CdtC, but the protein produced by <em>cdtB</em> is mainly responsible for eukaryotic cell death while <em>cdtA</em> and <em>cdtC</em> are responsible for adhesion to the host cell <a href="#future-direction10">[10]</a>. Thus, a primary target for our Progenie system would be the <em>cdtB</em> gene.</p>
+                        </div>
+                      </div>
+                      <div class="bacteria-container">
+                        <img class="bacteria-gif" src="https://2021.igem.org/wiki/images/0/0f/T--UCSC--v_cholerae.gif" alt="v. cholerae gif">
+                        <div class="text-block">
+                            <h2> Vibrio Cholerae </h2>
+                            <p> <em>Vibrio cholerae</em> is a pathogenic bacteria that, like STEC, is found in feces and is spread through contaminated food and water <a href="#future-direction16">[16]</a>. Its primary virulence factor is the cholera toxin (CT) which disrupts ion transportation in the intestinal epithelial cells <a href="#future-direction20">[20]</a>. The toxin is encoded by the <em>ctxAB</em>  gene in the <em>V. cholerae</em> serogroup O1 or O139 and causes about 2.9 million cases of profuse diarrhea and 95,000 deaths each year around the world <a href="#future-direction20">[20]</a><a href="#future-direction14">[14]</a>. In order to eliminate the cholera toxin, we can target the <em>ctxAB</em> gene with our Progenie system.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="split-category"> 
+                      <h1> AMR </h1>
+                      <div class="bacteria-container">
+                        <img class="bacteria-gif" src="https://2021.igem.org/wiki/images/2/2b/T--UCSC--chronobacter.gif" alt="chronobacter sakazakii gif">
+                        <div class="text-block">
+                            <h2> Cronobacter Sakazakii </h2>
+                            <p> Another Progenie-applicable pathogenic bacteria, <em>Cronobacter sakazakii</em>i, infects people of all age groups <a href="#future-direction14">[14]</a>, but about 90% of cases are associated with contaminated powdered baby formula <a href="#future-direction3">[3]</a>. Although cases are rare, death occurs 40-80% of the time and infection can cause neurological disorders later in life <a href="#future-direction4">[4]</a>. Studies have shown that isolated strains of <em>C. sakazakii</em> were resistant to multiple antibiotics; some reports have found that 100% of isolates are resistant to ampicillin and cefotaxime <a href="#future-direction7">[7]</a>. Some strains have also been resistant to colistin, raising global concern since colistin is used as a last-resort medication <a href="#future-direction7">[7]</a>. The pECLA plasmid has been reported to confer resistance to different <em>C. sakazakii</em> strains, containing carbapenemase genes such as <em>∆intI1–blaIMP-2</em> and <em>blaCMA</em> <a href="#future-direction7">[7]</a>. Targeting these plasmids may reduce the levels of resistance currently observed in <em>C. sakazakii</em>. Another approach for the bacteria would be targeting the gene <em>ompA</em>, which produces a protein that crosses the blood-brain barrier and disrupts the central nervous system <a href="#future-direction4">[4]</a>. Thus, to disrupt the pathogenicity we would target <em>ompA</em> with our Progenie system to prevent this virulence factor.</p>
+                        </div>
+                      </div>
+                      <div class="bacteria-container">
+                        <img class="bacteria-gif" src="https://2021.igem.org/wiki/images/b/b8/T--UCSC--yersinia_enterocolitica.gif" alt="yersinia enterocolitica gif">
+                        <div class="text-block">
+                            <h2> Yersinia enterocolitica </h2>
+                            <p><em>Yersinia enterocolitica (Y. enterocolitica)</em> is a well studied anaerobic gastrointestinal zoonotic coccobacillus which causes yersiniosis, an illness that can causes abdominal pain, fever, diarrhea, which is often bloody and can progress into worse symptoms. <em>Yersinia</em> causes around 117,000 illnesses with 640 hospitalizations and 35 deaths a year in the United States alone and is transmittable through undercooked pork and animal products <a href="#future-direction17">[17]</a>. <em>Y. enterocolitica</em> has a multidrug resistant cassette that contains determinants against phenicols (<em>catA1</em>), streptomycin (<em>aadA1</em>), heavy metal mercury (<em>mer</em> operon), quaternary ammonium compounds (<em>qacE-delta1</em>), and a folate pathway antagonist (<em>sul1</em>) <a href="#future-direction19">[19]</a>. <em>Y. enterocolitica</em> also has a plasmid that contains tetracycline resistance (<em>tetB</em>) that could be targeted <a href="#future-direction19">[19]</a>. For <em>Y. enterocolitica</em> we would target the tetracycline resistant gene <em>tetB</em> for a single gene and if we use the multiplexing aspect of the INTEGRATE system,then the resistant cassette could be targeted as well.</p>
+                        </div>
+                      </div>
+                </div>
+            </section>
+            <section class="tag subpage-selector-ref">
+                <div class="card-modified">
+                           <nav>
+                               <ul class="subpage-list">
+                                 <li><a id="future-direction1" href="https://doi.org/10.3390/molecules25061340"><button> [1]</button></a></li>
+                                 <li><a id="future-direction2" href="https://www.cdc.gov/cronobacter/infection-and-infants.html"><button> [2]</button></a></li>
+                                 <li><a id="future-direction3" href="https://doi.org/10.3389/fped.2015.00056"><button> [3]</button></a></li>
+                                 <li><a id="future-direction4" href="https://doi.org/10.1080/21505594.2015.1036217"><button> [4]</button></a></li>
+                                 <li><a id="future-direction5" href="https://doi.org/10.1111/j.1365-2672.2005.02656.x"><button> [5]</button></a></li>
+                                 <li><a id="future-direction6" href="https://doi.org/10.3201/eid2605.190858"><button> [6]</button></a></li>
+                                 <li><a id="future-direction7" href="https://doi.org/10.3390/foods10010020"><button> [7]</button></a></li>
+                                 <li><a id="future-direction8" href="https://www.who.int/news-room/fact-sheets/detail/campylobacter"><button> [8]</button></a></li>
+                                 <li><a id="future-direction9" href="https://doi.org/10.1016/j.ijmm.2009.07.002"><button> [9]</button></a></li>
+                                 <li><a id="future-direction10" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3910176/"><button> [10]</button></a></li>
+                                 <li><a id="future-direction11" href="https://doi.org/10.1016/j.heliyon.2019.e02814"><button> [11]</button></a></li>
+                                 <li><a id="future-direction12" href="https://doi.org/10.3390/molecules25061340"><button> [12]</button></a></li>
+                                 <li><a id="future-direction13" href="https://www.cdc.gov/yersinia/symptoms.html"><button> [13]</button></a></li>
+                                 <li><a id="future-direction14" href="https://www.google.com/url?q=https://www.cdc.gov/cronobacter/infection-and-infants.html&sa=D&source=docs&ust=1634716581915000&usg=AOvVaw2z8rVb_bOAZ1wHT4V3gu75"><button> [14]</button></a></li>
+                                 <li><a id="future-direction15" href="https://www.who.int/news-room/fact-sheets/detail/campylobacter"><button> [15]</button></a></li>
+                                 <li><a id="future-direction16" href="https://www.google.com/url?q=https://www.cdc.gov/cholera/index.html&sa=D&source=docs&ust=1634716724094000&usg=AOvVaw13NOyZqFAbNrMQSQjceyvD"><button> [16]</button></a></li>
+                                 <li><a id="future-direction17" href="https://www.cdc.gov/yersinia/faq.html"><button> [17]</button></a></li>
+                                 <li><a id="future-direction18" href="https://doi.org/10.3389/fmicb.2021.664665"><button> [18]</button></a></li>
+                                 <li><a id="future-direction19" href="https://doi.org/10.3389/fmicb.2021.664665"><button> [19]</button></a></li>
+                                 <li><a id="future-direction20" href="https://www.researchgate.net/profile/Km-Shahunja/publication/341674894_Changing_Susceptibility_Pattern_of_Vibrio_cholerae_O1_Isolates_to_Commonly_Used_Antibiotics_in_the_Largest_Diarrheal_Disease_Hospital_in_Bangladesh_during_2000-2018/links/5ededbc6299bf1d20bdaea5f/Changing-Susceptibility-Pattern-of-Vibrio-cholerae-O1-Isolates-to-Commonly-Used-Antibiotics-in-the-Largest-Diarrheal-Disease-Hospital-in-Bangladesh-during-2000-2018.pdf"><button> [20]</button></a></li>
+                               </ul>
+                           </nav>
+                </div>
+            </section> 
+            </main>
+    </div>
+</html>
