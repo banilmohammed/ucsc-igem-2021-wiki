@@ -1,0 +1,92 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+{{Template:UCSC/footer-css}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+            <img src="https://2021.igem.org/wiki/images/b/ba/T--UCSC--project_future_directions_header.gif" alt="spinning planet"/>
+            <h6> Future Lab Directions </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar"></div>
+            <section class="tag">
+                <div class="card"><a id="current_progress"></a>
+                    <h2> Current Progress </h2>
+                    <p> Through trials and travails, we eliminated the crimson glow of <em>mcherry</em>-integrated <em>E. coli</em>. We were able to successfully demonstrate our system’s ability to disrupt a gene, and we have also already constructed and isolated the plasmids necessary for the next two steps of our system: phage infection and conjugation.   </p>
+
+                    <p> That is the extent of the experimental successes we may present in this competition. </p>
+
+                    <p> However, while this year’s iGEM competition may soon be over, we’re far from finished.
+We’ve proven that we can disrupt genes, and in the coming months we can begin experimenting with phage infection and conjugation. </p>
+
+                    <p> To demonstrate the viability of phage infection as a means to deliver the gene elimination machinery, we constructed the plasmid &#966;MINT to contain both the INTEGRATE gene disruption system and an F1 phage packaging origin of replication. &#966;MINT will be transformed into DH5α <em>E. coli</em> alongside the M13KO7 helper plasmid. The DH5α should then secrete phages containing &#966;MINT into its growth media, which we will then purify to isolate the phage. We will extract the DNA from these phages and sequence it to verify the presence of &#966;MINT. Once that is confirmed, we can dose our DH5α-F’-<em>mcherry</em>  cells with the &#966;MINT phage, and measure the subsequent fluorescence of the cells. If the delivery was successful, we would observe a decrease in fluorescence similar to our results from the prior gene elimination experiments. </p>
+
+                    <p> To explore our system's capacity to propagate through a bacterial population we will conduct conjugation experiments. Conjugation experiments require the addition of the F’ origin of transfer (oriT) to our plasmid. This new plasmid, coined &#966;MINTO, will be transformed into F’ donor cells that contain all the necessary machinery to mobilize it for transfer to recipient cells. Non-selective liquid media will be inoculated with recipient F-E.coli DH5α-<em>mcherry</em> cells, and its fluorescence will be measured. After confirming the presence of &#966;MINT in a chosen F’ colony, the donor will be mixed in with the recipient cells and grown. At regular intervals, we will analyze the fluorescence of the liquid culture. If the DH5α-<em>mcherry</em> receives &#966;MINTO, we should see a notable decrease in the fluorescence of the culture. </p>
+
+                    <p> These mixtures will be done with a variety of donor to recipient ratios to discover which ratio produces the most<p1><a href="https://2021.igem.org/Team:UCSC/Glossary#transconjugant">transconjugants</a></p1>- which might be measured by the rate of change in fluorescence. After growing in non-selective media, the cells will be replated on selective media, to isolate the cells containing &#966;MINT. To differentiate between donors and recipients containing &#966;MINT, we will run colony PCRs to check for the presence of the <em>mcherry</em>. If we find colonies containing <em>mcherry</em> but lacking fluorescence, then we can assume they are transconjugants and that our experiments were successful. As a last check, we’ll send colonies to be sequenced. </p>
+
+                    <p>  When we have successfully delivered &#966;MINT/&#966;MINTO via phage infection and conjugation individually, we can finally put the two steps together. F’ cells will be dosed with phage, then placed in media with a recipient strain containing <em>mcherry</em>. </p1>
+
+                    <p> As in all the experiments, the change in fluorescence, or lack thereof, will declare our victory or failure. </p>
+                </div>
+            </section>
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1><a href="#current_progress"> Current Progress </a></h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+             <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-2">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--ucsc_white_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--baskin_logo_white.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/33/T--UCSC--geneious_prime_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/39/T--UCSC--idt_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/2/29/T--UCSC--aether_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/93/T--UCSC--biolink_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/4/42/T--UCSC--benchling_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/c/cc/T--UCSC--biorender_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-4">
+                                <li><a href="https://twitter.com/ucsc_igem20?lang=en"><img src="https://2021.igem.org/wiki/images/9/9e/T--UCSC--twitter_page_icon.png"/></a></li>
+                                <li><a href="https://www.instagram.com/igemucsc/?hl=en"><img src="https://2021.igem.org/wiki/images/f/f2/T--UCSC--ig_icon.png"/></a></li>
+                                <li><a href="mailto:ucsc.igem.2021@gmail.com"><img src="https://2021.igem.org/wiki/images/3/3b/T--UCSC--email_icon.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>    
+     </div>
+</html>
