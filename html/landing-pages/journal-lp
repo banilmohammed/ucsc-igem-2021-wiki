@@ -1,0 +1,85 @@
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/landing-page-css}}
+{{Template:UCSC/navbar}}
+{{Template:UCSC/footer-css}}
+<html>
+    <div class="total-body">
+        <div class="app">
+              <video loop muted autoplay preload="auto">
+                  <source src="https://2021.igem.org/wiki/images/f/f5/T--UCSC--glossary_landing_page.mov"/>
+              </video>
+              <div class="overlayText">
+                   <h2 id="topText">Journal</h2>
+              </div>
+        </div>
+        <main class="grid">
+            <section>
+                <div class="fade-in-image flexbox-container">
+                    <div class="card">
+                        
+                        <p> Here we provide a week-by-week recap of our project, tracking our collaborations and partnerships, educational outreach presentations, major meetings we had for human practices, detailed descriptions and protocols for the experiments we conducted, and the safety measures we took to ensure the wellbeing of our team.</p>
+
+                    </div>
+                </div> 
+            </section>
+       <section class="subpage-selector">
+            <nav>
+                <ul class="subpage-list">
+                    <li><a href="https://2021.igem.org/Team:UCSC/Notebook"><button> Notebook </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Experiments"><button> Protocols </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Safety"><button> Safety </button></a></li>
+                    <li><a href="https://2021.igem.org/Team:UCSC/Medals"><button> Medals </button></a></li>
+                </ul>
+            </nav>
+       </section>
+      </main>
+             <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-2">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--ucsc_white_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--baskin_logo_white.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/33/T--UCSC--geneious_prime_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/39/T--UCSC--idt_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/2/29/T--UCSC--aether_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/93/T--UCSC--biolink_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/4/42/T--UCSC--benchling_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/c/cc/T--UCSC--biorender_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-4">
+                                <li><a href="https://twitter.com/ucsc_igem20?lang=en"><img src="https://2021.igem.org/wiki/images/9/9e/T--UCSC--twitter_page_icon.png"/></a></li>
+                                <li><a href="https://www.instagram.com/igemucsc/?hl=en"><img src="https://2021.igem.org/wiki/images/f/f2/T--UCSC--ig_icon.png"/></a></li>
+                                <li><a href="mailto:ucsc.igem.2021@gmail.com"><img src="https://2021.igem.org/wiki/images/3/3b/T--UCSC--email_icon.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+    </div>
+</html>
