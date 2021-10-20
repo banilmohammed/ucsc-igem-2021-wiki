@@ -1,0 +1,153 @@
+{{UCSC}}
+{{Template:UCSC/wiki_strip}}
+{{Template:UCSC/educational-outreach-css}}
+{{Template:UCSC/educational-outreach-js}}
+{{Template:UCSC/navbar}}
+{{Template:UCSC/footer-css}}
+<html>
+    <div class="total-body">
+        <section class="hero">
+            <img src="https://2021.igem.org/wiki/images/4/48/T--UCSC--hp_educational_outreach.gif" alt="spinning planet"/>
+            <h6> Educational Outreach </h6>
+        </section>
+        <main class="grid">
+            <div class="sidebar-edu"></div>
+            <section class="tag">
+                <div class="card"><a id="goal"></a>
+                    <h2> Our Goal: Encourage and Engage </h2>
+
+                    <p> We introduced the topic of synthetic biology to the K-12 demographic using a presentation designed with the goal to encourage discussion, reflection, and engagement. We chose to present to high school students because aside from most of them never having heard of synthetic biology before, many of them are at the cusp of deciding their futures. We discussed real-world applications of synthetic biology and familiarized students with our process of research in a college setting and how it deviates from high school lab courses. This gave students a better outlook on what it meant to be a part of the STEM field. In the end, our hope was for students to feel more comfortable with not only pursuing biological research, but choosing a field of study they can make a difference in.  </p>
+                </div>
+            </section>
+            <section>
+                <div class="card-image">
+                         <img src="https://2021.igem.org/wiki/images/3/3d/T--UCSC--educational_outreach_flyer.png"/>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="freshmen_approach"></a>
+                    <h2> Approach with Freshmen </h2>
+
+                    <div class="subcaption-edit">
+                      <div class="scotts-valley">
+                        <img src="https://2021.igem.org/wiki/images/9/95/T--UCSC--team_members_scotts_valley.png"/>
+                      </div>
+                    </div>
+
+                    <p> Our first audience was Mikayla Heffner’s freshman biology classes at Scotts Valley High School. We had the excellent opportunity to send five of our team members to the school and give our presentation to a total of three classes. The freshman had no prior knowledge of molecular biology, therefore we used analogies to explain basic fundamentals of biology, such as…  </p>
+
+                    <u1>
+                       <li>  1. The central dogma, analogous to using instructions of a LEGO set (the genes) in order to stack building blocks (amino acids) into a final product (a protein). </li>
+                       <li>  2. An anecdote to help students understand the pathology behind the STEC.  </li>
+                    </u1>
+
+                    <div class="subcaption-edit">
+                    <img src="https://2021.igem.org/wiki/images/6/6a/T--UCSC--figure_1_edu_outreach.png"/>
+                        <h2> To make the presentation interactive, we created a storyline that involves a character falling ill to a stomach bug. We had the audience
+                        act as detectives to figure out what made them sick. We used this storyline as a segue into a high level overview of Progenie. </h2>
+                    </div>
+
+                    <p> We then built our way up to cover more complex topics related to our project, like explaining gene editing as making a cake with different ingredients and steps, which will result in a different product. Additionally, the class was currently covering the scientific method, thus we discussed the aspects of college-level research that are similar as well as different from the traditional methods. </p>
+
+                    <div class="subcaption-edit">
+                    <img src="https://2021.igem.org/wiki/images/f/fb/T--UCSC--figure_2_scotts_valley.png"/>
+                        <h2> We designed the end of our presentation to connect our research with their current “Scientific Methods” unit in which we highlighted the key differences between what they learn in school versus how real-life research projects occur both in higher education and the industry. </h2>
+                    </div>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card">
+                    <h2> Results of our Discussion </h2>
+                    <p> Based on the basic biology concepts we conveyed to the students, we asked them what they thought “synthetic biology” might mean. The students asked us some really important questions, like how likely it is that our project is actually implemented, or affects change. Such questions require us to reflect on the future of our own project, and really consider the context of the problem we are trying to solve. Doing so is critical for the development of innovative, effective, and truly thoughtful solutions to the problems we face in this world, so we enjoyed engaging with the students on that level. We also received questions related to how research works, such as where funding comes from or what being a researcher is like. Such questions indicated to us that we got a few students interested in learning more about pursuing a career in science. Most of the students were still unsure about their future academic and career plan, but we showed them that there are ample opportunities and they should not be afraid to go pursue them.Overall, it was a really fun and inspiring experience for us, and we hope it was for them as well. </p>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card"><a id="senior_approach"></a>
+                    <h2> Approach with Seniors </h2>
+                    <p> Our second audience was Jeff Roth-Vinson’s senior IB 2nd year biology class at the Kaohsiung American School in Taiwan. Due to this audience being international, we presented to them over Zoom. As seniors, this audience had a solid background in biology, allowing us to dive deeper into the more difficult aspects of our project as well as have time to discuss our paths in science. </p>
+
+
+                    <div class="subcaption-edit">
+                         <img src="https://2021.igem.org/wiki/images/b/b8/T--UCSC--zoom_screenshot_educational_outreach.png">
+                    </div>
+
+                    <p> We discussed how we used a CRISPR mechanism coupled with transposons to target virulence factors in bacteria. Similar to our presentation to freshmen, we discussed how research in a college setting is different than in high school. We also ended with an inclusive discussion regarding our personal experiences going into STEM as well as emphasizing the importance of trying new things, making mistakes, and being yourself. By sharing our experiences we hoped to express how no matter what one’s background is or what their path might seem to be, changes will happen that open new and unexpected possibilities. </p>
+
+                    <div class="subcaption-edit">
+                        <img src="https://2021.igem.org/wiki/images/3/34/T--UCSC--senior_outreach_slide.png">
+                    </div>
+
+                </div>
+            </section>
+            <section class="tag">
+                <div class="card">
+                    <h2> How it went: </h2>
+                    <p> Due to limited time, we were not able to take many questions but the ones we did get were related to research, how it's done, how a project is chosen, how roles are delegated, etc. These types of questions indicated to us that these students had no previous exposure to research and what it entails. We were glad to have been able to be the first to show these students the world of biological research and hopefully encourage them to pursue a related career. Additionally, after our presentation, the biology class at the Kaohsiung American School sent us a thank you letter for sharing our project and experiences in research. One student also noted how they ate steak the night before and had a really bad stomach ache the next day, and based on our presentation they thought it may have been caused by some pathogenic bacteria! Though a secondary goal of our presentation, we also were able to raise awareness of foodborne illnesses by introducing possible causes. </p>
+                </div>
+            </section>
+            <section>
+                <div class="card-image">
+                         <img src="https://2021.igem.org/wiki/images/b/b5/T--UCSC--thankyou_note.png"/>
+                         <h2> Thank you note from the IB Biology class at Kaohsiung American School in Taiwan! </h2>
+                </div>
+            </section>
+            <div class="aside">
+                <div class="aside-container">
+                    <div class="item shark-3">
+                        <h1><a href="#goal"> Our Goals </a></h1>
+                        <h1><a href="#freshmen_approach"> Approach with Freshmen </a></h1>
+                        <h1><a href="#senior_approach"> Approach with Seniors </a></h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+             <div class="footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-2">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--ucsc_white_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/90/T--UCSC--baskin_logo_white.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/33/T--UCSC--geneious_prime_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/3/39/T--UCSC--idt_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/2/29/T--UCSC--aether_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec aboutus">
+                        <u1 class="rhi">
+                            <div class="rhi-exp">
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/9/93/T--UCSC--biolink_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/4/42/T--UCSC--benchling_logo.png"/></a></li>
+                                <li><a href=="#"><img src="https://2021.igem.org/wiki/images/c/cc/T--UCSC--biorender_logo.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Follow Us</h1>
+                        <u1 class="rhi-better">
+                            <div class="rhi-exp-4">
+                                <li><a href="https://twitter.com/ucsc_igem20?lang=en"><img src="https://2021.igem.org/wiki/images/9/9e/T--UCSC--twitter_page_icon.png"/></a></li>
+                                <li><a href="https://www.instagram.com/igemucsc/?hl=en"><img src="https://2021.igem.org/wiki/images/f/f2/T--UCSC--ig_icon.png"/></a></li>
+                                <li><a href="mailto:ucsc.igem.2021@gmail.com"><img src="https://2021.igem.org/wiki/images/3/3b/T--UCSC--email_icon.png"/></a></li>
+                            </div>
+                        </u1>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h1>Contact Us</h1>
+                        <u1>
+                            <li><a href=="#">Baskin School of Engineering</a></li>
+                            <li><a href=="#">1156 High Street</a></li>
+                            <li><a href=="#">Santa Cruz, CA 95060, USA</a></li>
+                        <u1>
+                    </div>
+                </div>
+            </div>  
+     </div>
+</html>
